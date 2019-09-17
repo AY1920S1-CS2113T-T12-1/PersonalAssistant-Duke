@@ -49,4 +49,15 @@ public class Todo extends Task {
     public LocalDateTime getLocalDate() {
         return null;
     }
+
+    // does not apply for Todo
+    @Override
+    public String getDate() {
+        return null;
+    }
+
+    // does not apply for Todo
+    @Override
+    public void setDate(String newDate) {
+    }
 }

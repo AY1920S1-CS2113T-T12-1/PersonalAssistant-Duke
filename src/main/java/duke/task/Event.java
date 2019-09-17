@@ -8,6 +8,7 @@ import java.time.LocalDateTime;
 public class Event extends Task {
     private final String SYMBOL = "[E]";
     private String at;
+
     /**
      * Constructor for Event task.
      * @param description The event name
@@ -53,5 +54,18 @@ public class Event extends Task {
     @Override
     public String getDateTime() {
         return this.at;
+    }
+
+    /**
+     * Function to return at string.
+     * @return at string, which represents the date
+     */
+    @Override
+    public String getDate() {
+        return this.at;
+    }
+
+    public void setDate(String newDateTime) {
+        this.at = newDateTime;
     }
 }

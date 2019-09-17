@@ -64,4 +64,8 @@ public abstract class Task {
     public abstract String getDateTime();
 
     public abstract LocalDateTime getLocalDate();
+
+    public abstract String getDate();
+
+    public abstract void setDate(String newDate);
 }

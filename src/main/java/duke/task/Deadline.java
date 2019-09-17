@@ -7,6 +7,7 @@ import java.time.LocalDateTime;
 public class Deadline extends Task {
     private final String SYMBOL = "[D]";
     private String by;
+
     /**
      * Constructor for Deadline task.
      * @param description The deadline's task name
@@ -54,5 +55,18 @@ public class Deadline extends Task {
     public LocalDateTime getLocalDate() {
         LocalDateTime t = new DateFormatter(this.by).convertToLocalDate(this.by);
         return t;
+    }
+
+    /**
+     * Function to return at string.
+     * @return at string, which represents the date
+     */
+    @Override
+    public String getDate() {
+        return this.by;
+    }
+
+    public void setDate(String newDateTime) {
+        this.by = newDateTime;
     }
 }

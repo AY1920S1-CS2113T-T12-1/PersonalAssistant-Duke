@@ -1,8 +1,10 @@
 package duke;
 
+import duke.exception.DukeException;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 
 public class DateFormatter {
     private String date;
@@ -62,6 +64,8 @@ public class DateFormatter {
      * @return the String format of month
      */
     private String monthFormat(String month) {
+        // remove any leading 0
+        month = month.replace('0',' ').strip();
         switch (month) {
             case "1":
                 return "January ";
@@ -172,22 +176,6 @@ public class DateFormatter {
         return date != null;
     }
 
-    public LocalDateTime convertToLocalDate(String sDate) {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(getFormat(sDate));
-        LocalDateTime parsedDate = LocalDateTime.parse(sDate, formatter);
-        return parsedDate;
-    }
-
-    /**
-     * Formats object of LocalDateTime class to return String that is commonly used i.e. dd/MM/yyyy HHmm
-     * @param time LocalDateTime object
-     * @return String that is formatted to dd/MM/yyyy HHmm
-     */
-    public String formatLocalDateTime(LocalDateTime time) {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HHmm");
-        String formattedTime = time.format(formatter);
-        return formattedTime;
-    }
     private String getFormat(String date) {
         int padCount = 0;
         String format = "";
@@ -203,6 +191,57 @@ public class DateFormatter {
             }
         }
         return format;
+    }
+
+    public LocalDateTime convertToLocalDate(String sDate) {
+        String format = getFormat(sDate);
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(format);
+        LocalDateTime parsedDate = LocalDateTime.parse(sDate, formatter);
+        return parsedDate;
+    }
+
+    /**
+     * Formats object of LocalDateTime class to return String that is commonly used i.e. dd/MM/yyyy HHmm
+     * @param time LocalDateTime object
+     * @return String that is formatted to dd/MM/yyyy HHmm
+     */
+    public String formatLocalDateTime(LocalDateTime time) {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HHmm");
+        String formattedTime = time.format(formatter);
+        return formattedTime;
+    }
+
+
+    public LocalDateTime changeDate(LocalDateTime currDate, int value, String units) throws DukeException {
+        switch (units) {
+            case "minutes":
+            case "min":
+            case "m":
+            case "minute":
+                return currDate.plusMinutes(value);
+            case "hours":
+            case "hour":
+            case "h":
+                return currDate.plus(value, ChronoUnit.HOURS);
+            case "days":
+            case "day":
+            case "d":
+                return currDate.plusDays(value);
+            case "weeks":
+            case "week":
+            case "w":
+                return currDate.plusWeeks(value);
+            case "months":
+            case "month":
+            case "M":
+                return currDate.plusMonths(value);
+            case "years":
+            case "year":
+            case "y":
+                return currDate.plusYears(value);
+            default:
+                throw new DukeException("units of time are wrong.");
+        }
     }
 
 }
