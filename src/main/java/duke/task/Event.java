@@ -16,7 +16,6 @@ public class Event extends Task {
     public Event(String description, String date) {
         super(description.trim(), Task.TaskType.EVENT);
         this.at = date;
-
     }
 
     /**
