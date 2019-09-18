@@ -20,10 +20,15 @@ public class DateMap extends TreeMap<LocalDate, TimeMap> {
 
         LocalDate key = LocalDate.of(yr, mth, day);
 
-        if (checkCondition(key, time, task) == 3) {
-            TimeMap timeMap = this.get(key);
-            timeMap.remove(time, task);
-            this.replace(key, timeMap);
+        switch(checkCondition(key, time, task)) {
+            case 3:
+                TimeMap timeMap = this.get(key);
+                timeMap.remove(time, task);
+                this.replace(key, timeMap);
+                break;
+            // can throw error exception to show that task cannot be deleted
+            default:
+                break;
         }
     }
 
@@ -58,39 +63,32 @@ public class DateMap extends TreeMap<LocalDate, TimeMap> {
 
         if (this.isEmpty()) {
             timeMap = new TimeMap();
-            timeMap.put(time, task);
+            Task addedTask = timeMap.put(time, task);
             this.put(key, timeMap);
         } else {
             timeMap = this.get(LocalDate.of(yr, mth, day));
-            timeMap.put(time, task);
+            Task addedTask = timeMap.put(time, task);
             this.replace(key, timeMap);
         }
     }
 
-    public String viewSchedule(String date) {
+    public void viewSchedule(String date) {
         String[] arrStr = date.trim().split("/");
         int yr = Integer.parseInt(arrStr[2]);
         int mth = Integer.parseInt(arrStr[1]);
         int day = Integer.parseInt(arrStr[0]);
 
-        LocalDate key = LocalDate.of(yr, mth, day);
+        LocalDate viewDate = LocalDate.of(yr, mth, day);
 
         String message = String.format("Here are your tasks for %d/%d/%d: \n", day, mth, yr);
 
-        if (this.isEmpty() || !this.containsKey(key) || this.get(key).isEmpty()) {
-            message = "☹ OOPS!!! There isn't any task for this date.\n"
-                    + "Please try again. \n";
-        } else {
-            int counter = 1;
+        int counter = 1;
 
-            for (Map.Entry<String, Task> taskOfTheDay : this.get(key).entrySet()) {
-                Task task = taskOfTheDay.getValue();
-                message += counter + ". " + task.toString();
-                counter++;
-            }
+        for(Map.Entry<String, Task> taskOfTheDay : this.get(viewDate).entrySet()) {
+            Task task = taskOfTheDay.getValue();
+            message += counter + ". " + task.toString();
+            counter++;
         }
-
-        return message;
     }
 
     private int checkCondition(LocalDate key, String time, Task task) {

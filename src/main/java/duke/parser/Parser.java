@@ -140,5 +140,4 @@ public class Parser {
                 throw new DukeException("Invalid command\n");
         }
     }
-
 }
