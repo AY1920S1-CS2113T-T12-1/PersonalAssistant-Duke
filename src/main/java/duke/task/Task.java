@@ -1,11 +1,14 @@
 package duke.task;
-
 public abstract class Task {
+    public TaskType taskType;
     private String description;
     private boolean isCompleted = false;
-
-    public Task(String description) {
+    enum TaskType {
+        TODO, EVENT, DEADLINE
+    }
+    public Task(String description, TaskType taskType) {
         this.description = description;
+        this.taskType = taskType;
     }
 
     /**
@@ -48,6 +51,9 @@ public abstract class Task {
         return  "[" + getStatusIcon() + "] " + this.description;
     }
 
+    public TaskType getTaskType() {
+        return taskType;
+    }
 
     public abstract String getSymbol();
 

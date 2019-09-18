@@ -7,6 +7,8 @@ import duke.commands.DeleteCommand;
 import duke.commands.DoneCommand;
 import duke.commands.FindCommand;
 import duke.commands.ListCommand;
+import duke.commands.RemindersCommand;
+import duke.commands.SnoozeCommand;
 import duke.commands.ViewCommand;
 import duke.exception.DukeException;
 
@@ -69,6 +71,18 @@ public class Parser {
     }
 
     /**
+     * Snooze the task indicated by user.
+     * @param command The taskNo to be converted to an integer.
+     * @return DeleteCommand with the index of item to be snoozed.
+     * @throws NumberFormatException if command has characters.
+     */
+    private static Command parseSnooze(String command) throws NumberFormatException {
+        int index = Integer.parseInt(command);
+
+        return new SnoozeCommand(index);
+    }
+
+    /**
      * Return the correct command given by user, Class method.
      * @param fullCommand command input by user to be parse
      * @return The correct command class as defined by first word
@@ -85,6 +99,8 @@ public class Parser {
                         return new ListCommand();
                     case "bye":
                         return new ByeCommand();
+                    case "reminders":
+                        return new RemindersCommand();
                     default:
                         throw new DukeException("Invalid command\n");
                 }
@@ -106,6 +122,8 @@ public class Parser {
                             return parseDelete(splitStr[1]);
                         case "view":
                             return new ViewCommand(splitStr[1]);
+                        case "snooze":
+                            return parseSnooze(splitStr[1]);
                         default:
                             throw new DukeException("Invalid command\n");
                     }

@@ -24,6 +24,7 @@ public class DateMap extends TreeMap<LocalDate, TimeMap> {
             TimeMap timeMap = this.get(key);
             timeMap.remove(time, task);
             this.replace(key, timeMap);
+
         }
     }
 
