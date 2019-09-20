@@ -47,6 +47,10 @@ public class Deadline extends Task {
     }
 
     @Override
+    /**
+     * Function to return at string.
+     * @return at string, which represents the date
+     */
     public String getDateTime() {
         return this.by;
     }
@@ -55,15 +59,6 @@ public class Deadline extends Task {
     public LocalDateTime getLocalDate() {
         LocalDateTime t = new DateFormatter(this.by).convertToLocalDate(this.by);
         return t;
-    }
-
-    /**
-     * Function to return at string.
-     * @return at string, which represents the date
-     */
-    @Override
-    public String getDate() {
-        return this.by;
     }
 
     public void setDate(String newDateTime) {

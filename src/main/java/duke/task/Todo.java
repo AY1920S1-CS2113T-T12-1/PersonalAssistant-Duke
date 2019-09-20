@@ -42,6 +42,7 @@ public class Todo extends Task {
         return String.format("T | %d | %s",  (isCompleted() ? 1 : 0), this.getDescription());
     }
 
+    // not applicable for Todo.
     public String getDateTime() {
         return null;
     }
@@ -50,11 +51,6 @@ public class Todo extends Task {
         return null;
     }
 
-    // does not apply for Todo
-    @Override
-    public String getDate() {
-        return null;
-    }
 
     // does not apply for Todo
     @Override

@@ -52,16 +52,11 @@ public class Event extends Task {
         return t;
     }
     @Override
-    public String getDateTime() {
-        return this.at;
-    }
-
     /**
      * Function to return at string.
-     * @return at string, which represents the date
+     * @return at string, which represents the date and time of 'at' field.
      */
-    @Override
-    public String getDate() {
+    public String getDateTime() {
         return this.at;
     }
 

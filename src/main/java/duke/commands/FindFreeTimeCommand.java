@@ -57,7 +57,6 @@ public class FindFreeTimeCommand extends Command {
                 }
             }
         }
-        System.out.println(eventContainer.size());
         for (Task t: eventContainer) {
             LocalDateTime eventTime = t.getLocalDate();
             if (endFreeTime.isBefore(eventTime) ) {
