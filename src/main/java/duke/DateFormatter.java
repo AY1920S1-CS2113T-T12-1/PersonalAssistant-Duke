@@ -67,32 +67,32 @@ public class DateFormatter {
         // remove any leading 0
         month = month.replace('0',' ').strip();
         switch (month) {
-            case "1":
-                return "January ";
-            case "2":
-                return "February ";
-            case "3":
-                return "March ";
-            case "4":
-                return "April ";
-            case "5":
-                return "May ";
-            case "6":
-                return "June ";
-            case "7":
-                return "July ";
-            case "8":
-                return "August ";
-            case "9":
-                return "September ";
-            case "10":
-                return "October ";
-            case "11":
-                return "November ";
-            case "12":
-                return "December ";
-            default:
-                return null;
+        case "1":
+            return "January ";
+        case "2":
+            return "February ";
+        case "3":
+            return "March ";
+        case "4":
+            return "April ";
+        case "5":
+            return "May ";
+        case "6":
+            return "June ";
+        case "7":
+            return "July ";
+        case "8":
+            return "August ";
+        case "9":
+            return "September ";
+        case "10":
+            return "October ";
+        case "11":
+            return "November ";
+        case "12":
+            return "December ";
+        default:
+            return null;
         }
     }
 
@@ -176,6 +176,23 @@ public class DateFormatter {
         return date != null;
     }
 
+    public LocalDateTime toLocalDateTime(String sDate) {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(getFormat(sDate));
+        LocalDateTime parsedDate = LocalDateTime.parse(sDate, formatter);
+        return parsedDate;
+    }
+
+    /**
+     * Formats object of LocalDateTime class to return String that is commonly used i.e. dd/MM/yyyy HHmm
+     * @param time LocalDateTime object
+     * @return String that is formatted to dd/MM/yyyy HHmm
+     */
+    public String formatLocalDateTime(LocalDateTime time) {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HHmm");
+        String formattedTime = time.format(formatter);
+        return formattedTime;
+    }
+
     private String getFormat(String date) {
         int padCount = 0;
         String format = "";
@@ -193,23 +210,6 @@ public class DateFormatter {
         return format;
     }
 
-    public LocalDateTime convertToLocalDate(String sDate) {
-        String format = getFormat(sDate);
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(format);
-        LocalDateTime parsedDate = LocalDateTime.parse(sDate, formatter);
-        return parsedDate;
-    }
-
-    /**
-     * Formats object of LocalDateTime class to return String that is commonly used i.e. dd/MM/yyyy HHmm
-     * @param time LocalDateTime object
-     * @return String that is formatted to dd/MM/yyyy HHmm
-     */
-    public String formatLocalDateTime(LocalDateTime time) {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HHmm");
-        String formattedTime = time.format(formatter);
-        return formattedTime;
-    }
 
 
     public LocalDateTime changeDate(LocalDateTime currDate, int value, String units) throws DukeException {

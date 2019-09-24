@@ -1,8 +1,6 @@
 package duke.task;
-
-import duke.DateFormatter;
-
 import java.time.LocalDateTime;
+import duke.DateFormatter;
 
 public class Deadline extends Task {
     private final String SYMBOL = "[D]";
