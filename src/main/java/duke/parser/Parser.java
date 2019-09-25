@@ -6,6 +6,7 @@ import duke.commands.Command;
 import duke.commands.DeleteCommand;
 import duke.commands.DoneCommand;
 import duke.commands.FindCommand;
+import duke.commands.FindFreeTimeCommand;
 import duke.commands.ListCommand;
 import duke.commands.RemindersCommand;
 import duke.commands.SnoozeCommand;

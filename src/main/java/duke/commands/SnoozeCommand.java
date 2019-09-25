@@ -44,8 +44,8 @@ public class SnoozeCommand extends Command {
             if (task.getSymbol().equals("[T]")) {
                 message = new DukeResponse().WRONG_TASKTYPE;
             }
-            String currDate = task.getDate();
-            LocalDateTime currLocalDate = new DateFormatter(currDate).convertToLocalDate(currDate);
+            String currDate = task.getDateTime();
+            LocalDateTime currLocalDate = new DateFormatter(currDate).toLocalDateTime(currDate);
             try {
                 // increment the time by (value) amount of (units).| units e.g. year, month, minute.| value e.g. 1,2,3.
                 LocalDateTime newTime = new DateFormatter(currDate).changeDate(currLocalDate, value, units);
