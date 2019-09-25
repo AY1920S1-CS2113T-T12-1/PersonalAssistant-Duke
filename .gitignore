@@ -13,5 +13,7 @@ src/main/resources/docs/
 *.iml
 bin/
 
-# text file for saving
-src/main/data/duke.txt
+# ignore save file
+/src/main/data/duke.txt
+/src/main/data/optix.txt
+
