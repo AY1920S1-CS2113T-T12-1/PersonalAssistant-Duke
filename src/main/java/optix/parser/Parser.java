@@ -15,8 +15,7 @@ public class Parser {
     public static Command parse(String fullCommand) {
         // add exception for null pointer exception. e.g. postpone
         String[] splitStr = fullCommand.trim().split(" ", 2);
-
-
+      
         if (splitStr.length == 1) {
             switch (splitStr[0].toLowerCase()) {
             case "bye":
@@ -68,7 +67,6 @@ public class Parser {
         return new AddCommand(showName, showDate, showCost);
 
     }
-
 
     // delete a single show on a particular date
     private static Command parseDeleteOneOfShow(String showDetails) {

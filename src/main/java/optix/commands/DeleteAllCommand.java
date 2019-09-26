@@ -57,7 +57,5 @@ public class DeleteAllCommand extends Command {
             }
         }
         ui.setMessage(message.toString());
-
     }
-
 }
