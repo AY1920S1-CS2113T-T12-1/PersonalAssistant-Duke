@@ -24,7 +24,6 @@ class AddCommandTest {
 				+ "Got it. I've added this show:\n"
 				+ "dummy show name at: 2020-05-05\n"
 				+ "_________________________________________\n";
-        String output = ui.showLine();
 		assert expected.equals(ui.showLine());
 		filePath.deleteOnExit();
 	}
