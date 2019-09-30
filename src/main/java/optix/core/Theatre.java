@@ -71,6 +71,10 @@ public class Theatre {
         return showName;
     }
 
+    public Seat[][] getSeats() {
+        return seats;
+    }
+
     public String writeToFile() {
         return String.format("%s | %f | %f | %f\n", showName, cost, revenue, seatBasePrice);
     }
@@ -211,21 +215,21 @@ public class Theatre {
         }
     }
 
-    public int getTierOneSeats() {
-        return tierOneSeats;
+    public void setSeat(String buyerName, int row, int col) {
+        seats[row][col].setBooked(true);
+        seats[row][col].setName(buyerName);
+        switch (seats[row][col].getSeatTier()) {
+            case "1":
+                tierOneSeats--;
+                break;
+            case "2":
+                tierTwoSeats--;
+                break;
+            case "3":
+                tierThreeSeats--;
+                break;
+            default:
+                System.out.println("Should have a Seat Tier!");
+        }
     }
-
-    public int getTierTwoSeats() {
-        return tierTwoSeats;
-    }
-
-    public int getTierThreeSeats() {
-        return tierThreeSeats;
-    }
-
-    private int decreaseSeats(int numSeats) {
-        return numSeats--;
-    }
-
-
 }
