@@ -1,5 +1,8 @@
 package optix.core;
 
+import java.text.DecimalFormat;
+import java.util.ArrayList;
+
 public class Theatre {
 
     private final String SPACES = "  ";
@@ -97,26 +100,18 @@ public class Theatre {
         return seatingArrangement.toString();
     }
     // need to think of better way to parse seat number
-    public void sellSeats(String buyerName, String seat) {
-        char[] seatNumber = seat.trim().toCharArray();
-        String row = String.valueOf(seatNumber[0]);
-        String col;
-        if (seatNumber.length == 3) {
-            col = String.valueOf(seatNumber[1]) + String.valueOf(seatNumber[2]);
-        } else if (seatNumber.length == 2) {
-            col = String.valueOf(seatNumber[1]);
-        } else {
-            //throw exception so that it doesn't continue
-            System.out.println("This is not acceptable");
-            col = "0";
-        }
+    public double sellSeats(String buyerName, String seat) {
+        int row = getRow(seat.substring(0, 1));
+        int col = getCol(seat.substring(1));
 
+        double costOfSeat = 0;
 
-        if (!seats[getRow(row)][getCol(col)].isBooked()) {
-            Seat soldSeat = seats[getRow(row)][getCol(col)];
+        if (!seats[row][col].isBooked()) {
+            Seat soldSeat = seats[row][col];
             soldSeat.setBooked(true);
             soldSeat.setName(buyerName);
-            revenue += soldSeat.getSeatPrice(seatBasePrice);
+            costOfSeat = soldSeat.getSeatPrice(seatBasePrice);
+            revenue += costOfSeat;
 
             switch (soldSeat.getSeatTier()) {
             case "1":
@@ -130,16 +125,44 @@ public class Theatre {
                 break;
             default:
             }
+            seats[row][col] = soldSeat;
 
-            seats[getRow(row)][getCol(col)] = soldSeat;
         }
 
+        return costOfSeat;
     }
 
-    public void sellSeats(String buyerName, String[] seats) {
+    public String sellSeats(String buyerName, String[] seats) {
+        double totalCost = 0;
+        ArrayList<String> seatsSold = new ArrayList<>();
+        ArrayList<String> seatsNotSold = new ArrayList<>();
+        String message;
         for (String seatNumber : seats) {
-            sellSeats(buyerName, seatNumber);
+            double costOfSeat = sellSeats(buyerName, seatNumber);
+
+            if (costOfSeat != 0) {
+                totalCost += costOfSeat;
+                seatsSold.add(seatNumber);
+            } else {
+                seatsNotSold.add(seatNumber);
+            }
         }
+
+        if (seatsSold.isEmpty()) {
+            message = String.format("☹ OOPS!!! All of the seats %s are unavailable\n", seatsNotSold);
+        } else if (seatsNotSold.isEmpty()) {
+            message = "You have successfully purchased the following seats: \n"
+                    + seatsSold + "\n"
+                    + "The total cost of the ticket is " + new DecimalFormat("$#.00").format(totalCost) + "\n";
+        } else {
+            message = "You have successfully purchased the following seats: \n"
+                    + seatsSold + "\n"
+                    + "The total cost of the ticket is " + new DecimalFormat("$#.00").format(totalCost) + "\n"
+                    + "The following seats are unavailable: \n"
+                    + seatsNotSold + "\n";
+        }
+
+        return message;
     }
 
     private int getRow(String row) {
@@ -186,6 +209,7 @@ public class Theatre {
         default:
             return -1;
         }
+    }
 
     public int getTierOneSeats() {
         return tierOneSeats;
@@ -204,5 +228,4 @@ public class Theatre {
     }
 
 
-    }
 }
