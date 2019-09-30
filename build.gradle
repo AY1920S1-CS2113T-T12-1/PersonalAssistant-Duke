@@ -13,8 +13,12 @@ repositories {
 
 dependencies {
     compile 'com.jfoenix:jfoenix:9.0.8'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.5.0'
 }
 
+test {
+    useJUnitPlatform()
+}
 javafx {
     version = "11.0.2"
     modules = [ 'javafx.controls', 'javafx.fxml' ]
