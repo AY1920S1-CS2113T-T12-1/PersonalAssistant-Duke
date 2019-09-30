@@ -12,7 +12,7 @@ class AddCommandTest {
 	private ShowMap shows = new ShowMap();
 	private Ui ui = new Ui();
 	private File currentDir = new File(System.getProperty("user.dir"));
-	private File filePath = new File(currentDir.toString() + "\\src\\main\\data\\optix.txt");
+	private File filePath = new File(currentDir.toString() + "\\src\\main\\data\\testOptix.txt");
 	private Storage storage = new Storage(filePath);
 
 	@Test
@@ -26,5 +26,6 @@ class AddCommandTest {
 				+ "_________________________________________\n";
         String output = ui.showLine();
 		assert expected.equals(ui.showLine());
+		filePath.deleteOnExit();
 	}
 }
