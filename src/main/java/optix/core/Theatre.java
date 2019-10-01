@@ -190,28 +190,28 @@ public class Theatre {
 
     private int getCol(String col) {
         switch (col) {
-        case "1":
-            return 0;
-        case "2":
-            return 1;
-        case "3":
-            return 2;
-        case "4":
-            return 3;
-        case "5":
-            return 4;
-        case "6":
-            return 5;
-        case "7":
-            return 6;
-        case "8":
-            return 7;
-        case "9":
-            return 8;
-        case "10":
-            return 9;
-        default:
-            return -1;
+            case "1":
+                return 0;
+            case "2":
+                return 1;
+            case "3":
+                return 2;
+            case "4":
+                return 3;
+            case "5":
+                return 4;
+            case "6":
+                return 5;
+            case "7":
+                return 6;
+            case "8":
+                return 7;
+            case "9":
+                return 8;
+            case "10":
+                return 9;
+            default:
+                return -1;
         }
     }
 
@@ -231,5 +231,21 @@ public class Theatre {
             default:
                 System.out.println("Should have a Seat Tier!");
         }
+    }
+
+    public int getTierOneSeats() {
+        return tierOneSeats;
+    }
+
+    public int getTierTwoSeats() {
+        return tierTwoSeats;
+    }
+
+    public int getTierThreeSeats() {
+        return tierThreeSeats;
+    }
+
+    private int decreaseSeats(int numSeats) {
+        return numSeats--;
     }
 }
