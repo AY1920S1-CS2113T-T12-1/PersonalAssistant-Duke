@@ -25,7 +25,7 @@ public class ViewSeatsCommand extends Command {
             Theatre theatre = shows.get(showDate);
             message.append(theatre.getSeatingArrangement());
         } else {
-            message = new StringBuilder("☹ OOPS!!! Sorry the show " + showName + " cannot be found.");
+            message = new StringBuilder("☹ OOPS!!! Sorry the show <" + showName + "> cannot be found.\n");
         }
 
         ui.setMessage(message.toString());
