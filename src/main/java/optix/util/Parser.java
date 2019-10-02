@@ -49,6 +49,8 @@ public class Parser {
                 return parseDeleteAllOfShow(splitStr[1]);
             case "delete": // e.g. delete 2/10/2019|poto
                 return parseDeleteOneOfShow(splitStr[1]);
+            case "help":
+                return new HelpCommand(splitStr[1].trim());
             default:
                 throw new OptixInvalidCommandException();
             }
@@ -94,8 +96,8 @@ public class Parser {
             throw new OptixInvalidCommandException();
         }
 
-        String showName = splitStr[0];
-        String showDate = splitStr[1];
+        String showName = splitStr[0].trim();
+        String showDate = splitStr[1].trim();
 
         return new DeleteOneCommand(showName, showDate);
     }
@@ -137,6 +139,6 @@ public class Parser {
             return new SellSeatCommand(showName, showDate, buyerName, seats);
         }
 
-        return new SellSeatCommand(showName, showDate, showName);
+        return new SellSeatCommand(showName, showDate, buyerName);
     }
 }
