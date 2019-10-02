@@ -40,7 +40,7 @@ public class ListShowCommand extends Command {
         }
         
         if (!existsShow) { 
-            message = new StringBuilder("☹ OOPS!!! The show cannot be found.");
+            message = new StringBuilder("☹ OOPS!!! The show cannot be found.\n");
         }
 
         ui.setMessage(message.toString());
