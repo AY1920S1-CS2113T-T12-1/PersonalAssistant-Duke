@@ -24,9 +24,9 @@ class ListShowCommandTest {
 		// try looking for a show that does not exist
 		ListShowCommand testCommand1 = new ListShowCommand("non existent show.");
 		testCommand1.execute(shows,ui,storage);
-		String expected1 = "_________________________________________\n" +
+		String expected1 = "__________________________________________________________________________________\n" +
 				"☹ OOPS!!! The show cannot be found.\n" +
-				"_________________________________________\n";
+				"__________________________________________________________________________________\n";
 		assertEquals(expected1, ui.showLine());
 
 		// insert dummy show
@@ -37,11 +37,11 @@ class ListShowCommandTest {
 		// attempt to view dummy show.
 		ListShowCommand testCommand2 = new ListShowCommand("Dummy Show");
 		testCommand2.execute(shows,ui,storage);
-		String expected2 = "_________________________________________\n" +
+		String expected2 = "__________________________________________________________________________________\n" +
 				"The show Dummy Show is showing on the following following dates: \n" +
 				"1. 2020-05-05\n" +
 				"2. 2020-05-06\n" +
-				"_________________________________________\n";
+				"__________________________________________________________________________________\n";
 		assertEquals(expected2, ui.showLine());
 		filePath.deleteOnExit();
 	}

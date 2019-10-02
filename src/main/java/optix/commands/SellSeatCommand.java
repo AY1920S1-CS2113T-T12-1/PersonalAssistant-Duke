@@ -1,13 +1,14 @@
 package optix.commands;
 
 import optix.Ui;
+import optix.constant.OptixResponse;
 import optix.core.Storage;
 import optix.core.Theatre;
+import optix.util.OptixDateFormatter;
 import optix.util.ShowMap;
 
 import java.text.DecimalFormat;
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
 public class SellSeatCommand extends Command {
@@ -15,6 +16,9 @@ public class SellSeatCommand extends Command {
     private String showDate;
     private String[] seats;
     private String buyerName;
+
+    private OptixResponse response = new OptixResponse();
+    private OptixDateFormatter formatter = new OptixDateFormatter();
 
     public SellSeatCommand(String showName, String showDate, String buyerName) {
         this.showName = showName;
@@ -30,12 +34,13 @@ public class SellSeatCommand extends Command {
         this.seats = seats.split(" ");
     }
 
+    //need to refactor
     @Override
     public void execute(ShowMap shows, Ui ui, Storage storage) {
         StringBuilder message = new StringBuilder();
-        LocalDate key = toLocalDate(showDate);
-        if (!shows.isEmpty() && shows.containsKey(key) && shows.get(key).hasSameName(showName)) {
-            Theatre show = shows.get(key);
+        LocalDate showLocalDate = formatter.toLocalDate(showDate);
+        if (!shows.isEmpty() && shows.containsKey(showLocalDate) && shows.get(showLocalDate).hasSameName(showName)) {
+            Theatre show = shows.get(showLocalDate);
             if (seats.length == 0) {
                 new ViewSeatsCommand(showName, showDate).execute(shows, ui, storage);
                 System.out.println(ui.showLine());
@@ -44,7 +49,7 @@ public class SellSeatCommand extends Command {
                 message.append(show.sellSeats(buyerName, seats));
             }
         } else {
-            message = new StringBuilder("Sorry the show you are looking for does not exist");
+            message = new StringBuilder(response.SHOW_NOT_FOUND);
         }
 
         ui.setMessage(message.toString());
@@ -55,6 +60,7 @@ public class SellSeatCommand extends Command {
         return super.isExit();
     }
 
+    //need to refactor
     private String querySeats(Ui ui, Theatre show) {
         String seatInput = "";
         String message;
@@ -91,39 +97,5 @@ public class SellSeatCommand extends Command {
         }
 
         return message;
-    }
-
-    private String getFormat(String date) {
-        int padCount = 0;
-
-        StringBuilder format = new StringBuilder();
-        String[] timeType = {"d","M","y","H","H","m","m"};
-        for (int i = 0; i < date.length(); i += 1) {
-            char c = date.charAt(i);
-            if (Character.isDigit(c)) {
-                format.append(timeType[padCount]);
-                if (padCount >= 3) { padCount += 1;}
-            } else {
-                format.append(c);
-                padCount += 1;
-            }
-        }
-        return format.toString();
-
-    }
-
-    //TODO create a date formatter class
-    /**
-     * function to convert String to localDate
-
-     * note that currently the format is fixed 1/1/1997
-     * @param dateString
-     * @return
-     */
-    private LocalDate toLocalDate(String dateString) {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(getFormat(dateString));
-        //Convert string to localdate
-        LocalDate localDate = LocalDate.parse(dateString,formatter);
-        return localDate;
     }
 }
