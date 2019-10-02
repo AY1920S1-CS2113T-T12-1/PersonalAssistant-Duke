@@ -16,6 +16,7 @@ import optix.exceptions.OptixInvalidCommandException;
 
 public class Parser {
     public static Command parse(String fullCommand) throws OptixException {
+
         // add exception for null pointer exception. e.g. postpone
         String[] splitStr = fullCommand.trim().split(" ", 2);
       
@@ -31,6 +32,7 @@ public class Parser {
                 throw new OptixInvalidCommandException();
             }
         } else if (splitStr.length == 2) {
+
             // There will definitely be exceptions thrown here. Need to stress test and then categorise
             switch (splitStr[0].toLowerCase()) {
             case "sell":
@@ -140,5 +142,6 @@ public class Parser {
         }
 
         return new SellSeatCommand(showName, showDate, buyerName);
+
     }
 }

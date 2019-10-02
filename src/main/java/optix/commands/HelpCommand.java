@@ -3,6 +3,7 @@ package optix.commands;
 import optix.Ui;
 import optix.constant.OptixResponse;
 import optix.core.Storage;
+
 import optix.exceptions.OptixException;
 import optix.exceptions.OptixInvalidCommandException;
 import optix.util.ShowMap;
@@ -30,12 +31,14 @@ public class HelpCommand extends Command {
         } catch (OptixException e) {
             ui.setMessage(e.getMessage());
         }
+
     }
 
     @Override
     public boolean isExit() {
         return super.isExit();
     }
+
 
     private String getSpecificCommand(String command) throws OptixInvalidCommandException {
         StringBuilder message = new StringBuilder("Valid " + command + " command:\n");
@@ -67,4 +70,5 @@ public class HelpCommand extends Command {
 
         return message.toString();
     }
+
 }
