@@ -42,14 +42,14 @@ public class PostponeCommand extends Command {
             if (!shows.containsKey(localOldDate)) {
                 message = response.SHOW_NOT_FOUND;
             } else if (shows.containsKey(localNewDate)) {
-                message = response.POSTPONE_CLASH + newDate + "\n";
+                message = response.POSTPONE_CLASH + newDate + '.' + "\n";
             } else if (!shows.get(localOldDate).hasSameName(showName)) {
                 message = response.SHOW_DOES_NOT_MATCH;
             } else {
                 Theatre postponedShow = shows.removeShow(localOldDate);
                 shows.put(localNewDate, postponedShow);
 
-                message = String.format("%s has been postponed from %s to %s\n", showName, oldDate, newDate);
+                message = String.format("%s has been postponed from %s to %s.\n", showName, oldDate, newDate);
             }
         }
 

@@ -23,9 +23,9 @@ void execute() {
 	// testing for an empty show list
 	ListCommand testCommand1 = new ListCommand();
 	testCommand1.execute(shows, ui, storage);
-	String expected1 = "_________________________________________\n"
+	String expected1 = "__________________________________________________________________________________\n"
 			+ "☹ OOPS!!! There are no shows in the near future.\n"
-			+ "_________________________________________\n";
+			+ "__________________________________________________________________________________\n";
 	assertEquals(expected1, ui.showLine());
 
 	// testing for a filled show list

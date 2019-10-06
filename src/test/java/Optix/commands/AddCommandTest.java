@@ -20,10 +20,10 @@ class AddCommandTest {
 		AddCommand testCommand = new AddCommand("dummy show name","5/5/2020",2000,20);
 
 		testCommand.execute(shows, ui, storage);
-		String expected = "_________________________________________\n"
+		String expected = "__________________________________________________________________________________\n"
 				+ "Got it. I've added this show:\n"
 				+ "dummy show name at: 2020-05-05\n"
-				+ "_________________________________________\n";
+				+ "__________________________________________________________________________________\n";
 		assert expected.equals(ui.showLine());
 		filePath.deleteOnExit();
 	}
