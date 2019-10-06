@@ -5,9 +5,8 @@ import optix.constant.OptixResponse;
 import java.util.Scanner;
 
 /**
- * Reads in the command input by user amd
- * returns the response by the Optix program.
- *
+ * Reads in the input user and
+ * returns the response by Optix.
  */
 public class Ui {
 
@@ -25,11 +24,13 @@ public class Ui {
      */
     private OptixResponse or = new OptixResponse();
 
+    private Scanner sc = new Scanner(System.in);
+
     /**
      * Read in the command by user.
      * @return String input by user.
      */
-    public String readCommand(Scanner sc) {
+    public String readCommand() {
         return sc.nextLine();
     }
 
@@ -43,7 +44,7 @@ public class Ui {
 
     /**
      * Prints out the greeting by Optix program when Optix starts running.
-     * @return Greetings by Optix
+     * @return Greetings by Optix.
      */
     public String showWelcome() {
         return or.SPACES + or.GREET + or.SPACES;
@@ -51,9 +52,13 @@ public class Ui {
 
     /**
      * Prints out the Optix's response based on user's input.
-     * @return Response by Optix
+     * @return Response by Optix.
      */
     public String showLine() {
         return this.message;
+    }
+
+    public void exitOptix() {
+        sc.close();
     }
 }

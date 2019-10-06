@@ -1,0 +1,37 @@
+# About Us
+Optix was developed by the AY1920S1-CS2113T-T12-1 team. 
+We are a team from the National University of Singapore, taking CS2113T in AY19/20 S1.
+This is a group project as part of this module. We are an egoless team.
+
+## Project Team
+### Kennedy Oung  
+
+image::images/oungkennedy.png[width="150", align="left"]
+{empty}[https://https://github.com/OungKennedy[github]]
+
+Role: Developer
+
+Responsibilities: Detail Design & Implementation
+
+### Nicholas Liu
+
+image::images/nicholasliu97.png[width="150", align="left"]
+{empty}[https://https://github.com/NicholasLiu97[github]]
+
+Role: Developer
+
+Responsibilities: UI
+
+### Tian Chang
+Role: Developer
+
+Responsibilities: Detail Design & Implementation
+
+### Brian
+
+image::images/BrianLim.png[width ="150", align="left"]
+{empty}[https://https://github.com/CheeSengg[github]]
+
+Role: Developer
+
+Responsibilities: UI
