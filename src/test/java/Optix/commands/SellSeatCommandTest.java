@@ -30,7 +30,7 @@ class SellSeatCommandTest {
 				+ "[A1]\n"
 				+ "The total cost of the ticket is $30.00\n"
 				+ "__________________________________________________________________________________\n";
-		assertEquals(expected1,ui.showLine());
+		assertEquals(expected1,ui.showCommandLine());
 
 		// sell a seat that is taken
 	//	SellSeatCommand testCommand2 = new SellSeatCommand("Test Show 1", "5/5/2020","A1");
@@ -38,7 +38,7 @@ class SellSeatCommandTest {
 		String expected2 = "__________________________________________________________________________________\n"
 				+ "☹ OOPS!!! All of the seats [A1] are unavailable\n"
 				+ "__________________________________________________________________________________\n";
-		assertEquals(expected2,ui.showLine());
+		assertEquals(expected2,ui.showCommandLine());
 		// sell a seat that does not exist
 //		SellSeatCommand testCommand2 = new SellSeatCommand("Test Show 1", "5/5/2020","John","%1");
 //		testCommand2.execute(shows,ui,storage);
@@ -49,6 +49,6 @@ class SellSeatCommandTest {
 //				+ "The following seats are unavailable: \n"
 //				+ "[A1]\n"
 //				+ "__________________________________________________________________________________\n";
-//		assertEquals(expected3,ui.showLine());
+//		assertEquals(expected3,ui.showCommandLine());
 	}
 }

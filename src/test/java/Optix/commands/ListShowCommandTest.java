@@ -26,7 +26,7 @@ class ListShowCommandTest {
 		String expected1 = "__________________________________________________________________________________\n" +
 				"☹ OOPS!!! The show cannot be found.\n" +
 				"__________________________________________________________________________________\n";
-		assertEquals(expected1, ui.showLine());
+		assertEquals(expected1, ui.showCommandLine());
 
 		// insert dummy show
 		AddCommand insertDummyShow1 = new AddCommand("Dummy Show","5/5/2020",2000,20);
@@ -41,7 +41,7 @@ class ListShowCommandTest {
 				"1. 2020-05-05\n" +
 				"2. 2020-05-06\n" +
 				"__________________________________________________________________________________\n";
-		assertEquals(expected2, ui.showLine());
+		assertEquals(expected2, ui.showCommandLine());
 		filePath.deleteOnExit();
 	}
 }

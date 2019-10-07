@@ -2,7 +2,6 @@ package optix.commands.seats;
 
 import optix.Ui;
 import optix.commands.Command;
-import optix.constant.OptixResponse;
 import optix.core.Storage;
 import optix.core.Theatre;
 import optix.exceptions.OptixInvalidDateException;
@@ -19,8 +18,9 @@ public class SellSeatCommand extends Command {
     private String[] seats;
     private String buyerName;
 
-    private OptixResponse response = new OptixResponse();
     private OptixDateFormatter formatter = new OptixDateFormatter();
+
+    private static final String MESSAGE_SHOW_NOT_FOUND = "☹ OOPS!!! The show cannot be found.\n";
 
     public SellSeatCommand(String showName, String showDate, String buyerName) {
         this.showName = showName;
@@ -52,14 +52,14 @@ public class SellSeatCommand extends Command {
 
                 if (seats.length == 0) {
                     new ViewSeatsCommand(showName, showDate).execute(shows, ui, storage);
-                    System.out.println(ui.showLine());
+                    System.out.println(ui.showCommandLine());
                     message.append(querySeats(ui, show));
                 } else {
                     message.append(show.sellSeats(buyerName, seats));
                 }
 
             } else {
-                message = new StringBuilder(response.SHOW_NOT_FOUND);
+                message = new StringBuilder(MESSAGE_SHOW_NOT_FOUND);
             }
 
         } catch (OptixInvalidDateException e) {
@@ -90,7 +90,7 @@ public class SellSeatCommand extends Command {
             }
 
             // TODO: Bug fix for seatInput query. If deviated from seat input, error will occur.
-            double costOfSeat = show.sellSeats(buyerName, seatInput);
+            double costOfSeat = show.sellSeats(buyerName, seatInput.trim());
 
             if (costOfSeat != 0) {
                 totalCost += costOfSeat;
@@ -99,7 +99,7 @@ public class SellSeatCommand extends Command {
             } else {
                 ui.setMessage("☹ OOPS!!! Purchase of " + seatInput + " was unsuccessful.\n");
             }
-            System.out.println(ui.showLine());
+            System.out.println(ui.showCommandLine());
         }
 
         if (!seatsSold.isEmpty()) {

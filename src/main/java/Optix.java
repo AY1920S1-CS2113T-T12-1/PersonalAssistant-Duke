@@ -37,7 +37,7 @@ public class Optix {
     public void run() {
 
         boolean isExit = false;
-        System.out.println(ui.showWelcome());
+        System.out.println(ui.showCommandLine());
 
         while (!isExit) {
             try {
@@ -48,7 +48,7 @@ public class Optix {
             } catch (OptixException e) {
                 ui.setMessage(e.getMessage());
             } finally {
-                System.out.println(ui.showLine());
+                System.out.println(ui.showCommandLine());
             }
         }
 

@@ -24,6 +24,6 @@ class ByeCommandTest {
 		String expected = "__________________________________________________________________________________\n"
 				+ "Bye. Hope to see you again soon!\n"
 				+ "__________________________________________________________________________________\n";
-		assertEquals(expected, ui.showLine());
+		assertEquals(expected, ui.showCommandLine());
 	}
 }

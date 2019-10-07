@@ -26,7 +26,7 @@ void execute() {
 	String expected1 = "__________________________________________________________________________________\n"
 			+ "☹ OOPS!!! There are no shows in the near future.\n"
 			+ "__________________________________________________________________________________\n";
-	assertEquals(expected1, ui.showLine());
+	assertEquals(expected1, ui.showCommandLine());
 
 	// testing for a filled show list
 	AddCommand addShow1 = new AddCommand("dummy test 1","5/5/2020",2000,20);
@@ -40,7 +40,7 @@ void execute() {
 			+ "1. dummy test 1 (on: 2020-05-05)\n"
 			+ "2. dummy test 2 (on: 2020-05-06)\n"
 			+ "__________________________________________________________________________________\n";
-	assertEquals(expected2,ui.showLine());
+	assertEquals(expected2,ui.showCommandLine());
 	filePath.deleteOnExit();
 	}
 }

@@ -24,9 +24,9 @@ class AddCommandTest {
 		testCommand.execute(shows, ui, storage);
 		String expected = "__________________________________________________________________________________\n"
 				+ "Got it. I've added this show:\n"
-				+ "dummy show name at: 5/5/2020\n"
+				+ "dummy show name on 5/5/2020\n"
 				+ "__________________________________________________________________________________\n";
-		assertEquals(expected,ui.showLine());
+		assertEquals(expected,ui.showCommandLine());
 		filePath.deleteOnExit();
 	}
 }

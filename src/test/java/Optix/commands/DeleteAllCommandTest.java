@@ -33,7 +33,7 @@ class DeleteAllCommandTest {
 				+ "Intentionally missing show\n"
 				+ "__________________________________________________________________________________\n";
 
-		assertEquals(expected, ui.showLine());
+		assertEquals(expected, ui.showCommandLine());
 		filePath.deleteOnExit();
 	}
 }

@@ -26,7 +26,7 @@ void execute() {
 	testCommand.execute(shows, ui, storage);
 	String expected1 =
 	"__________________________________________________________________________________\n"
-	+"Here is the layout of the theatre for Dummy Show on 5/5/2020: \n"
+	+"Here is the layout of the theatre for Dummy Show on 5/5/2020:\n"
     +"                |STAGE|           \n"
 	+"  [\u2718][\u2718][\u2718][\u2718][\u2718][\u2718][\u2718][\u2718][\u2718][\u2718]\n"
 	+"  [\u2718][\u2718][\u2718][\u2718][\u2718][\u2718][\u2718][\u2718][\u2718][\u2718]\n"
@@ -39,16 +39,16 @@ void execute() {
 	+"Tier 2 Seats: 20\n"
 	+"Tier 3 Seats: 20\n"
 	+"__________________________________________________________________________________\n";
-	assertEquals(expected1,ui.showLine());
+	assertEquals(expected1,ui.showCommandLine());
 
 	// view a show that does not exist
 	ViewSeatsCommand viewNonExistentShow = new ViewSeatsCommand("non existent show","5/5/2020");
 	viewNonExistentShow.execute(shows,ui,storage);
 	String expected2 =
 			"__________________________________________________________________________________\n"
-			+"☹ OOPS!!! Sorry the show <non existent show> cannot be found.\n"
+			+"☹ OOPS!!! Sorry the show non existent show cannot be found.\n"
 			+"__________________________________________________________________________________\n";
-	assertEquals(expected2, ui.showLine());
+	assertEquals(expected2, ui.showCommandLine());
 }
 
 }

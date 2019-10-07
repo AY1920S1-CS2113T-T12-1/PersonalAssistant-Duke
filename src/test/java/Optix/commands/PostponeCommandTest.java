@@ -31,14 +31,14 @@ class PostponeCommandTest {
 		String expected1 =  "__________________________________________________________________________________\n"
 				+ "Test Show 1 has been postponed from 5/5/2020 to 6/5/2020.\n"
 				+ "__________________________________________________________________________________\n";
-		assertEquals(expected1,ui.showLine());
+		assertEquals(expected1,ui.showCommandLine());
 		// postpone show 1 to an invalid date (there is a show on the desired date.)
 		PostponeCommand testCommand2 = new PostponeCommand("Test Show 1","6/5/2020","7/5/2020");
 		testCommand2.execute(shows,ui,storage);
 		String expected2 =  "__________________________________________________________________________________\n"
 				+ "☹ OOPS!!! There already exists a show for 7/5/2020.\n"
 				+ "__________________________________________________________________________________\n";
-		assertEquals(expected2,ui.showLine());
+		assertEquals(expected2,ui.showCommandLine());
 		filePath.deleteOnExit();
 	}
 }

@@ -31,14 +31,14 @@ class EditCommandTest {
         String expected1 =  "__________________________________________________________________________________\n"
                 + "Show has been successfully updated to Test Show 3.\n"
                 + "__________________________________________________________________________________\n";
-        assertEquals(expected1,ui.showLine());
+        assertEquals(expected1,ui.showCommandLine());
         // postpone show 1 to an invalid date (there is a show on the desired date.)
         EditCommand testCommand2 = new EditCommand("Test Show 1","5/5/2020","Test Show 3");
         testCommand2.execute(shows,ui,storage);
         String expected2 =  "__________________________________________________________________________________\n"
                 + "☹ OOPS!!! The show you are finding does not exist!\n"
                 + "__________________________________________________________________________________\n";
-        assertEquals(expected2,ui.showLine());
+        assertEquals(expected2,ui.showCommandLine());
         filePath.deleteOnExit();
     }
 }
