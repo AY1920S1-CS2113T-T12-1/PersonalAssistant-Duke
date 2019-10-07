@@ -1,4 +1,4 @@
-package optix.core;
+package optix.commons.model;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;

@@ -1,10 +1,11 @@
 package optix.commands.shows;
 
-import optix.Ui;
+import optix.commons.Model;
+import optix.ui.Ui;
 import optix.commands.Command;
-import optix.core.Storage;
-import optix.core.Theatre;
-import optix.util.ShowMap;
+import optix.commons.Storage;
+import optix.commons.model.Theatre;
+import optix.commons.model.ShowMap;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -25,7 +26,8 @@ public class DeleteAllCommand extends Command {
     /*
      * Command that deletes all instances of a specific show.
      */
-    public void execute(ShowMap shows, Ui ui, Storage storage) {
+    public void execute(Model model, Ui ui, Storage storage) {
+        ShowMap shows = model.getShows();
         StringBuilder message = new StringBuilder();
         ArrayList<String> deletedShows = new ArrayList<>();
         ArrayList<String> missingShows = new ArrayList<>();
@@ -62,6 +64,8 @@ public class DeleteAllCommand extends Command {
                 message.append(missingShow.trim()).append('\n');
             }
         }
+
+        model.setShows(shows);
         ui.setMessage(message.toString());
     }
 }

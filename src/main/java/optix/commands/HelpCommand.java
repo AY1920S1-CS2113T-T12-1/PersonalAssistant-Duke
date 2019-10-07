@@ -1,10 +1,10 @@
 package optix.commands;
 
-import optix.Ui;
-import optix.core.Storage;
+import optix.commons.Model;
+import optix.commons.Storage;
 import optix.exceptions.OptixException;
 import optix.exceptions.OptixInvalidCommandException;
-import optix.util.ShowMap;
+import optix.ui.Ui;
 
 /**
  * Prompts user on the correct Command Input format.
@@ -40,7 +40,7 @@ public class HelpCommand extends Command {
     }
 
     @Override
-    public void execute(ShowMap shows, Ui ui, Storage storage) {
+    public void execute(Model model, Ui ui, Storage storage) {
         try {
             if (command.equals("")) {
                 ui.setMessage(MESSAGE_MENU);

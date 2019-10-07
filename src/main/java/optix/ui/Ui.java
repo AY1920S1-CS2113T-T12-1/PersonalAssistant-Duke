@@ -1,4 +1,4 @@
-package optix;
+package optix.ui;
 
 import java.util.Scanner;
 

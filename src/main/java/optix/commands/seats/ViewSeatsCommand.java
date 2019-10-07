@@ -1,12 +1,13 @@
 package optix.commands.seats;
 
-import optix.Ui;
 import optix.commands.Command;
-import optix.core.Storage;
-import optix.core.Theatre;
+import optix.commons.Model;
+import optix.commons.Storage;
+import optix.commons.model.ShowMap;
+import optix.commons.model.Theatre;
 import optix.exceptions.OptixInvalidDateException;
+import optix.ui.Ui;
 import optix.util.OptixDateFormatter;
-import optix.util.ShowMap;
 
 import java.time.LocalDate;
 
@@ -22,7 +23,8 @@ public class ViewSeatsCommand extends Command {
     }
 
     @Override
-    public void execute(ShowMap shows, Ui ui, Storage storage) {
+    public void execute(Model model, Ui ui, Storage storage) {
+        ShowMap shows = model.getShows();
         StringBuilder message = new StringBuilder();
         try {
             if (!formatter.isValidDate(showDate)) {

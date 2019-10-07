@@ -1,12 +1,13 @@
 package optix.commands.seats;
 
-import optix.Ui;
+import optix.commons.Model;
+import optix.ui.Ui;
 import optix.commands.Command;
-import optix.core.Storage;
-import optix.core.Theatre;
+import optix.commons.Storage;
+import optix.commons.model.Theatre;
 import optix.exceptions.OptixInvalidDateException;
 import optix.util.OptixDateFormatter;
-import optix.util.ShowMap;
+import optix.commons.model.ShowMap;
 
 import java.text.DecimalFormat;
 import java.time.LocalDate;
@@ -38,7 +39,8 @@ public class SellSeatCommand extends Command {
 
     //need to refactor
     @Override
-    public void execute(ShowMap shows, Ui ui, Storage storage) {
+    public void execute(Model model, Ui ui, Storage storage) {
+        ShowMap shows = model.getShows();
         StringBuilder message = new StringBuilder();
         try {
             if (!formatter.isValidDate(showDate)) {
@@ -51,7 +53,7 @@ public class SellSeatCommand extends Command {
                 Theatre show = shows.get(showLocalDate);
 
                 if (seats.length == 0) {
-                    new ViewSeatsCommand(showName, showDate).execute(shows, ui, storage);
+                    new ViewSeatsCommand(showName, showDate).execute(model, ui, storage);
                     System.out.println(ui.showCommandLine());
                     message.append(querySeats(ui, show));
                 } else {
@@ -65,6 +67,7 @@ public class SellSeatCommand extends Command {
         } catch (OptixInvalidDateException e) {
             message.append(e.getMessage());
         } finally {
+            model.setShows(shows);
             ui.setMessage(message.toString());
         }
     }
