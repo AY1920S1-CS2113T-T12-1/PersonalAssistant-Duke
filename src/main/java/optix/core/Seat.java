@@ -6,6 +6,10 @@ public class Seat {
     private String seatTier;
     private boolean isBooked;
 
+    /**
+     * the seat object.
+     * @param seatTier tier of the seat. Higher tier seat is less precious.
+     */
     public Seat(String seatTier) {
         this.isBooked = false;
         this.buyerName = null;
@@ -31,7 +35,7 @@ public class Seat {
     }
 
     private String getStatusIcon() {
-        return isBooked ?  "\u2713" : "\u2718";
+        return isBooked ? "✓" : "✘";
     }
 
     public String getSeat() {
@@ -52,7 +56,15 @@ public class Seat {
     }
 
     // need to make sure that there are anomalous data here
+
+    /**
+     * Get the price of the seat according to its tier.
+     * The seat tier cannot be out of bounds.
+     * @param basePrice
+     * @return
+     */
     public double getSeatPrice(double basePrice) {
+        assert(Integer.parseInt(seatTier) <= 3 && Integer.parseInt(seatTier) > 0);
         if (seatTier.equals("1")) {
             ticketPrice = basePrice * 1.5;
         }

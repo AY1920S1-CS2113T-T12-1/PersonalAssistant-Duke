@@ -15,14 +15,14 @@ public class OptixResponse {
 
     public final String SHOW_NOT_FOUND = "☹ OOPS!!! The show cannot be found.\n";
 
-    public final String SHOW_OVER ="☹ OOPS!!! The show is already over.\n";
+    public final String SHOW_OVER = "☹ OOPS!!! The show is already over.\n";
 
     public final String POSTPONE_PAST = "☹ OOPS!!! It is not possible to postpone to the past.\n";
 
     public final String POSTPONE_CLASH = "☹ OOPS!!! There already exists a show for ";
 
     public final String SHOW_DOES_NOT_MATCH = "☹ OOPS!!! Did you get the wrong date or wrong show. \n"
-                                              + "Try again!\n";
+            + "Try again!\n";
 
     public final String DONE_FOUND = "Nice! I've marked this task as done:\n";
 

@@ -31,12 +31,12 @@ public class PostponeCommand extends Command {
     public void execute(ShowMap shows, Ui ui, Storage storage) {
         String message = "";
         LocalDate today = storage.getToday();
-        
+
         try {
             if (!formatter.isValidDate(oldDate) || !formatter.isValidDate(newDate)) {
                 throw new OptixInvalidDateException();
             }
-            
+
             LocalDate localOldDate = formatter.toLocalDate(oldDate);
             LocalDate localNewDate = formatter.toLocalDate(newDate);
 

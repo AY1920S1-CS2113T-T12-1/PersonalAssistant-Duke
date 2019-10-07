@@ -22,8 +22,8 @@ public class ListShowCommand extends Command {
 
     @Override
     public void execute(ShowMap shows, Ui ui, Storage storage) {
-        StringBuilder message = new StringBuilder(String.format("The show %s is showing on " +
-                "the following following dates:\n", showName));
+        StringBuilder message = new StringBuilder(String.format("The show %s is showing on "
+                + "the following following dates:\n", showName));
         boolean hasShow = false;
         String today = LocalDate.now().toString();
 
@@ -43,7 +43,7 @@ public class ListShowCommand extends Command {
                 counter++;
             }
         }
-        
+
         if (!hasShow) {
             message = new StringBuilder(response.SHOW_NOT_FOUND);
         }

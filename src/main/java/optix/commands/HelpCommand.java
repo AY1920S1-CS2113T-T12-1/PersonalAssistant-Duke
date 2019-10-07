@@ -44,6 +44,7 @@ public class HelpCommand extends Command {
 
     /**
      * String message to prompt user of correct Command input format.
+     *
      * @param command The command in query.
      * @return String message for Command input format.
      * @throws OptixInvalidCommandException if user command input does not exist in Optix.

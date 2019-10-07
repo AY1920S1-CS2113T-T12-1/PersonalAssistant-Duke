@@ -38,7 +38,7 @@ class ListShowCommandTest {
 		ListShowCommand testCommand2 = new ListShowCommand("Dummy Show");
 		testCommand2.execute(shows,ui,storage);
 		String expected2 = "__________________________________________________________________________________\n" +
-				"The show Dummy Show is showing on the following following dates: \n" +
+				"The show Dummy Show is showing on the following following dates:\n" +
 				"1. 2020-05-05\n" +
 				"2. 2020-05-06\n" +
 				"__________________________________________________________________________________\n";

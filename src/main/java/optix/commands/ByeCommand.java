@@ -5,7 +5,7 @@ import optix.constant.OptixResponse;
 import optix.core.Storage;
 import optix.util.ShowMap;
 
-public class ByeCommand extends  Command {
+public class ByeCommand extends Command {
 
     private OptixResponse response = new OptixResponse();
 
