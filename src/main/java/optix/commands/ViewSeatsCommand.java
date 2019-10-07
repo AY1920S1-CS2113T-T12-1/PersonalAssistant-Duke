@@ -23,13 +23,18 @@ public class ViewSeatsCommand extends Command {
     public void execute(ShowMap shows, Ui ui, Storage storage) {
         LocalDate showLocalDate = formatter.toLocalDate(showDate);
 
-        StringBuilder message = new StringBuilder("Here is the layout of the theatre for " + showName + " on " + showDate + ": \n");
+        StringBuilder message = new StringBuilder("Here is the layout of the theatre for "
+                + showName
+                + " on "
+                + showDate + ": \n");
 
         if (!shows.isEmpty() && shows.get(showLocalDate).hasSameName(showName)) {
             Theatre theatre = shows.get(showLocalDate);
             message.append(theatre.getSeatingArrangement());
         } else {
-            message = new StringBuilder("☹ OOPS!!! Sorry the show <" + showName + "> cannot be found.\n");
+            message = new StringBuilder("☹ OOPS!!! Sorry the show <"
+                    + showName
+                    + "> cannot be found.\n");
         }
 
         ui.setMessage(message.toString());

@@ -20,7 +20,14 @@ public class AddCommand extends Command {
     private OptixResponse response = new OptixResponse();
     private OptixDateFormatter formatter = new OptixDateFormatter();
 
-    public AddCommand(String showName, String date, double cost, double seatBasePrice) {
+/**
+ * Add a show to the show list
+ * @param showName name of new show.
+ * @param date date of new show.
+ * @param cost cost of setting up the new show.
+ * @param seatBasePrice the base price of the seat.
+ */
+public AddCommand(String showName, String date, double cost, double seatBasePrice) {
         // need to check if it is a valid date if not need to throw exception
         this.showName = showName;
         this.date = date;

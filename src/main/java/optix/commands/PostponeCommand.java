@@ -17,7 +17,13 @@ public class PostponeCommand extends Command {
     private OptixResponse response = new OptixResponse();
     private OptixDateFormatter formatter = new OptixDateFormatter();
 
-    public PostponeCommand(String showName, String oldDate, String newDate) {
+/**
+ * Sets up the command.
+ * @param showName is the name of the show to postpone
+ * @param oldDate is the current date of the show
+ * @param newDate is the new date of the show
+ */
+public PostponeCommand(String showName, String oldDate, String newDate) {
         // need to check if both dates are valid if not throw exception
         // need to check if the event was completed in the past. Past event shouldn't be postponed.
         this.showName = showName;
@@ -25,7 +31,13 @@ public class PostponeCommand extends Command {
         this.newDate = newDate;
     }
 
-    @Override
+/**
+ * Executes the command.
+ * @param shows The list of performance that are upcoming.
+ * @param ui The User Interface that reads user input and response to user.
+ * @param storage The filepath of txt file which data are being stored.
+ */
+@Override
     public void execute(ShowMap shows, Ui ui, Storage storage) {
         String message;
         LocalDate today = storage.getToday();

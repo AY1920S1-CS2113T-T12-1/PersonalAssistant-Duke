@@ -19,13 +19,23 @@ public class Optix {
 
     private Storage storage;
 
-    public Optix(File filePath) {
+/**
+ * Set up the storage, ui, and list of shows.
+ * Save data is loaded from storage.load()
+ * @param filePath is the path to the file which contains save data.
+ */
+public Optix(File filePath) {
         ui = new Ui();
         storage = new Storage(filePath);
         shows = storage.load();
     }
 
-    public static void main(String[] args) {
+/**
+ * initialize Optix object.
+ * path to the save file is defined in filePath.
+ * @param args is empty?
+ */
+public static void main(String[] args) {
         File currentDir = new File(System.getProperty("user.dir"));
         File filePath = new File(currentDir.toString() + "\\src\\main\\data\\optix.txt");
         new Optix(filePath).run();

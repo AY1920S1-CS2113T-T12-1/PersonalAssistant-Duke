@@ -22,7 +22,8 @@ public class ListShowCommand extends Command {
 
     @Override
     public void execute(ShowMap shows, Ui ui, Storage storage) {
-        StringBuilder message = new StringBuilder(String.format("The show %s is showing on the following following dates: \n", showName));
+        StringBuilder message = new StringBuilder(String.format("The show %s is showing on " +
+                "the following following dates:\n", showName));
         boolean hasShow = false;
         String today = LocalDate.now().toString();
 
@@ -30,12 +31,12 @@ public class ListShowCommand extends Command {
 
         for (Map.Entry<LocalDate, Theatre> entry : shows.entrySet()) {
             String showDate = entry.getKey().toString();
-
-            if(showDate.compareTo(today) <= 0) {
+            if (showDate.compareTo(today) <= 0) {
                 continue;
             }
 
-            // Can add to check whether the show has seats available. If not seats are available we can remove it from the listing.
+            // Can add to check whether the show has seats available.
+            // If not, seats are available we can remove it from the listing.
             if (entry.getValue().hasSameName(showName.trim())) {
                 hasShow = true;
                 message.append(String.format("%d. %s\n", counter, showDate));
