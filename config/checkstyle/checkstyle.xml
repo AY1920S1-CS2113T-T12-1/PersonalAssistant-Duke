@@ -23,6 +23,7 @@
     <module name="BeforeExecutionExclusionFileFilter">
         <property name="fileNamePattern" value="module\-info\.java$"/>
     </module>
+    <!-- Exclude OptixResponse from checkstyle -->
     <module name="BeforeExecutionExclusionFileFilter">
         <property name="fileNamePattern" value="OptixResponse\.java$"/>
     </module>
@@ -34,6 +35,12 @@
 
     <module name="TreeWalker">
         <module name="OuterTypeFilename"/>
+
+        <module name="SuppressWithNearbyCommentFilter">
+            <property name="commentFormat" value="CHECKSTYLE IGNORE THIS LINE"/>
+            <property name="checkFormat" value=".*"/>
+            <property name="influenceFormat" value="0"/>
+        </module>
         <module name="IllegalTokenText">
             <property name="tokens" value="STRING_LITERAL, CHAR_LITERAL"/>
             <property name="format"

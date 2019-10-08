@@ -15,7 +15,7 @@ import optix.exceptions.OptixException;
 import optix.exceptions.OptixInvalidCommandException;
 
 /**
- * Parse input arguments and create a new Command Object
+ * Parse input arguments and create a new Command Object.
  */
 public class Parser {
 
@@ -169,7 +169,7 @@ public class Parser {
     }
 
     /**
-     * Parse the remaining user input to its respective parameters for SellSeatsCommand
+     * Parse the remaining user input to its respective parameters for SellSeatsCommand.
      *
      * @param details The details to create a new SellSeatsCommand Object.
      * @return new SellSeatsCommand Object.

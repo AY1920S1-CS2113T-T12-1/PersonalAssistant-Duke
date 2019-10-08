@@ -1,4 +1,4 @@
-package Optix.commands;
+package optix.commands;
 
 import optix.Ui;
 import optix.commands.ByeCommand;
@@ -8,22 +8,23 @@ import org.junit.jupiter.api.Test;
 
 import java.io.File;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class ByeCommandTest {
-	private ShowMap shows = new ShowMap();
-	private Ui ui = new Ui();
-	private File currentDir = new File(System.getProperty("user.dir"));
-	private File filePath = new File(currentDir.toString() + "\\src\\main\\data\\testOptix.txt");
-	private Storage storage = new Storage(filePath);
-	@Test
-	void execute() {
-		ByeCommand testCommand = new ByeCommand();
-		testCommand.execute(shows, ui, storage);
+    private ShowMap shows = new ShowMap();
+    private Ui ui = new Ui();
+    private File currentDir = new File(System.getProperty("user.dir"));
+    private File filePath = new File(currentDir.toString() + "\\src\\main\\data\\testOptix.txt");
+    private Storage storage = new Storage(filePath);
 
-		String expected = "__________________________________________________________________________________\n"
-				+ "Bye. Hope to see you again soon!\n"
-				+ "__________________________________________________________________________________\n";
-		assertEquals(expected, ui.showLine());
-	}
+    @Test
+    void execute() {
+        ByeCommand testCommand = new ByeCommand();
+        testCommand.execute(shows, ui, storage);
+
+        String expected = "__________________________________________________________________________________\n"
+                + "Bye. Hope to see you again soon!\n"
+                + "__________________________________________________________________________________\n";
+        assertEquals(expected, ui.showLine());
+    }
 }

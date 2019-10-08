@@ -19,6 +19,12 @@ public class PostponeCommand extends Command {
     private OptixResponse response = new OptixResponse();
     private OptixDateFormatter formatter = new OptixDateFormatter();
 
+    /**
+     * Command to postpone show.
+     * @param showName show name
+     * @param oldDate current show date
+     * @param newDate new show date
+     */
     public PostponeCommand(String showName, String oldDate, String newDate) {
         // need to check if both dates are valid if not throw exception
         // need to check if the event was completed in the past. Past event shouldn't be postponed.

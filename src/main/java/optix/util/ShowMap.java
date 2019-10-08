@@ -10,8 +10,8 @@ import java.util.TreeMap;
  */
 public class ShowMap extends TreeMap<LocalDate, Theatre> {
     /**
-     * Remove a show from the show map
-     * @param key the show to be removed
+     * Remove a show from the show map.
+     * @param key the show to be removed.
      * @return the show that is removed.
      */
     public Theatre removeShow(Object key) {
