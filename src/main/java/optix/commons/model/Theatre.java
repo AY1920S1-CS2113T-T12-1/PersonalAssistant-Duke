@@ -1,10 +1,10 @@
-package optix.core;
+package optix.commons.model;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public class Theatre {
-    @SuppressWarnings("checkstyle:membername")
+    //@SuppressWarnings("checkstyle:membername")
     private final String SPACES = "  "; // CHECKSTYLE IGNORE THIS LINE
     private final String STAGE = "                |STAGE|           \n"; // CHECKSTYLE IGNORE THIS LINE
 
@@ -75,11 +75,15 @@ public class Theatre {
                     tierThreeSeats++;
                     break;
                 default:
-                    System.out.println("There shouldn't be anything here.");
+                    assert i > seats.length;
                     break;
                 }
             }
         }
+    }
+
+    public void setShowName(String showName) {
+        this.showName = showName;
     }
 
     public String getShowName() {
@@ -90,18 +94,29 @@ public class Theatre {
         return seats;
     }
 
-    public String writeToFile() {
-        return String.format("%s | %f | %f | %f\n", showName, cost, revenue, seatBasePrice);
-    }
-
-    public boolean hasSameName(String checkName) {
-        return showName.toLowerCase().equals(checkName.toLowerCase());
-    }
-
-    private String getSeatsLeft() {
-        return "\nTier 1 Seats: " + tierOneSeats + "\n"
-                + "Tier 2 Seats: " + tierTwoSeats + "\n"
-                + "Tier 3 Seats: " + tierThreeSeats + "\n";
+    /**
+     * function to set the status of a seat (change it to booked when a seat is bought).
+     *
+     * @param buyerName Name of buyer
+     * @param row       desired seat row
+     * @param col       desired seat column
+     */
+    public void setSeat(String buyerName, int row, int col) {
+        seats[row][col].setBooked(true);
+        seats[row][col].setName(buyerName);
+        switch (seats[row][col].getSeatTier()) {
+        case "1":
+            tierOneSeats--;
+            break;
+        case "2":
+            tierTwoSeats--;
+            break;
+        case "3":
+            tierThreeSeats--;
+            break;
+        default:
+            System.out.println("Should have a Seat Tier!");
+        }
     }
 
     /**
@@ -124,6 +139,21 @@ public class Theatre {
         return seatingArrangement.toString();
     }
 
+    private String getSeatsLeft() {
+        return "\nTier 1 Seats: " + tierOneSeats + "\n"
+                + "Tier 2 Seats: " + tierTwoSeats + "\n"
+                + "Tier 3 Seats: " + tierThreeSeats + "\n";
+    }
+
+    public String writeToFile() {
+        return String.format("%s | %f | %f | %f\n", showName, cost, revenue, seatBasePrice);
+    }
+
+    public boolean hasSameName(String checkName) {
+        return showName.toLowerCase().equals(checkName.toLowerCase());
+    }
+
+
     /**
      * Sell seats to customers.
      *
@@ -136,6 +166,11 @@ public class Theatre {
         int col = getCol(seat.substring(1));
 
         double costOfSeat = 0;
+
+        //This needs to be changed in the event that the theatre dont have fixed seats for each row
+        if (row == -1 || col == -1) {
+            return costOfSeat;
+        }
 
         if (!seats[row][col].isBooked()) {
             Seat soldSeat = seats[row][col];
@@ -246,31 +281,6 @@ public class Theatre {
             return 9;
         default:
             return -1;
-        }
-    }
-
-    /**
-     * function to set the status of a seat (change it to booked when a seat is bought).
-     *
-     * @param buyerName Name of buyer
-     * @param row       desired seat row
-     * @param col       desired seat column
-     */
-    public void setSeat(String buyerName, int row, int col) {
-        seats[row][col].setBooked(true);
-        seats[row][col].setName(buyerName);
-        switch (seats[row][col].getSeatTier()) {
-        case "1":
-            tierOneSeats--;
-            break;
-        case "2":
-            tierTwoSeats--;
-            break;
-        case "3":
-            tierThreeSeats--;
-            break;
-        default:
-            System.out.println("Should have a Seat Tier!");
         }
     }
 

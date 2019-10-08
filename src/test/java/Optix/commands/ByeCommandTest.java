@@ -1,9 +1,9 @@
 package optix.commands;
 
-import optix.Ui;
 import optix.commands.ByeCommand;
-import optix.core.Storage;
-import optix.util.ShowMap;
+import optix.commons.Model;
+import optix.commons.Storage;
+import optix.ui.Ui;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;
@@ -11,20 +11,21 @@ import java.io.File;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class ByeCommandTest {
-    private ShowMap shows = new ShowMap();
+
     private Ui ui = new Ui();
     private File currentDir = new File(System.getProperty("user.dir"));
-    private File filePath = new File(currentDir.toString() + "\\src\\main\\data\\testOptix.txt");
+    private File filePath = new File(currentDir.toString() + "\\src\\test\\data\\testOptix.txt");
     private Storage storage = new Storage(filePath);
+    private Model model = new Model(storage);
 
     @Test
     void execute() {
         ByeCommand testCommand = new ByeCommand();
-        testCommand.execute(shows, ui, storage);
+        testCommand.execute(model, ui, storage);
 
         String expected = "__________________________________________________________________________________\n"
                 + "Bye. Hope to see you again soon!\n"
                 + "__________________________________________________________________________________\n";
-        assertEquals(expected, ui.showLine());
+        assertEquals(expected, ui.showCommandLine());
     }
 }

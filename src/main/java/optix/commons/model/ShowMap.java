@@ -1,6 +1,4 @@
-package optix.util;
-
-import optix.core.Theatre;
+package optix.commons.model;
 
 import java.time.LocalDate;
 import java.util.TreeMap;
@@ -11,6 +9,7 @@ import java.util.TreeMap;
 public class ShowMap extends TreeMap<LocalDate, Theatre> {
     /**
      * Remove a show from the show map.
+     *
      * @param key the show to be removed.
      * @return the show that is removed.
      */

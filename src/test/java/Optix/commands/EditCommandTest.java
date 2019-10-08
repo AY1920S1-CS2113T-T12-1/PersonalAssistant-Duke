@@ -1,7 +1,7 @@
 package optix.commands;
 
 import optix.commands.shows.AddCommand;
-import optix.commands.shows.ListCommand;
+import optix.commands.shows.EditCommand;
 import optix.commons.Model;
 import optix.commons.Storage;
 import optix.ui.Ui;
@@ -11,8 +11,7 @@ import java.io.File;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class ListCommandTest {
-
+class EditCommandTest {
     private Ui ui = new Ui();
     private File currentDir = new File(System.getProperty("user.dir"));
     private File filePath = new File(currentDir.toString() + "\\src\\test\\data\\testOptix.txt");
@@ -21,25 +20,23 @@ class ListCommandTest {
 
     @Test
     void execute() {
-        // testing for an empty show list
-        ListCommand testCommand1 = new ListCommand();
-        testCommand1.execute(model, ui, storage);
+        // add test shows
+        AddCommand addTestShow1 = new AddCommand("Test Show 1", "5/5/2020", 2000, 20);
+        addTestShow1.execute(model, ui, storage);
+        AddCommand addTestShow2 = new AddCommand("Test Show 2", "7/5/2020", 2000, 20);
+        addTestShow2.execute(model, ui, storage);
+        // postpone show 1 to a valid date (there is no show on desired date.)
+        EditCommand testCommand = new EditCommand("Test Show 1", "5/5/2020", "Test Show 3");
+        testCommand.execute(model, ui, storage);
         String expected1 = "__________________________________________________________________________________\n"
-                + "☹ OOPS!!! There are no shows in the near future.\n"
+                + "Show has been successfully updated to Test Show 3.\n"
                 + "__________________________________________________________________________________\n";
         assertEquals(expected1, ui.showCommandLine());
-
-        // testing for a filled show list
-        AddCommand addShow1 = new AddCommand("dummy test 1", "5/5/2020", 2000, 20);
-        addShow1.execute(model, ui, storage);
-        AddCommand addShow2 = new AddCommand("dummy test 2", "6/5/2020", 2000, 20);
-        addShow2.execute(model, ui, storage);
-        ListCommand testCommand2 = new ListCommand();
+        // postpone show 1 to an invalid date (there is a show on the desired date.)
+        EditCommand testCommand2 = new EditCommand("Test Show 1", "5/5/2020", "Test Show 3");
         testCommand2.execute(model, ui, storage);
         String expected2 = "__________________________________________________________________________________\n"
-                + "Here are the list of shows:\n"
-                + "1. dummy test 1 (on: 2020-05-05)\n"
-                + "2. dummy test 2 (on: 2020-05-06)\n"
+                + "☹ OOPS!!! The show you are finding does not exist!\n"
                 + "__________________________________________________________________________________\n";
         assertEquals(expected2, ui.showCommandLine());
         filePath.deleteOnExit();

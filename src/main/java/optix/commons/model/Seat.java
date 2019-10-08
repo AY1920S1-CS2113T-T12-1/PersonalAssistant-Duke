@@ -1,4 +1,4 @@
-package optix.core;
+package optix.commons.model;
 
 public class Seat {
     private double ticketPrice;
@@ -8,6 +8,7 @@ public class Seat {
 
     /**
      * the seat object.
+     *
      * @param seatTier tier of the seat. Higher tier seat is less precious.
      */
     public Seat(String seatTier) {
@@ -58,6 +59,7 @@ public class Seat {
     /**
      * Get the price of the seat according to its tier.
      * The seat tier cannot be out of bounds.
+     *
      * @param basePrice base seat price of a show.
      * @return price seat according to its tier.
      */

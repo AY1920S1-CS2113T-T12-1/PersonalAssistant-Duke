@@ -6,6 +6,7 @@ import optix.commands.Command;
 import optix.commands.shows.DeleteAllCommand;
 import optix.commands.shows.DeleteOneCommand;
 import optix.commands.HelpCommand;
+import optix.commands.shows.EditCommand;
 import optix.commands.shows.ListCommand;
 import optix.commands.shows.ListShowCommand;
 import optix.commands.shows.PostponeCommand;
@@ -32,7 +33,7 @@ public class Parser {
         String[] splitStr = fullCommand.trim().split(" ", 2);
 
         if (splitStr.length == 1) {
-            switch (splitStr[0].toLowerCase()) {
+            switch (splitStr[0].toLowerCase().trim()) {
             case "bye":
                 return new ByeCommand();
             case "list":
@@ -45,7 +46,9 @@ public class Parser {
         } else if (splitStr.length == 2) {
 
             // There will definitely be exceptions thrown here. Need to stress test and then categorise
-            switch (splitStr[0].toLowerCase()) {
+            switch (splitStr[0].toLowerCase().trim()) {
+            case "edit":
+                return parseEditShow(splitStr[1]);
             case "sell":
                 return parseSellSeats(splitStr[1]);
             case "view":
@@ -194,5 +197,14 @@ public class Parser {
 
         return new SellSeatCommand(showName, showDate, buyerName);
 
+    }
+
+    private static Command parseEditShow(String details) {
+        String[] splitStr = details.split("\\|");
+        String oldShowName = splitStr[0].trim();
+        String showDate = splitStr[1].trim();
+        String newShowName = splitStr[2].trim();
+
+        return new EditCommand(oldShowName, showDate, newShowName);
     }
 }
