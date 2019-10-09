@@ -50,6 +50,7 @@ public class Parser {
         String aliasName = splitStr[0];
         String commandName = commandAliasMap.getOrDefault(aliasName, aliasName);
         commandName = commandName.toLowerCase().trim(); // is the lower case and trim necessary ?
+
         if (splitStr.length == 1) {
             switch (commandName) {
             case "bye":
@@ -65,6 +66,7 @@ public class Parser {
 
             // There will definitely be exceptions thrown here. Need to stress test and then categorise
             switch (commandName) {
+
             case "edit":
                 return parseEditShow(splitStr[1]);
             case "sell":
