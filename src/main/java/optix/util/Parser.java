@@ -1,6 +1,7 @@
 package optix.util;
 
 import optix.commands.parser.AddAliasCommand;
+import optix.commands.parser.ListAliasCommand;
 import optix.commands.parser.RemoveAliasCommand;
 import optix.commands.parser.ResetAliasCommand;
 import optix.commands.shows.AddCommand;
@@ -85,6 +86,8 @@ public class Parser {
                 return new HelpCommand();
             case "reset-alias":
                 return new ResetAliasCommand();
+            case "list-alias":
+                return new ListAliasCommand();
             default:
                 throw new OptixInvalidCommandException();
             }

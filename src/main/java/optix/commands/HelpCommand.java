@@ -34,8 +34,18 @@ public class HelpCommand extends Command {
     private static String EDIT_MENU = "To edit show name:                            "
                                       + "edit OLD_SHOW_NAME | SHOW_DATE | NEW_SHOW_NAME\n";
 
+    private static String ADD_ALIAS = "To add new alias:                             "
+                                        + "add-alias NEW_ALIAS|COMMAND\n";
+
+    private static String REMOVE_ALIAS = "To remove an existing alias:                "
+                                        + "remove-alias ALIAS|COMMAND\n";
+
+    private static String RESET_ALIAS = "To restore alias settings to default:        "
+                                        + "reset-alias\n";
+
     private static String MESSAGE_MENU = "Here are the Commands to use Optix: \n"
-            + ADD_MENU + DELETE_MENU + LIST_MENU + SELL_MENU + POSTPONE_MENU + VIEW_MENU + EDIT_MENU;
+            + ADD_MENU + DELETE_MENU + LIST_MENU + SELL_MENU + POSTPONE_MENU + VIEW_MENU + EDIT_MENU
+            + ADD_ALIAS + REMOVE_ALIAS + RESET_ALIAS;
 
     public HelpCommand() {
         command = "";
