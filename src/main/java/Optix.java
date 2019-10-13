@@ -6,6 +6,7 @@ import optix.ui.Ui;
 import optix.util.Parser;
 
 import java.io.File;
+import java.io.IOException;
 
 
 /**
@@ -56,7 +57,7 @@ public class Optix {
                 Command c = Parser.parse(fullCommand);
                 c.execute(model, ui, storage);
                 isExit = c.isExit();
-            } catch (OptixException e) {
+            } catch (OptixException | IOException e) {
                 ui.setMessage(e.getMessage());
             } finally {
                 System.out.println(ui.showCommandLine());
