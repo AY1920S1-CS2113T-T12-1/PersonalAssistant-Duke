@@ -19,7 +19,13 @@ import optix.commands.seats.ViewSeatsCommand;
 import optix.exceptions.OptixException;
 import optix.exceptions.OptixInvalidCommandException;
 
-import java.io.*;
+import java.io.IOException;
+import java.io.File;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.PrintWriter;
+import java.io.FileNotFoundException;
+
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -32,7 +38,7 @@ public class Parser {
     private static final HashMap<String, String> commandAliasMap = new HashMap<>();
     // array of all possible command values
     private static String[] commandList = {"bye", "list", "help", "edit", "sell", "view",
-            "postpone", "add", "delete-all", "delete"};
+        "postpone", "add", "delete-all", "delete"};
 
     /**
      * Parse input argument and create a new Command Object based on the first input word.
@@ -41,7 +47,7 @@ public class Parser {
      * @return Command Object based on the first input word.
      * @throws OptixException if the Command word is not recognised by Optix.
      */
-    public static Command parse(String fullCommand) throws OptixException, IOException {
+    public static Command parse(String fullCommand) throws OptixException {
         // read the preferences from saved file and put them into commandAliasMap
         try {
             loadPreferences();
@@ -125,6 +131,7 @@ public class Parser {
             throw new OptixException("Alias already exists, or the command to alias does not exist.\n");
         }
     }
+
     private static void loadPreferences() throws IOException {
         File currentDir = new File(System.getProperty("user.dir"));
         File filePath = new File(currentDir.toString() + "\\src\\main\\data\\ParserPreferences.txt");
@@ -164,6 +171,7 @@ public class Parser {
             assert writer != null;
             writer.println(entry.getKey() + "\\|" + entry.getValue());
         }
+        assert writer != null;
         writer.close();
     }
 

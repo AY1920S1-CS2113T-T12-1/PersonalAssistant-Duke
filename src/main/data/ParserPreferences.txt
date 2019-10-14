@@ -4,6 +4,7 @@ b|bye
 s|sell
 D|delete-all
 d|delete
+t|add
 e|edit
 v|view
 h|help

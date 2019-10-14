@@ -27,8 +27,10 @@ public class ResetAliasCommand extends Command {
         try {
             PrintWriter pw = new PrintWriter(filePath);
             pw.close();
+            String systemMessage = "Alias settings have been reset to default.\n";
+            ui.setMessage(systemMessage);
         } catch (FileNotFoundException e) {
-            System.out.println(e.getMessage());
+            ui.setMessage(e.getMessage());
         }
     }
 }

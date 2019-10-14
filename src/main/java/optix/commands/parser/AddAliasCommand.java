@@ -16,6 +16,12 @@ public class AddAliasCommand extends Command {
     private String command;
     private HashMap<String, String> commandAliasMap;
 
+    /**
+     * Command to add a new alias to the command alias map.
+     * @param alias alias to add
+     * @param command command which the alias is to be paired to
+     * @param commandAliasMap the command alias map
+     */
     public AddAliasCommand(String alias, String command, HashMap<String, String> commandAliasMap) {
         this.newAlias = alias;
         this.command = command;

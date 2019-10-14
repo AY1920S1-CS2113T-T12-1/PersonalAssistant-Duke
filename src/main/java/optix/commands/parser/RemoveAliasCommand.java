@@ -16,6 +16,12 @@ public class RemoveAliasCommand extends Command {
     private String command;
     private HashMap<String, String> commandAliasMap;
 
+    /**
+     * Command to remove an existing alias from aliasCommandMap.
+     * @param alias alias to remove
+     * @param command command which the alias belongs to
+     * @param commandAliasMap the command alias map
+     */
     public RemoveAliasCommand(String alias, String command, HashMap<String, String> commandAliasMap) {
         this.alias = alias;
         this.command = command;
@@ -46,7 +52,7 @@ public class RemoveAliasCommand extends Command {
             String successMessage = String.format("Noted. The alias %s has been removed\n", this.alias);
             ui.setMessage(successMessage);
         } catch (IOException e) {
-            System.out.println(e.getMessage());
+            ui.setMessage(e.getMessage());
         }
     }
 }

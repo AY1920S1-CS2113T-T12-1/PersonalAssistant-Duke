@@ -57,7 +57,7 @@ public class Optix {
                 Command c = Parser.parse(fullCommand);
                 c.execute(model, ui, storage);
                 isExit = c.isExit();
-            } catch (OptixException | IOException e) {
+            } catch (OptixException e) {
                 ui.setMessage(e.getMessage());
             } finally {
                 System.out.println(ui.showCommandLine());
