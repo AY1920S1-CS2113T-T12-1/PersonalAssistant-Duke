@@ -36,9 +36,11 @@ import java.util.Map;
 public class Parser {
 
     private static final HashMap<String, String> commandAliasMap = new HashMap<>();
+
     // array of all possible command values
     private static String[] commandList = {"bye", "list", "help", "edit", "sell", "view",
         "postpone", "add", "delete-all", "delete"};
+
 
     /**
      * Parse input argument and create a new Command Object based on the first input word.
@@ -54,6 +56,19 @@ public class Parser {
         } catch (IOException e) {
             System.out.print(e.getMessage());
         }
+        // populate commandAliasMap
+        commandAliasMap.put("s", "sell");
+        commandAliasMap.put("v", "view");
+        commandAliasMap.put("a", "add");
+        commandAliasMap.put("D", "delete-all");
+        commandAliasMap.put("d", "delete");
+        commandAliasMap.put("e", "edit");
+        commandAliasMap.put("L", "list");
+        commandAliasMap.put("p", "postpone");
+        commandAliasMap.put("b", "bye");
+        commandAliasMap.put("h", "help");
+
+
         // add exception for null pointer exception. e.g. postpone
         String[] splitStr = fullCommand.trim().split(" ", 2);
         String aliasName = splitStr[0];
