@@ -98,11 +98,10 @@ public class Storage {
         String message;
         while ((message = br.readLine()) != null && !message.equals("next")) {
             String[] arrStr = message.split("\\|");
-            String buyerName = arrStr[0].trim();
-            int row = Integer.parseInt(arrStr[1].trim());
-            int col = Integer.parseInt(arrStr[2].trim());
+            int row = Integer.parseInt(arrStr[0].trim());
+            int col = Integer.parseInt(arrStr[1].trim());
 
-            theatre.setSeat(buyerName, row, col);
+            theatre.setSeat(row, col);
         }
 
         return theatre;
@@ -172,7 +171,7 @@ public class Storage {
         for (int i = 0; i < seats.length; i++) {
             for (int j = 0; j < seats[i].length; j++) {
                 if (seats[i][j].isBooked()) {
-                    wr.write(String.format("%s | %d | %d\n", seats[i][j].getName(), i, j));
+                    wr.write(String.format("%d | %d\n", i, j));
                 }
             }
         }

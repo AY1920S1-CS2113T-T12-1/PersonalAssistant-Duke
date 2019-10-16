@@ -5,8 +5,8 @@ import java.util.ArrayList;
 
 public class Theatre {
     //@SuppressWarnings("checkstyle:membername")
-    private final String SPACES = "  "; // CHECKSTYLE IGNORE THIS LINE
-    private final String STAGE = "                |STAGE|           \n"; // CHECKSTYLE IGNORE THIS LINE
+    private static final String SPACES = "  "; // CHECKSTYLE IGNORE THIS LINE
+    private static final String STAGE = "                |STAGE|           \n"; // CHECKSTYLE IGNORE THIS LINE
 
     private Seat[][] seats = new Seat[6][10];
     private int tierOneSeats;
@@ -97,13 +97,11 @@ public class Theatre {
     /**
      * function to set the status of a seat (change it to booked when a seat is bought).
      *
-     * @param buyerName Name of buyer
      * @param row       desired seat row
      * @param col       desired seat column
      */
-    public void setSeat(String buyerName, int row, int col) {
+    public void setSeat(int row, int col) {
         seats[row][col].setBooked(true);
-        seats[row][col].setName(buyerName);
         switch (seats[row][col].getSeatTier()) {
         case "1":
             tierOneSeats--;
@@ -157,11 +155,10 @@ public class Theatre {
     /**
      * Sell seats to customers.
      *
-     * @param buyerName name of buyer
      * @param seat      desired seat
      * @return cost of seat.
      */
-    public double sellSeats(String buyerName, String seat) {
+    public double sellSeats(String seat) {
         int row = getRow(seat.substring(0, 1));
         int col = getCol(seat.substring(1));
 
@@ -175,7 +172,6 @@ public class Theatre {
         if (!seats[row][col].isBooked()) {
             Seat soldSeat = seats[row][col];
             soldSeat.setBooked(true);
-            soldSeat.setName(buyerName);
             costOfSeat = soldSeat.getSeatPrice(seatBasePrice);
             revenue += costOfSeat;
 
@@ -201,17 +197,16 @@ public class Theatre {
     /**
      * Sell seats to customers. Used when customer wants to buy multiple seats.
      *
-     * @param buyerName name of buyer
      * @param seats     String array of desired seats
      * @return Message detailing status of desired seats (sold out or successfully purchased.)
      */
-    public String sellSeats(String buyerName, String... seats) {
+    public String sellSeats(String... seats) {
         double totalCost = 0;
         ArrayList<String> seatsSold = new ArrayList<>();
         ArrayList<String> seatsNotSold = new ArrayList<>();
         String message;
         for (String seatNumber : seats) {
-            double costOfSeat = sellSeats(buyerName, seatNumber);
+            double costOfSeat = sellSeats(seatNumber);
 
             if (costOfSeat != 0) {
                 totalCost += costOfSeat;
