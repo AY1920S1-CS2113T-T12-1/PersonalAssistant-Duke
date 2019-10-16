@@ -14,9 +14,7 @@ public class Theatre {
     private int tierThreeSeats;
     private double seatBasePrice;
 
-    private double revenue;
-
-    private String showName;
+    private Show show;
 
     /**
      * instantiates Theatre Object. Used when loading save file data.
@@ -26,8 +24,7 @@ public class Theatre {
      * @param seatBasePrice base price of seats
      */
     public Theatre(String showName, double revenue, double seatBasePrice) {
-        this.showName = showName;
-        this.revenue = revenue;
+        show = new Show(showName, revenue);
         this.seatBasePrice = seatBasePrice;
         initializeLayout();
     }
@@ -39,8 +36,7 @@ public class Theatre {
      * @param seatBasePrice base price of seats.
      */
     public Theatre(String showName, double seatBasePrice) {
-        this.showName = showName;
-        this.revenue = 0;
+        show = new Show(showName, 0);
         this.seatBasePrice = seatBasePrice;
         initializeLayout();
     }
@@ -78,11 +74,15 @@ public class Theatre {
     }
 
     public void setShowName(String showName) {
-        this.showName = showName;
+        show.setShowName(showName);
     }
 
     public String getShowName() {
-        return showName;
+        return show.getShowName();
+    }
+
+    public double getProfit() {
+        return show.getProfit();
     }
 
     public Seat[][] getSeats() {
@@ -138,14 +138,6 @@ public class Theatre {
                 + "Tier 3 Seats: " + tierThreeSeats + "\n";
     }
 
-    public String writeToFile() {
-        return String.format("%s | %f | %f\n", showName, revenue, seatBasePrice);
-    }
-
-    public boolean hasSameName(String checkName) {
-        return showName.toLowerCase().equals(checkName.toLowerCase());
-    }
-
 
     /**
      * Sell seats to customers.
@@ -163,6 +155,8 @@ public class Theatre {
         if (row == -1 || col == -1) {
             return costOfSeat;
         }
+
+        double revenue = show.getProfit();
 
         if (!seats[row][col].isBooked()) {
             Seat soldSeat = seats[row][col];
@@ -185,6 +179,8 @@ public class Theatre {
             seats[row][col] = soldSeat;
 
         }
+
+        show.setProfit(revenue);
 
         return costOfSeat;
     }
@@ -274,23 +270,12 @@ public class Theatre {
         }
     }
 
-    public double getProfit() {
-        return revenue;
+
+    public boolean hasSameName(String checkName) {
+        return show.hasSameName(checkName);
     }
 
-    public int getTierOneSeats() {
-        return tierOneSeats;
-    }
-
-    public int getTierTwoSeats() {
-        return tierTwoSeats;
-    }
-
-    public int getTierThreeSeats() {
-        return tierThreeSeats;
-    }
-
-    private int decreaseSeats(int numSeats) {
-        return numSeats--;
+    public String writeToFile() {
+        return String.format("%s | %f | %f\n", show.getShowName(), show.getProfit(), seatBasePrice);
     }
 }
