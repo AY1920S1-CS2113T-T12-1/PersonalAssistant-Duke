@@ -22,7 +22,7 @@ class SellSeatCommandTest {
     @Test
     void execute() {
         filePath.deleteOnExit();
-        AddCommand addTestShow1 = new AddCommand("Test Show 1", "5/5/2020", 2000, 20);
+        AddCommand addTestShow1 = new AddCommand("Test Show 1", "5/5/2020", 20);
         addTestShow1.execute(model, ui, storage);
         // sell an available seat
         SellSeatCommand testCommand1 = new SellSeatCommand("Test Show 1", "5/5/2020", "A1");

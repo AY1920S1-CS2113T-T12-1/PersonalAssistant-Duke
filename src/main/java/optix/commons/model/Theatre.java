@@ -14,7 +14,6 @@ public class Theatre {
     private int tierThreeSeats;
     private double seatBasePrice;
 
-    private double cost;
     private double revenue;
 
     private String showName;
@@ -23,13 +22,11 @@ public class Theatre {
      * instantiates Theatre Object. Used when loading save file data.
      *
      * @param showName      name of show
-     * @param cost          cost of show
      * @param revenue       expected revenue, calculated from seat purchases - cost
      * @param seatBasePrice base price of seats
      */
-    public Theatre(String showName, double cost, double revenue, double seatBasePrice) {
+    public Theatre(String showName, double revenue, double seatBasePrice) {
         this.showName = showName;
-        this.cost = cost;
         this.revenue = revenue;
         this.seatBasePrice = seatBasePrice;
         initializeLayout();
@@ -39,12 +36,10 @@ public class Theatre {
      * Instantiates Theatre Object. Used when there is no revenue yet (fresh instance).
      *
      * @param showName      name of show
-     * @param cost          cost of show
      * @param seatBasePrice base price of seats.
      */
-    public Theatre(String showName, double cost, double seatBasePrice) {
+    public Theatre(String showName, double seatBasePrice) {
         this.showName = showName;
-        this.cost = cost;
         this.revenue = 0;
         this.seatBasePrice = seatBasePrice;
         initializeLayout();
@@ -144,7 +139,7 @@ public class Theatre {
     }
 
     public String writeToFile() {
-        return String.format("%s | %f | %f | %f\n", showName, cost, revenue, seatBasePrice);
+        return String.format("%s | %f | %f\n", showName, revenue, seatBasePrice);
     }
 
     public boolean hasSameName(String checkName) {
@@ -280,7 +275,7 @@ public class Theatre {
     }
 
     public double getProfit() {
-        return revenue + cost;
+        return revenue;
     }
 
     public int getTierOneSeats() {

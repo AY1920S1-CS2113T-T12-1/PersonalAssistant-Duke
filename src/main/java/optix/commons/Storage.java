@@ -61,9 +61,8 @@ public class Storage {
                 if (arrStr[0].toLowerCase().equals("s")) {
                     LocalDate date = localDate(arrStr[1]);
                     String showName = arrStr[2].trim();
-                    double cost = Double.parseDouble(arrStr[3]);
-                    double revenue = Double.parseDouble(arrStr[4]);
-                    double seatBasePrice = Double.parseDouble(arrStr[5]);
+                    double revenue = Double.parseDouble(arrStr[3]);
+                    double seatBasePrice = Double.parseDouble(arrStr[4]);
 
                     if (date.compareTo(today) <= 0) {
                         Show show = new Show(showName, revenue);
@@ -71,7 +70,7 @@ public class Storage {
                         continue;
                     }
 
-                    Theatre theatre = new Theatre(showName, cost, revenue, seatBasePrice);
+                    Theatre theatre = new Theatre(showName, revenue, seatBasePrice);
                     loadSeat(br, theatre);
 
                     shows.put(date, theatre);
