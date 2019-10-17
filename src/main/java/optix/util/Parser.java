@@ -129,7 +129,7 @@ public class Parser {
     }
 
     private static Command parseRemoveAlias(String splitStr) throws OptixException {
-        String[] aliasDetails = splitStr.split("\\|",2);
+        String[] aliasDetails = splitStr.trim().split("\\|",2);
         String alias = aliasDetails[0];
         String command = aliasDetails[1];
         if (commandAliasMap.containsValue(command) && commandAliasMap.containsKey(alias)) {
@@ -140,7 +140,7 @@ public class Parser {
     }
 
     private static Command parseAddAlias(String splitStr) throws OptixException {
-        String[] aliasDetails = splitStr.split("\\|",2);
+        String[] aliasDetails = splitStr.trim().split("\\|",2);
         String alias = aliasDetails[0];
         String command = aliasDetails[1];
         if (commandAliasMap.containsValue(command) && !commandAliasMap.containsKey(alias)) {
