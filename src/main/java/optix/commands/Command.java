@@ -17,7 +17,6 @@ public abstract class Command {
      */
     public abstract void execute(Model model, Ui ui, Storage storage);
 
-
     public boolean isExit() {
         return false;
     }
