@@ -3,7 +3,6 @@ package optix.commands.shows;
 import optix.commands.Command;
 import optix.commons.Model;
 import optix.commons.Storage;
-import optix.commons.model.ShowMap;
 import optix.exceptions.OptixInvalidDateException;
 import optix.ui.Ui;
 import optix.util.OptixDateFormatter;
@@ -19,8 +18,6 @@ public class ListDateCommand extends Command {
 
     private static final String MESSAGE_NO_SHOWS_FOUND = "☹ OOPS!!! There are no shows on %1$s.\n";
 
-    private static final String MESSAGE_ENTRY = "%1$d. %2$s on %3$s\n";
-
     public ListDateCommand(String monthOfYear) {
         this.monthOfYear = monthOfYear;
     }
@@ -32,7 +29,7 @@ public class ListDateCommand extends Command {
         int year = getYear(splitStr[1]);
         int month = getMonth(splitStr[0].toLowerCase());
 
-        StringBuilder message = new StringBuilder();
+        StringBuilder message = new StringBuilder(String.format(MESSAGE_FOUND_SHOW, monthOfYear));
 
         try {
             if (year == 0 || month == 0) {
@@ -42,24 +39,9 @@ public class ListDateCommand extends Command {
             LocalDate startOfMonth = formatter.getStartOfMonth(year, month);
             LocalDate endOfMonth = formatter.getEndOfMonth(year, month);
 
-            ShowMap shows = model.getShows();
-            message.append(String.format(MESSAGE_FOUND_SHOW, monthOfYear));
+            message.append(model.listShow(startOfMonth, endOfMonth));
 
-            boolean hasShow = false;
-
-            int counter = 1;
-
-            while (startOfMonth.compareTo(endOfMonth) != 0) {
-                if (shows.containsKey(startOfMonth)) {
-                    hasShow = true;
-                    message.append(String.format(MESSAGE_ENTRY, counter, shows.getShowName(startOfMonth), startOfMonth));
-                    counter++;
-                }
-
-                startOfMonth = startOfMonth.plusDays(1);
-            }
-
-            if (!hasShow) {
+            if (!hasShow(message.toString())) {
                 message = new StringBuilder(String.format(MESSAGE_NO_SHOWS_FOUND, monthOfYear));
             }
 
@@ -83,6 +65,10 @@ public class ListDateCommand extends Command {
     @Override
     public boolean isExit() {
         return super.isExit();
+    }
+
+    private boolean hasShow(String message) {
+        return !message.equals(String.format(MESSAGE_FOUND_SHOW, monthOfYear));
     }
 
     private int getYear(String year) {

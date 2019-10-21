@@ -31,16 +31,16 @@ class ListCommandTest {
         assertEquals(expected1, ui.showCommandLine());
 
         // testing for a filled show list
-        AddCommand addShow1 = new AddCommand("dummy test 1|5/5/2020|20");
+        AddCommand addShow1 = new AddCommand("dummy test 1|20|5/5/2020");
         addShow1.execute(model, ui, storage);
-        AddCommand addShow2 = new AddCommand("dummy test 2|6/5/2020|20");
+        AddCommand addShow2 = new AddCommand("dummy test 2|20|6/5/2020");
         addShow2.execute(model, ui, storage);
         ListCommand testCommand2 = new ListCommand();
         testCommand2.execute(model, ui, storage);
         String expected2 = "__________________________________________________________________________________\n"
                 + "Here are the list of shows:\n"
-                + "1. dummy test 1 (on: 2020-05-05)\n"
-                + "2. dummy test 2 (on: 2020-05-06)\n"
+                + "1. dummy test 1 (on: 05/05/2020)\n"
+                + "2. dummy test 2 (on: 06/05/2020)\n"
                 + "__________________________________________________________________________________\n";
         assertEquals(expected2, ui.showCommandLine());
         filePath.deleteOnExit();

@@ -23,7 +23,7 @@ class SellSeatCommandTest {
     @Test
     void execute() throws OptixInvalidCommandException {
         filePath.deleteOnExit();
-        AddCommand addTestShow1 = new AddCommand("Test Show 1|5/5/2020|20");
+        AddCommand addTestShow1 = new AddCommand("Test Show 1|20|5/5/2020");
         addTestShow1.execute(model, ui, storage);
         // sell an available seat
         SellSeatCommand testCommand1 = new SellSeatCommand("Test Show 1|5/5/2020|A1");

@@ -1,34 +1,32 @@
 package optix.util;
 
+import optix.commands.ByeCommand;
+import optix.commands.Command;
+import optix.commands.HelpCommand;
 import optix.commands.parser.AddAliasCommand;
 import optix.commands.parser.ListAliasCommand;
 import optix.commands.parser.RemoveAliasCommand;
 import optix.commands.parser.ResetAliasCommand;
+import optix.commands.seats.SellSeatCommand;
+import optix.commands.seats.ViewSeatsCommand;
 import optix.commands.shows.AddCommand;
-import optix.commands.ByeCommand;
-import optix.commands.Command;
-import optix.commands.shows.DeleteAllCommand;
-import optix.commands.shows.DeleteOneCommand;
-import optix.commands.HelpCommand;
+import optix.commands.shows.DeleteCommand;
 import optix.commands.shows.EditCommand;
 import optix.commands.shows.ListCommand;
 import optix.commands.shows.ListDateCommand;
 import optix.commands.shows.ListShowCommand;
 import optix.commands.shows.PostponeCommand;
-import optix.commands.shows.ViewProfitCommand;
 import optix.commands.shows.ViewMonthlyCommand;
-import optix.commands.seats.SellSeatCommand;
-import optix.commands.seats.ViewSeatsCommand;
+import optix.commands.shows.ViewProfitCommand;
 import optix.exceptions.OptixException;
 import optix.exceptions.OptixInvalidCommandException;
 
-import java.io.IOException;
-import java.io.File;
 import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.PrintWriter;
+import java.io.File;
 import java.io.FileNotFoundException;
-
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -42,7 +40,7 @@ public class Parser {
 
     // array of all possible command values
     private static String[] commandList = {"bye", "list", "help", "edit", "sell", "view",
-        "postpone", "add", "delete-all", "delete"};
+        "postpone", "add", "delete"};
 
 
     /**
@@ -63,7 +61,6 @@ public class Parser {
         commandAliasMap.put("s", "sell");
         commandAliasMap.put("v", "view");
         commandAliasMap.put("a", "add");
-        commandAliasMap.put("D", "delete-all");
         commandAliasMap.put("d", "delete");
         commandAliasMap.put("e", "edit");
         commandAliasMap.put("L", "list");
@@ -112,10 +109,8 @@ public class Parser {
                 return new ByeCommand();
             case "add": // add poto|5/10/2020|20
                 return new AddCommand(splitStr[1]);
-            case "delete-all": // e.g. delete-all poto|lion king
-                return new DeleteAllCommand(splitStr[1]);
-            case "delete": // e.g. delete 2/10/2019|poto
-                return new DeleteOneCommand(splitStr[1]);
+            case "delete": // e.g. delete SHOW_NAME DATE_1|DATE_2|etc
+                return new DeleteCommand(splitStr[1]);
             case "view-profit": //e.g. view-profit lion king|5/5/2020
                 return new ViewProfitCommand(splitStr[1]);
             case "view-monthly": //e.g. view-monthly May 2020
@@ -195,7 +190,6 @@ public class Parser {
         commandAliasMap.put("v", "view");
         commandAliasMap.put("p", "postpone");
         commandAliasMap.put("a", "add");
-        commandAliasMap.put("D", "delete-all");
         commandAliasMap.put("d", "delete");
     }
 

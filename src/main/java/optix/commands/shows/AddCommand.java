@@ -1,36 +1,32 @@
 package optix.commands.shows;
 
+import optix.commands.Command;
 import optix.commons.Model;
+import optix.commons.Storage;
 import optix.exceptions.OptixInvalidCommandException;
 import optix.ui.Ui;
-import optix.commands.Command;
-import optix.commons.Storage;
-import optix.commons.model.Theatre;
-import optix.exceptions.OptixInvalidDateException;
 import optix.util.OptixDateFormatter;
-import optix.commons.model.ShowMap;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 public class AddCommand extends Command {
     private String showName;
-    private String date;
+    private String[] showDates;
     private double seatBasePrice;
 
     private OptixDateFormatter formatter = new OptixDateFormatter();
 
-    private static final String MESSAGE_IN_THE_PAST = "☹ OOPS!!! It is not possible to perform in the past.\n";
+    private static final String MESSAGE_SUCCESSFUL = "Noted. The following shows has been added:\n";
 
-    private static final String MESSAGE_THEATRE_BOOKED = "☹ OOPS!!! There is already a show being added on that date.\n"
-            + "Please try again. \n";
+    private static final String MESSAGE_ENTRY = "%1$d. %2$s (on: %3$s)\n";
 
-    private static final String MESSAGE_SUCCESSFUL = "Got it. I've added this show:\n"
-            + "%1$s on %2$s\n";
+    private static final String MESSAGE_UNSUCCESSFUL = "☹ OOPS!!! Unable to add the following shows:\n";
 
     /**
      * Add a show to the show list.
      *
-     * @param splitStr String of format "SHOW_NAME|SHOW_DATE|SEAT_BASE_PRICE"
+     * @param splitStr String of format "SHOW_NAME|SEAT_BASE_PRICE|DATE_1|DATE_2|etc"
      */
     public AddCommand(String splitStr) throws OptixInvalidCommandException {
         String[] details = parseDetails(splitStr);
@@ -39,35 +35,49 @@ public class AddCommand extends Command {
         }
         // need to check if it is a valid date if not need to throw exception
         this.showName = details[0].trim();
-        this.date = details[1].trim();
-        this.seatBasePrice = Double.parseDouble(details[2]);
+        this.showDates = details[2].trim().split("\\|");
+        this.seatBasePrice = Double.parseDouble(details[1]);
     }
 
     @Override
     public void execute(Model model, Ui ui, Storage storage) {
-        ShowMap shows = model.getShows();
-        Theatre theatre = new Theatre(showName, seatBasePrice);
         LocalDate today = storage.getToday();
+        ArrayList<String> errorShows = new ArrayList<>();
 
-        try {
-            if (!formatter.isValidDate(date)) {
-                throw new OptixInvalidDateException();
+        StringBuilder message = new StringBuilder(MESSAGE_SUCCESSFUL);
+
+        int counter = 1;
+
+        for (int i = 0; i < showDates.length; i++) {
+            String date = showDates[i].trim();
+
+            if (!hasValidDate(date)) {
+                errorShows.add(date);
+                continue;
             }
 
             LocalDate showLocalDate = formatter.toLocalDate(date);
 
-            if (showLocalDate.compareTo(today) <= 0) {
-                ui.setMessage(MESSAGE_IN_THE_PAST);
-            } else if (shows.containsKey(showLocalDate)) {
-                ui.setMessage(MESSAGE_THEATRE_BOOKED);
+            if (showLocalDate.compareTo(today) <= 0 || model.containsKey(showLocalDate)) {
+                errorShows.add(date);
             } else {
-                shows.put(showLocalDate, theatre);
-                model.setShows(shows);
-                ui.setMessage(String.format(MESSAGE_SUCCESSFUL, theatre.getShowName(), date));
+                model.addShow(showName, showLocalDate, seatBasePrice);
+                message.append(String.format(MESSAGE_ENTRY, counter, showName, date));
+                counter++;
             }
-        } catch (OptixInvalidDateException e) {
-            ui.setMessage(e.getMessage());
         }
+
+        if (errorShows.size() == showDates.length) {
+            message = new StringBuilder(MESSAGE_UNSUCCESSFUL);
+        } else if (errorShows.size() != 0) {
+            message.append("\n" + MESSAGE_UNSUCCESSFUL);
+        }
+
+        for (int i = 0; i < errorShows.size(); i++) {
+            message.append(String.format(MESSAGE_ENTRY, i + 1, showName, errorShows.get(i)));
+        }
+
+        ui.setMessage(message.toString());
     }
 
     @Override
@@ -75,6 +85,10 @@ public class AddCommand extends Command {
         return details.trim().split("\\|", 3);
     }
 
+
+    private boolean hasValidDate(String date) {
+        return formatter.isValidDate(date);
+    }
 
     @Override
     public boolean isExit() {

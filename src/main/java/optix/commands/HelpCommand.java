@@ -13,16 +13,16 @@ public class HelpCommand extends Command {
     private String command;
 
     private static final String ADD_MENU = "To add a new show:                            "
-                                           + "add SHOW_NAME|SCHEDULED_DATE|PRICE|SEATS_BASE_PRICE\n";
+                                           + "add SHOW_NAME|SEATS_BASE_PRICE|SHOW_DATE1|SHOW_DATE2|...\n";
 
-    private static String DELETE_MENU = "To delete shows with particular name:         "
-                                        + "delete-all SHOW_NAME_1|SHOW_NAME_2 | ...\n"
-                                        + "To delete shows with specific name and date:  delete SHOW_NAME|SHOW_DATE\n";
+    private static String DELETE_MENU = "To delete shows:         "
+                                        + "To delete shows with the same name:           "
+                                        + "delete SHOW_NAME|SHOW_DATE1|SHOW_DATE2|...\n";
 
     private static String VIEW_MENU = "To view availability of seats for a show:     view SHOW_NAME | SHOW_DATE\n";
 
     private static String SELL_MENU = "To sell seats to the audience:                "
-                                      + "sell SHOW_NAME | SHOW_DATE | BUYER_NAME\n";
+                                      + "sell SHOW_NAME | SHOW_DATE | SEAT1 SEAT2 SEAT3 ...\n";
 
     private static String LIST_MENU = "To list all shows for viewing:                list\n"
                                       + "To list all dates for a specific show:        list SHOW_NAME\n"
@@ -34,18 +34,25 @@ public class HelpCommand extends Command {
     private static String EDIT_MENU = "To edit show name:                            "
                                       + "edit OLD_SHOW_NAME | SHOW_DATE | NEW_SHOW_NAME\n";
 
-    private static String ADD_ALIAS = "To add new alias:                             "
-                                        + "add-alias NEW_ALIAS|COMMAND\n";
-
-    private static String REMOVE_ALIAS = "To remove an existing alias:                "
-                                        + "remove-alias ALIAS|COMMAND\n";
-
-    private static String RESET_ALIAS = "To restore alias settings to default:        "
+    private static String ALIAS_MENU = "To add Alias:                                 "
+                                        + "add-alias ALIAS | COMMAND\n"
+                                        + "To remove Alias:                              "
+                                        + "remove-alias ALIAS | COMMAND\n"
+                                        + "To reset Alias:                               "
                                         + "reset-alias\n";
 
+    private static String PROFIT_MENU = "To view profits for a show:                   "
+                                        + "view-profit SHOW_NAME | SHOW_DATE\n"
+                                        + "To view monthly profits:                      "
+                                        + "view-monthly MONTH YEAR\n";
+
     private static String MESSAGE_MENU = "Here are the Commands to use Optix: \n"
-            + ADD_MENU + DELETE_MENU + LIST_MENU + SELL_MENU + POSTPONE_MENU + VIEW_MENU + EDIT_MENU
-            + ADD_ALIAS + REMOVE_ALIAS + RESET_ALIAS;
+                                        + "\nShow related Commands:\n"
+                                        + ADD_MENU + DELETE_MENU + LIST_MENU + POSTPONE_MENU + EDIT_MENU + PROFIT_MENU
+                                        + "\nSeat related Commands:\n"
+                                        + SELL_MENU  + VIEW_MENU
+                                        + "\nMiscellaneous Commands:\n"
+                                        + ALIAS_MENU;
 
     public HelpCommand() {
         command = "";
@@ -69,6 +76,11 @@ public class HelpCommand extends Command {
 
     }
 
+    /**
+     * Dummy method
+     * @param details n.a
+     * @return n.a
+     */
     @Override
     public String[] parseDetails(String details) {
         return new String[0];
@@ -110,6 +122,12 @@ public class HelpCommand extends Command {
             break;
         case "edit":
             message.append(EDIT_MENU);
+            break;
+        case "profit":
+            message.append(PROFIT_MENU);
+            break;
+        case "alias":
+            message.append(ALIAS_MENU);
             break;
         default:
             throw new OptixInvalidCommandException();

@@ -23,9 +23,9 @@ class PostponeCommandTest {
     @Test
     void execute() throws OptixInvalidCommandException {
         // add test shows
-        AddCommand addTestShow1 = new AddCommand("Test Show 1|5/5/2020|20");
+        AddCommand addTestShow1 = new AddCommand("Test Show 1|20|5/5/2020");
         addTestShow1.execute(model, ui, storage);
-        AddCommand addTestShow2 = new AddCommand("Test Show 2|7/5/2020|20");
+        AddCommand addTestShow2 = new AddCommand("Test Show 2|20|7/5/2020");
         addTestShow2.execute(model, ui, storage);
         // postpone show 1 to a valid date (there is no show on desired date.)
         PostponeCommand testCommand = new PostponeCommand("Test Show 1|5/5/2020|6/5/2020");
