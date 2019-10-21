@@ -21,9 +21,10 @@ public class DeleteOneCommand extends Command {
 
     private static final String MESSAGE_UNSUCCESSFUL = "Unable to find show called <%1$s> scheduled on <%2$s>.\n";
 
-    public DeleteOneCommand(String showName, String showDate) {
-        this.showDate = showDate;
-        this.showName = showName;
+    public DeleteOneCommand(String splitStr) {
+        String[] details = parseDetails(splitStr);
+        this.showDate = details[0];
+        this.showName = details[1];
     }
 
     @Override
@@ -51,5 +52,14 @@ public class DeleteOneCommand extends Command {
         } finally {
             ui.setMessage(message.toString());
         }
+    }
+
+    @Override
+    public String[] parseDetails(String details) {
+        String[] splits = details.trim().split("\\|");
+        for (int i = 0; i < splits.length; i++) {
+            splits[i] = splits[i].trim();
+        }
+        return splits;
     }
 }

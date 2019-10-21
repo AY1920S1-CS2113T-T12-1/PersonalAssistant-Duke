@@ -4,6 +4,7 @@ import optix.commands.shows.AddCommand;
 import optix.commands.shows.DeleteAllCommand;
 import optix.commons.Model;
 import optix.commons.Storage;
+import optix.exceptions.OptixInvalidCommandException;
 import optix.ui.Ui;
 import org.junit.jupiter.api.Test;
 
@@ -20,12 +21,12 @@ class DeleteAllCommandTest {
     private Model model = new Model(storage);
 
     @Test
-    void execute() {
-        AddCommand addTestShow1 = new AddCommand("Test Show 1", "5/5/2020", 20);
-        AddCommand addTestShow2 = new AddCommand("Test Show 2", "6/5/2020", 50);
+    void execute() throws OptixInvalidCommandException {
+        AddCommand addTestShow1 = new AddCommand("Test Show 1|5/5/2020|20");
+        AddCommand addTestShow2 = new AddCommand("Test Show 2|6/5/2020|50");
         addTestShow1.execute(model, ui, storage);
         addTestShow2.execute(model, ui, storage);
-        DeleteAllCommand testCommand = new DeleteAllCommand(new String[]{"Test Show 1", "Test Show 2", "Intentionally missing show"});
+        DeleteAllCommand testCommand = new DeleteAllCommand("Test Show 1|Test Show 2|Intentionally missing show");
         testCommand.execute(model, ui, storage);
         String expected = "__________________________________________________________________________________\n"
                 + "Noted. These are the deleted entries:\n"

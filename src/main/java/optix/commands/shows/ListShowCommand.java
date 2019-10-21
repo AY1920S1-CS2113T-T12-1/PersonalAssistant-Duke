@@ -52,6 +52,11 @@ public class ListShowCommand extends Command {
     }
 
     @Override
+    public String[] parseDetails(String details) {
+        return details.split(" ");
+    }
+
+    @Override
     public boolean isExit() {
         return super.isExit();
     }

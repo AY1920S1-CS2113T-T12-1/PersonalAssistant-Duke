@@ -43,5 +43,15 @@ public class ListAliasCommand extends Command {
             ui.setMessage(e.getMessage());
         }
     }
+
+    /**
+     * Dummy command
+     * @param details n.a.
+     * @return n.a.
+     */
+    @Override
+    public String[] parseDetails(String details) {
+        return new String[0];
+    }
 }
 

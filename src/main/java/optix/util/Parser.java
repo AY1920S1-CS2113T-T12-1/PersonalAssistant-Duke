@@ -38,7 +38,7 @@ import java.util.Map;
  */
 public class Parser {
 
-    private static final HashMap<String, String> commandAliasMap = new HashMap<>();
+    private static HashMap<String, String> commandAliasMap;
 
     // array of all possible command values
     private static String[] commandList = {"bye", "list", "help", "edit", "sell", "view",
@@ -99,33 +99,33 @@ public class Parser {
             switch (commandName) {
 
             case "edit":
-                return parseEditShow(splitStr[1]);
+                return new EditCommand(splitStr[1]);
             case "sell":
-                return parseSellSeats(splitStr[1]);
+                return new SellSeatCommand(splitStr[1]);
             case "view":
-                return parseViewSeating(splitStr[1]);
+                return new ViewSeatsCommand(splitStr[1]);
             case "postpone":
-                return parsePostpone(splitStr[1]);
+                return new PostponeCommand(splitStr[1]);
             case "list":
                 return parseList(splitStr[1]);
             case "bye":
                 return new ByeCommand();
-            case "add": // add poto|5/10/2020|2000|20
-                return parseAddShow(splitStr[1]);
+            case "add": // add poto|5/10/2020|20
+                return new AddCommand(splitStr[1]);
             case "delete-all": // e.g. delete-all poto|lion king
-                return parseDeleteAllOfShow(splitStr[1]);
+                return new DeleteAllCommand(splitStr[1]);
             case "delete": // e.g. delete 2/10/2019|poto
-                return parseDeleteOneOfShow(splitStr[1]);
+                return new DeleteOneCommand(splitStr[1]);
             case "view-profit": //e.g. view-profit lion king|5/5/2020
-                return parseViewProfit(splitStr[1]);
+                return new ViewProfitCommand(splitStr[1]);
             case "view-monthly": //e.g. view-monthly May 2020
-                return parseViewMonthly(splitStr[1]);
+                return new ViewMonthlyCommand(splitStr[1]);
             case "help":
                 return new HelpCommand(splitStr[1].trim());
             case "add-alias":
-                return parseAddAlias(splitStr[1]);
+                return new AddAliasCommand(splitStr[1]);
             case "remove-alias":
-                return parseRemoveAlias(splitStr[1]);
+                return new RemoveAliasCommand(splitStr[1], commandAliasMap);
             default:
                 throw new OptixInvalidCommandException();
             }
@@ -134,25 +134,11 @@ public class Parser {
         }
     }
 
-    private static Command parseRemoveAlias(String splitStr) throws OptixException {
-        String[] aliasDetails = splitStr.split("\\|",2);
-        String alias = aliasDetails[0];
-        String command = aliasDetails[1];
-        if (commandAliasMap.containsValue(command) && commandAliasMap.containsKey(alias)) {
-            return new RemoveAliasCommand(alias, command, commandAliasMap);
+    public void addAlias(String newAlias, String command) throws OptixException {
+        if (Arrays.asList(commandList).contains(command) && !commandAliasMap.containsKey(newAlias)) {
+            commandAliasMap.put(newAlias, command);
         } else {
-            throw new OptixException("Error removing alias.\n");
-        }
-    }
-
-    private static Command parseAddAlias(String splitStr) throws OptixException {
-        String[] aliasDetails = splitStr.split("\\|",2);
-        String alias = aliasDetails[0];
-        String command = aliasDetails[1];
-        if (commandAliasMap.containsValue(command) && !commandAliasMap.containsKey(alias)) {
-            return new AddAliasCommand(alias, command, commandAliasMap);
-        } else {
-            throw new OptixException("Alias already exists, or the command to alias does not exist.\n");
+            throw new OptixException("Alias is already in use, or command does not exist.");
         }
     }
 
@@ -213,181 +199,6 @@ public class Parser {
         commandAliasMap.put("d", "delete");
     }
 
-    /**
-     * Parse the remaining user input to its respective parameters for PostponeCommand.
-     *
-     * @param postponeDetails The details to create new PostponeCommand Object.
-     * @return new PostponeCommand Object.
-     * @throws OptixInvalidCommandException if the user input does not have the correct number of parameters.
-     */
-    private static Command parsePostpone(String postponeDetails) throws OptixInvalidCommandException {
-        String[] splitStr = postponeDetails.trim().split("\\|", 3);
-
-        if (splitStr.length != 3) {
-            throw new OptixInvalidCommandException();
-        }
-
-        String showName = splitStr[0].trim();
-        String oldDate = splitStr[1].trim();
-        String newDate = splitStr[2].trim();
-
-        return new PostponeCommand(showName, oldDate, newDate);
-    }
-
-    /**
-     * Parse the remaining user input to its respective parameters for AddCommand.
-     *
-     * @param showDetails The details to create a new AddCommand Object.
-     * @return new AddCommand Object.
-     * @throws OptixInvalidCommandException if the user input does not have the correct number of parameters.
-     * @throws NumberFormatException        if user attempt to convert String into double.
-     */
-    private static Command parseAddShow(String showDetails) throws OptixInvalidCommandException, NumberFormatException {
-        String[] splitStr = showDetails.trim().split("\\|", 3);
-
-        if (splitStr.length != 3) {
-            throw new OptixInvalidCommandException();
-        }
-
-        String showName = splitStr[0].trim();
-        String showDate = splitStr[1].trim();
-        double seatBasePrice = Double.parseDouble(splitStr[2]);
-
-        return new AddCommand(showName, showDate, seatBasePrice);
-    }
-
-    /**
-     * Parse the remaining user input to its respective parameters for DeleteOneCommand.
-     *
-     * @param showDetails The details to create a new DeleteOneCommand Object.
-     * @return new DeleteOneCommand Object.
-     * @throws OptixInvalidCommandException if the user input does not have the correct number of parameters.
-     */
-    private static Command parseDeleteOneOfShow(String showDetails) throws OptixInvalidCommandException {
-        String[] splitStr = showDetails.trim().split("\\|");
-
-        if (splitStr.length != 2) {
-            throw new OptixInvalidCommandException();
-        }
-
-        String showName = splitStr[0].trim();
-        String showDate = splitStr[1].trim();
-
-        return new DeleteOneCommand(showName, showDate);
-    }
-
-    /**
-     * Parse the remaining user input to its respective parameters for DeleteAllCommand.
-     *
-     * @param deleteDetails The name of all the shows being queried.
-     * @return new DeleteAllCommand Object.
-     */
-    private static Command parseDeleteAllOfShow(String deleteDetails) {
-        String[] splitStr = deleteDetails.trim().split("\\|");
-
-        return new DeleteAllCommand(splitStr);
-    }
-
-    /**
-     * Parse the remaining user input to its respective parameters for ViewSeatsCommand.
-     *
-     * @param showDetails The details to create a new ViewSeatsCommand Object.
-     * @return new ViewSeatsCommand Object.
-     * @throws OptixInvalidCommandException if the user input does not have the correct number of parameters.
-     */
-    private static Command parseViewSeating(String showDetails) throws OptixInvalidCommandException {
-        String[] splitStr = showDetails.trim().split("\\|");
-
-        if (splitStr.length != 2) {
-            throw new OptixInvalidCommandException();
-        }
-
-        String showName = splitStr[0].trim();
-        String showDate = splitStr[1].trim();
-
-        return new ViewSeatsCommand(showName, showDate);
-    }
-
-    /**
-     * Parse the remaining user input to its respective parameters for SellSeatsCommand.
-     *
-     * @param details The details to create a new SellSeatsCommand Object.
-     * @return new SellSeatsCommand Object.
-     * @throws OptixInvalidCommandException if the user input does not have the correct number of parameters.
-     */
-    private static Command parseSellSeats(String details) throws OptixInvalidCommandException {
-        String[] splitStr = details.trim().split("\\|");
-
-        if (splitStr.length < 2 || splitStr.length > 3) {
-            throw new OptixInvalidCommandException();
-        }
-
-        String showName = splitStr[0].trim();
-        String showDate = splitStr[1].trim();
-
-        if (splitStr.length == 3) {
-            String seats = splitStr[2].trim();
-
-            return new SellSeatCommand(showName, showDate, seats);
-        }
-
-        return new SellSeatCommand(showName, showDate);
-
-    }
-
-    /**
-     * Parse the remaining user input to its respective parameters for EditCommand.
-     *
-     * @param details The details to create a new EditCommand Object.
-     * @return new EditCommand Object.
-     * @throws OptixInvalidCommandException if the user input does not have the correct number of parameters.
-     */
-    private static Command parseEditShow(String details) throws OptixInvalidCommandException {
-        String[] splitStr = details.split("\\|");
-
-        if (splitStr.length != 3) {
-            throw new OptixInvalidCommandException();
-        }
-
-        String oldShowName = splitStr[0].trim();
-        String showDate = splitStr[1].trim();
-        String newShowName = splitStr[2].trim();
-
-        return new EditCommand(oldShowName, showDate, newShowName);
-    }
-
-    /**
-     * Parse the remaining user input to its respective parameters for ViewProfitCommand.
-     *
-     * @param details The details to create a new EditCommand Object.
-     * @return new ViewProfitCommand Object.
-     * @throws OptixInvalidCommandException if the user input does not have the correct number of parameters.
-     */
-    private static Command parseViewProfit(String details) throws OptixInvalidCommandException {
-        String[] splitStr = details.trim().split("\\|");
-
-        if (splitStr.length != 2) {
-            throw new OptixInvalidCommandException();
-        }
-
-        String showName = splitStr[0];
-        String showDate = splitStr[1];
-
-        return new ViewProfitCommand(showName, showDate);
-    }
-
-    private static Command parseViewMonthly(String details) throws OptixInvalidCommandException {
-        String[] splitStr = details.trim().split(" ");
-
-        if (splitStr.length != 2) {
-            throw new OptixInvalidCommandException();
-        }
-
-        String month = splitStr[0];
-        String year = splitStr[1];
-
-        return new ViewMonthlyCommand(month, year);
-    }
 
     /**
      * Parse the remaining user input to its respective parameters for ListDateCommand or ListShowCommand.

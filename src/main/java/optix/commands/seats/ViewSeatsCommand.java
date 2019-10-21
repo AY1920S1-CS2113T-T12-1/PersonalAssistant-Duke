@@ -5,6 +5,7 @@ import optix.commons.Model;
 import optix.commons.Storage;
 import optix.commons.model.ShowMap;
 import optix.commons.model.Theatre;
+import optix.exceptions.OptixInvalidCommandException;
 import optix.exceptions.OptixInvalidDateException;
 import optix.ui.Ui;
 import optix.util.OptixDateFormatter;
@@ -17,9 +18,13 @@ public class ViewSeatsCommand extends Command {
 
     private OptixDateFormatter formatter = new OptixDateFormatter();
 
-    public ViewSeatsCommand(String showName, String showDate) {
-        this.showName = showName;
-        this.showDate = showDate;
+    public ViewSeatsCommand(String splitStr) throws OptixInvalidCommandException {
+        String[] details = parseDetails(splitStr);
+        if (details.length != 2) {
+            throw new OptixInvalidCommandException();
+        }
+        this.showName = details[0].trim();
+        this.showDate = details[1].trim();
     }
 
     @Override
@@ -46,6 +51,11 @@ public class ViewSeatsCommand extends Command {
         } finally {
             ui.setMessage(message.toString());
         }
+    }
+
+    @Override
+    public String[] parseDetails(String details) {
+        return details.trim().split("\\|");
     }
 
     @Override

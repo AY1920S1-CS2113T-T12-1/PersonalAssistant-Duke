@@ -3,6 +3,7 @@ package optix.commands;
 import optix.commands.shows.AddCommand;
 import optix.commons.Model;
 import optix.commons.Storage;
+import optix.exceptions.OptixInvalidCommandException;
 import optix.ui.Ui;
 import org.junit.jupiter.api.Test;
 
@@ -19,8 +20,8 @@ class AddCommandTest {
     private Model model = new Model(storage);
 
     @Test
-    void execute() {
-        AddCommand testCommand = new AddCommand("dummy show name", "5/5/2020", 20);
+    void execute() throws OptixInvalidCommandException {
+        AddCommand testCommand = new AddCommand("dummy show name|5/5/2020|20");
 
         testCommand.execute(model, ui, storage);
         String expected = "__________________________________________________________________________________\n"

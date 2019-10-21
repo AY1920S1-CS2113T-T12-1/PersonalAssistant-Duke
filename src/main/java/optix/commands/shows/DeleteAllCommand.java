@@ -18,8 +18,12 @@ public class DeleteAllCommand extends Command {
 
     private static final String MESSAGE_UNSUCCESSFUL = "Sorry, these shows were not found:\n";
 
-    public DeleteAllCommand(String[] showNames) {
-        this.showNames = showNames;
+    /**
+     * Instantiate vars.
+     * @param splitStr String of format "SHOW_NAME_1|SHOW_NAME2|etc"
+     */
+    public DeleteAllCommand(String splitStr) {
+        this.showNames = parseDetails(splitStr);
     }
 
     @Override
@@ -69,5 +73,10 @@ public class DeleteAllCommand extends Command {
 
         model.setShows(shows);
         ui.setMessage(message.toString());
+    }
+
+    @Override
+    public String[] parseDetails(String details) {
+        return details.trim().split("\\|");
     }
 }

@@ -4,6 +4,7 @@ import optix.commands.shows.AddCommand;
 import optix.commands.shows.DeleteOneCommand;
 import optix.commons.Model;
 import optix.commons.Storage;
+import optix.exceptions.OptixInvalidCommandException;
 import optix.ui.Ui;
 import org.junit.jupiter.api.Test;
 
@@ -20,17 +21,17 @@ class DeleteOneCommandTest {
     private Model model = new Model(storage);
 
     @Test
-    void execute() {
-        AddCommand addTestShow1 = new AddCommand("Test Show 1", "5/5/2020", 20);
+    void execute() throws OptixInvalidCommandException {
+        AddCommand addTestShow1 = new AddCommand("Test Show 1|5/5/2020|20");
         addTestShow1.execute(model, ui, storage);
-        DeleteOneCommand testCommand1 = new DeleteOneCommand("Test Show 1", "5/5/2020");
+        DeleteOneCommand testCommand1 = new DeleteOneCommand("Test Show 1|5/5/2020");
         testCommand1.execute(model, ui, storage);
         String expected1 = "__________________________________________________________________________________\n"
                 + "Noted. The show <Test Show 1> scheduled on <5/5/2020> has been removed.\n"
                 + "__________________________________________________________________________________\n";
         assertEquals(expected1, ui.showCommandLine());
 
-        DeleteOneCommand testCommand2 = new DeleteOneCommand("Non-existent show", "4/5/2020");
+        DeleteOneCommand testCommand2 = new DeleteOneCommand("Non-existent show|4/5/2020");
         testCommand2.execute(model, ui, storage);
         String expected2 = "__________________________________________________________________________________\n"
                 + "Unable to find show called <Non-existent show> scheduled on <4/5/2020>.\n"

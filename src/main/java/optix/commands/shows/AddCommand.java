@@ -1,6 +1,7 @@
 package optix.commands.shows;
 
 import optix.commons.Model;
+import optix.exceptions.OptixInvalidCommandException;
 import optix.ui.Ui;
 import optix.commands.Command;
 import optix.commons.Storage;
@@ -29,15 +30,17 @@ public class AddCommand extends Command {
     /**
      * Add a show to the show list.
      *
-     * @param showName      name of new show.
-     * @param date          date of new show.
-     * @param seatBasePrice the base price of the seat.
+     * @param splitStr String of format "SHOW_NAME|SHOW_DATE|SEAT_BASE_PRICE"
      */
-    public AddCommand(String showName, String date, double seatBasePrice) {
+    public AddCommand(String splitStr) throws OptixInvalidCommandException {
+        String[] details = parseDetails(splitStr);
+        if (details.length != 3) {
+            throw new OptixInvalidCommandException();
+        }
         // need to check if it is a valid date if not need to throw exception
-        this.showName = showName;
-        this.date = date;
-        this.seatBasePrice = seatBasePrice;
+        this.showName = details[0].trim();
+        this.date = details[1].trim();
+        this.seatBasePrice = Double.parseDouble(details[2]);
     }
 
     @Override
@@ -65,6 +68,11 @@ public class AddCommand extends Command {
         } catch (OptixInvalidDateException e) {
             ui.setMessage(e.getMessage());
         }
+    }
+
+    @Override
+    public String[] parseDetails(String details) {
+        return details.trim().split("\\|", 3);
     }
 
 
