@@ -22,7 +22,7 @@ public class DeleteCommand extends Command {
     private static final String MESSAGE_SHOW_NOT_FOUND = "☹ OOPS!!! Unable to find the following shows:\n";
 
     /**
-     * Instantiate vars
+     * Instantiate vars.
      * @param splitStr String of format "SHOW_NAME|DATE_1|DATE_2|etc."
      */
     public DeleteCommand(String splitStr) {

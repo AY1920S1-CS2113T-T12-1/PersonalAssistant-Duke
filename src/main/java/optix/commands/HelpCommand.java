@@ -77,7 +77,7 @@ public class HelpCommand extends Command {
     }
 
     /**
-     * Dummy method
+     * Dummy method.
      * @param details n.a
      * @return n.a
      */

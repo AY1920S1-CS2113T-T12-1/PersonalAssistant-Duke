@@ -21,7 +21,11 @@ import optix.commands.shows.ViewProfitCommand;
 import optix.exceptions.OptixException;
 import optix.exceptions.OptixInvalidCommandException;
 
-import java.io.*;
+import java.io.IOException;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.BufferedReader;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -36,8 +40,14 @@ public class Parser {
     private File preferenceFile; // the path to the file itself
     // array of all possible command values
     private static String[] commandList = {"bye", "list", "help", "edit", "sell", "view",
-            "postpone", "add", "delete"};
+        "postpone", "add", "delete"};
 
+    /**
+     * Set the path to directory containing the save file for preferences.
+     * Set the path to the save file for preferences.
+     *
+     * @param filePath path to directory containing the save file for preferences.
+     */
     public Parser(File filePath) {
         this.preferenceFile = new File(filePath + "\\ParserPreferences.txt");
         this.preferenceFilePath = filePath;
@@ -120,7 +130,19 @@ public class Parser {
     }
 
     //@@ OungKennedy
-    public void addAlias(String newAlias, String command) throws OptixException, IOException {
+
+    /**
+     * Adds a new alias-command pair to commandAliasMap.
+     *
+     * @param newAlias new alias to add
+     * @param command  existing command to be paired to
+     * @throws OptixException thrown when the alias-command pair is invalid (refer to below)
+     *                        the alias must not be the name of a command.
+     *                        the alias must not already be in use. use remove-alias to remove a pair to redirect existing aliases.
+     *                        the command to be paired to must exist (refer to commandList for list of existing commands).
+     *                        the pipe symbol is a special character- it cannot be used.
+     */
+    public void addAlias(String newAlias, String command) throws OptixException {
         if (!newAlias.contains("\\|") // pipe symbol not in alias
                 && Arrays.asList(commandList).contains(command) // command exists
                 && !commandAliasMap.containsKey(newAlias) // new alias is not already in use
@@ -173,6 +195,10 @@ public class Parser {
     }
 
     //@@ OungKennedy
+
+    /**
+     * Method to reset preferences to default values.
+     */
     public static void resetPreferences() {
         commandAliasMap.clear();
         commandAliasMap.put("b", "bye");

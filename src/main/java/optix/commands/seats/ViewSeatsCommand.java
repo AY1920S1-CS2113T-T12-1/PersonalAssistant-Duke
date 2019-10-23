@@ -20,6 +20,11 @@ public class ViewSeatsCommand extends Command {
 
     private static final String MESSAGE_SHOW_NOT_FOUND = "☹ OOPS!!! Sorry the show %1$s cannot be found.\n";
 
+    /**
+     * Command to view seats of a show.
+     * @param splitStr String of format "SHOW_NAME|SHOW_DATE"
+     * @throws OptixInvalidCommandException When number of arguments are not correct (must be 2 arguments)
+     */
     public ViewSeatsCommand(String splitStr) throws OptixInvalidCommandException {
         String[] details = parseDetails(splitStr);
         if (details.length != 2) {

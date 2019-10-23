@@ -45,7 +45,7 @@ public class ResetAliasCommand extends Command {
     }
 
     /**
-     * Dummy command
+     * Dummy command.
      *
      * @param details n.a
      * @return n.a

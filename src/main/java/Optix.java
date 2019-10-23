@@ -8,7 +8,6 @@ import optix.util.Parser;
 import java.io.File;
 
 
-
 /**
  * Software that stores all the finance for the Opera Hall.
  */
@@ -20,12 +19,14 @@ public class Optix {
     private Storage storage;
 
     private Parser parser;
+
     /**
      * Set up the storage, ui, and list of shows.
      * Save data is loaded from storage.load()
      *
      * @param filePath is the path to the file which contains save data.
      */
+
     public Optix(File filePath) {
         ui = new Ui();
         storage = new Storage(filePath);
