@@ -4,16 +4,15 @@ import optix.commands.Command;
 import optix.commons.Model;
 import optix.commons.Storage;
 import optix.ui.Ui;
+import optix.util.Parser;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.util.Map;
 
 public class ListAliasCommand extends Command {
 
     /**
-     * Processes user input to be stored, queried, modified in ShowMap,
+     * Iterates through all entries in the commandAliasMap of a parser object.
+     * Prints every key (alias) and value (command) pair.
      * to show response by program in ui and store existing data in Storage.
      *
      * @param model   The data structure holding all the information.
@@ -22,30 +21,16 @@ public class ListAliasCommand extends Command {
      */
     @Override
     public void execute(Model model, Ui ui, Storage storage) {
-        StringBuilder systemMessage = new StringBuilder("Alias Settings:\n");
-        // open target file
-        File currentDir = new File(System.getProperty("user.dir"));
-        File filePath = new File(currentDir.toString() + "\\src\\main\\data\\ParserPreferences.txt");
-        try {
-            FileReader fileReader = new FileReader(filePath);
-            BufferedReader bufferedReader = new BufferedReader(fileReader);
-            String data;
-            while ((data = bufferedReader.readLine()) != null) {
-                String[] details = data.split("\\|", 2);
-                String alias = details[0];
-                String command = details[1];
-                systemMessage.append(alias).append(" : ").append(command).append('\n');
-            }
-            bufferedReader.close();
-            fileReader.close();
-            ui.setMessage(systemMessage.toString());
-        } catch (IOException e) {
-            ui.setMessage(e.getMessage());
-        }
+        StringBuilder systemMessage = new StringBuilder("Alias list: \n");
+        for (Map.Entry<String, String> entry : Parser.commandAliasMap.entrySet())
+            systemMessage.append(entry.getKey()).append(" : ").append(entry.getValue()).append('\n');
+
+        ui.setMessage(systemMessage.toString());
     }
 
     /**
      * Dummy command
+     *
      * @param details n.a.
      * @return n.a.
      */

@@ -1,12 +1,9 @@
 p|postpone
 a|add
-q|add
 b|bye
 s|sell
-D|delete-all
 d|delete
 e|edit
 v|view
 h|help
 l|list
-L|list

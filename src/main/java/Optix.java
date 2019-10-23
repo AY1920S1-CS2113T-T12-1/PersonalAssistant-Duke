@@ -19,6 +19,7 @@ public class Optix {
 
     private Storage storage;
 
+    private Parser parser;
     /**
      * Set up the storage, ui, and list of shows.
      * Save data is loaded from storage.load()
@@ -29,6 +30,7 @@ public class Optix {
         ui = new Ui();
         storage = new Storage(filePath);
         model = new Model(storage);
+        parser = new Parser(filePath);
     }
 
     /**
@@ -54,7 +56,7 @@ public class Optix {
         while (!isExit) {
             try {
                 String fullCommand = ui.readCommand();
-                Command c = Parser.parse(fullCommand);
+                Command c = parser.parse(fullCommand);
                 c.execute(model, ui, storage);
                 isExit = c.isExit();
             } catch (OptixException e) {

@@ -21,12 +21,7 @@ import optix.commands.shows.ViewProfitCommand;
 import optix.exceptions.OptixException;
 import optix.exceptions.OptixInvalidCommandException;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.*;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -36,12 +31,25 @@ import java.util.Map;
  */
 public class Parser {
 
-    private static HashMap<String, String> commandAliasMap;
-
+    public static HashMap<String, String> commandAliasMap = new HashMap<>();
+    private File preferenceFilePath; // the directory where the file is stored
+    private File preferenceFile; // the path to the file itself
     // array of all possible command values
     private static String[] commandList = {"bye", "list", "help", "edit", "sell", "view",
-        "postpone", "add", "delete"};
+            "postpone", "add", "delete"};
 
+    public Parser(File filePath) {
+        this.preferenceFile = new File(filePath + "\\ParserPreferences.txt");
+        this.preferenceFilePath = filePath;
+        // load preferences from file
+        if (commandAliasMap.isEmpty()) {
+            try {
+                loadPreferences();
+            } catch (IOException e) {
+                System.out.println(e.getMessage());
+            }
+        }
+    }
 
     /**
      * Parse input argument and create a new Command Object based on the first input word.
@@ -50,25 +58,7 @@ public class Parser {
      * @return Command Object based on the first input word.
      * @throws OptixException if the Command word is not recognised by Optix.
      */
-    public static Command parse(String fullCommand) throws OptixException {
-        // read the preferences from saved file and put them into commandAliasMap
-        try {
-            loadPreferences();
-        } catch (IOException e) {
-            System.out.print(e.getMessage());
-        }
-        // populate commandAliasMap
-        commandAliasMap.put("s", "sell");
-        commandAliasMap.put("v", "view");
-        commandAliasMap.put("a", "add");
-        commandAliasMap.put("d", "delete");
-        commandAliasMap.put("e", "edit");
-        commandAliasMap.put("L", "list");
-        commandAliasMap.put("p", "postpone");
-        commandAliasMap.put("b", "bye");
-        commandAliasMap.put("h", "help");
-
-
+    public Command parse(String fullCommand) throws OptixException {
         // add exception for null pointer exception. e.g. postpone
         String[] splitStr = fullCommand.trim().split(" ", 2);
         String aliasName = splitStr[0];
@@ -84,7 +74,7 @@ public class Parser {
             case "help":
                 return new HelpCommand();
             case "reset-alias":
-                return new ResetAliasCommand();
+                return new ResetAliasCommand(this.preferenceFilePath);
             case "list-alias":
                 return new ListAliasCommand();
             default:
@@ -118,7 +108,7 @@ public class Parser {
             case "help":
                 return new HelpCommand(splitStr[1].trim());
             case "add-alias":
-                return new AddAliasCommand(splitStr[1]);
+                return new AddAliasCommand(splitStr[1], this.preferenceFilePath);
             case "remove-alias":
                 return new RemoveAliasCommand(splitStr[1], commandAliasMap);
             default:
@@ -129,18 +119,26 @@ public class Parser {
         }
     }
 
-    public void addAlias(String newAlias, String command) throws OptixException {
-        if (Arrays.asList(commandList).contains(command) && !commandAliasMap.containsKey(newAlias)) {
+    //@@ OungKennedy
+    public void addAlias(String newAlias, String command) throws OptixException, IOException {
+        if (!newAlias.contains("\\|") // pipe symbol not in alias
+                && Arrays.asList(commandList).contains(command) // command exists
+                && !commandAliasMap.containsKey(newAlias) // new alias is not already in use
+                && !Arrays.asList(commandList).contains(newAlias)) { // new alias is not the name of a command
             commandAliasMap.put(newAlias, command);
         } else {
-            throw new OptixException("Alias is already in use, or command does not exist.");
+            throw new OptixException("Alias is already in use, or command does not exist.\n");
         }
     }
 
-    private static void loadPreferences() throws IOException {
-        File currentDir = new File(System.getProperty("user.dir"));
-        File filePath = new File(currentDir.toString() + "\\src\\main\\data\\ParserPreferences.txt");
-        if (filePath.exists() && filePath.length() > 0) {
+    //@@ OungKennedy
+    private void loadPreferences() throws IOException {
+        File filePath = this.preferenceFile;
+        // if file does not exist, create a new file and write the default aliases
+        if (filePath.createNewFile()) {
+            resetPreferences();
+            savePreferences();
+        } else { // if file exists then load the preferences within
             FileReader fr = new FileReader(filePath);
             BufferedReader br = new BufferedReader(fr);
             String aliasPreference;
@@ -148,39 +146,34 @@ public class Parser {
                 String[] aliasDetails = aliasPreference.split("\\|");
                 String alias = aliasDetails[0];
                 String command = aliasDetails[1];
-                if (Arrays.asList(commandList).contains(command)) {
-                    commandAliasMap.put(alias, command);
-                } else {
-                    System.out.println("error inserting alias preference.");
+                try {
+                    this.addAlias(alias, command);
+                } catch (OptixException e) {
+                    System.out.println(e.getMessage());
                 }
-
             }
             br.close();
             fr.close();
-        } else {
-            resetPreferences();
-            savePreferences();
         }
     }
 
-    private static void savePreferences()  {
-        File currentDir = new File(System.getProperty("user.dir"));
-        File filePath = new File(currentDir.toString() + "\\src\\main\\data\\ParserPreferences.txt");
-        PrintWriter writer = null;
-        try {
-            writer = new PrintWriter(filePath);
-        } catch (FileNotFoundException e) {
-            System.out.println(e.getMessage());
-        }
+    //@@ OungKennedy
+
+    /**
+     * Writes the contents of commandAliasMap to the file in preferenceFilePath.
+     */
+    public void savePreferences() throws IOException {
+        FileWriter writer = new FileWriter(this.preferenceFile, false);
+
         for (Map.Entry<String, String> entry : commandAliasMap.entrySet()) {
-            assert writer != null;
-            writer.println(entry.getKey() + "\\|" + entry.getValue());
+            String saveString = entry.getKey() + "|" + entry.getValue() + '\n'; // no need to escape. why?
+            writer.write(saveString);
         }
-        assert writer != null;
         writer.close();
     }
 
-    private static void resetPreferences() {
+    //@@ OungKennedy
+    public static void resetPreferences() {
         commandAliasMap.clear();
         commandAliasMap.put("b", "bye");
         commandAliasMap.put("l", "list");
@@ -193,6 +186,7 @@ public class Parser {
         commandAliasMap.put("d", "delete");
     }
 
+    //@@ cheesengg
 
     /**
      * Parse the remaining user input to its respective parameters for ListDateCommand or ListShowCommand.
