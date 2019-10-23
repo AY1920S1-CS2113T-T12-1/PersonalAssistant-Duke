@@ -32,7 +32,7 @@ public class DeleteCommand extends Command {
     }
 
     @Override
-    public void execute(Model model, Ui ui, Storage storage) {
+    public String execute(Model model, Ui ui, Storage storage) {
         StringBuilder message = new StringBuilder(MESSAGE_SUCCESSFUL);
         ArrayList<String> missingShows = new ArrayList<>();
 
@@ -68,6 +68,7 @@ public class DeleteCommand extends Command {
         }
 
         ui.setMessage(message.toString());
+        return "show";
     }
 
     @Override
