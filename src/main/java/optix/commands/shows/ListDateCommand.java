@@ -28,16 +28,7 @@ public class ListDateCommand extends Command {
 
     @Override
     public String execute(Model model, Ui ui, Storage storage) {
-<<<<<<< HEAD
         StringBuilder message = new StringBuilder();
-=======
-        String[] splitStr = monthOfYear.trim().split(" ");
-        int year = formatter.getYear(splitStr[1].trim());
-        int month = formatter.getMonth(splitStr[0].trim().toLowerCase());
-
-        StringBuilder message = new StringBuilder(String.format(MESSAGE_FOUND_SHOW, monthOfYear));
-
->>>>>>> 6465a3b127cc80c351305265aac57ac462b07d8e
         try {
             String[] splitStr = monthOfYear.trim().split(" ");
             if (splitStr.length != 2) {

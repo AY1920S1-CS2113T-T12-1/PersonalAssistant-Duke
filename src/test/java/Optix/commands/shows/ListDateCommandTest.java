@@ -7,10 +7,7 @@ import optix.commons.Storage;
 import optix.ui.Ui;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
-<<<<<<< HEAD
 import org.junit.jupiter.api.DisplayName;
-=======
->>>>>>> 6465a3b127cc80c351305265aac57ac462b07d8e
 import org.junit.jupiter.api.Test;
 
 import java.io.File;
@@ -23,16 +20,6 @@ class ListDateCommandTest {
     private static File filePath = new File(currentDir.toString() + "\\src\\test\\data\\testOptix");
     private Storage storage;
     private Model model;
-<<<<<<< HEAD
-=======
-
-    @BeforeEach
-    void init() {
-        this.ui = new Ui();
-        this.storage = new Storage(filePath);
-        this.model = new Model(storage);
-    }
->>>>>>> 6465a3b127cc80c351305265aac57ac462b07d8e
 
     @BeforeEach
     void init() {
