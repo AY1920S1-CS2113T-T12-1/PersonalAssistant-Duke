@@ -94,7 +94,7 @@ public class ViewMonthlyCommand extends Command {
         } finally {
             ui.setMessage(message);
         }
-        return "show";
+        return "finance";
     }
 
     @Override

@@ -1,12 +1,12 @@
 package optix.commons.model;
 
-import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public class Theatre {
     //@SuppressWarnings("checkstyle:membername")
     private static final String SPACES = "  "; // CHECKSTYLE IGNORE THIS LINE
     private static final String STAGE = "                |STAGE|           \n"; // CHECKSTYLE IGNORE THIS LINE
+    private static final String MESSAGE_TICKET_COST = "The total cost of the ticket is $%1$.2f\n";
 
     private Seat[][] seats = new Seat[6][10];
     private int tierOneSeats;
@@ -216,11 +216,11 @@ public class Theatre {
         } else if (seatsNotSold.isEmpty()) {
             message = "You have successfully purchased the following seats: \n"
                     + seatsSold + "\n"
-                    + "The total cost of the ticket is " + new DecimalFormat("$#.00").format(totalCost) + "\n";
+                    + String.format(MESSAGE_TICKET_COST, totalCost);
         } else {
             message = "You have successfully purchased the following seats: \n"
                     + seatsSold + "\n"
-                    + "The total cost of the ticket is " + new DecimalFormat("$#.00").format(totalCost) + "\n"
+                    + String.format(MESSAGE_TICKET_COST, totalCost)
                     + "The following seats are unavailable: \n"
                     + seatsNotSold + "\n";
         }

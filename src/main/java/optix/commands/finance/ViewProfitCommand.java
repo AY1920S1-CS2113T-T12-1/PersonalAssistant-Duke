@@ -80,7 +80,7 @@ public class ViewProfitCommand extends Command {
         } finally {
             ui.setMessage(message);
         }
-        return "show";
+        return "finance";
     }
 
     @Override
