@@ -66,7 +66,6 @@ public class ShowMap extends TreeMap<LocalDate, Theatre> {
             message.append(String.format("%d. %s (on: %s)\n", counter, showName, date));
             counter++;
         }
-
         return message.toString();
     }
 
@@ -87,7 +86,6 @@ public class ShowMap extends TreeMap<LocalDate, Theatre> {
                 counter++;
             }
         }
-
         return message.toString();
     }
 
@@ -113,7 +111,6 @@ public class ShowMap extends TreeMap<LocalDate, Theatre> {
 
             startOfMonth = startOfMonth.plusDays(1);
         }
-
         return message.toString();
     }
 
@@ -142,6 +139,5 @@ public class ShowMap extends TreeMap<LocalDate, Theatre> {
 
     public String reassignSeat(LocalDate showLocalDate, String oldSeat, String newSeat) {
         return this.get(showLocalDate).reassignSeat(oldSeat, newSeat);
-
     }
 }

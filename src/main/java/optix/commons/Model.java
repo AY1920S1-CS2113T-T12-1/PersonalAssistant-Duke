@@ -26,13 +26,13 @@ public class Model {
         return showsHistory;
     }
 
-    public void setShows(ShowMap shows) {
-        this.shows = shows;
-    }
-
-    public void setShowsHistory(ShowMap showsHistory) {
-        this.showsHistory = showsHistory;
-    }
+//    public void setShows(ShowMap shows) {
+//        this.shows = shows;
+//    }
+//
+//    public void setShowsHistory(ShowMap showsHistory) {
+//        this.showsHistory = showsHistory;
+//    }
 
     public boolean hasSameName(LocalDate key, String showName) {
         return shows.get(key).hasSameName(showName);

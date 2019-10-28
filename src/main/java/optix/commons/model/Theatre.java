@@ -183,21 +183,7 @@ public class Theatre {
             soldSeat.setBooked(true);
             costOfSeat = soldSeat.getSeatPrice(seatBasePrice);
             revenue += costOfSeat;
-
-            switch (soldSeat.getSeatTier()) {
-            case "1":
-                tierOneSeats--;
-                break;
-            case "2":
-                tierTwoSeats--;
-                break;
-            case "3":
-                tierThreeSeats--;
-                break;
-            default:
-            }
-            seats[row][col] = soldSeat;
-
+            this.setSeat(row, col);
         }
         show.setProfit(revenue);
         return costOfSeat;
@@ -285,10 +271,10 @@ public class Theatre {
 
         if (costOfNewSeat > costOfOldSeat) {
             double extraCost = costOfNewSeat - costOfOldSeat;
-            message.append(String.format("An extra cost of %1$s is required.\n", extraCost));
+            message.append(String.format("An extra cost of $%1$.2f is required.\n", extraCost));
         } else if (costOfOldSeat > costOfNewSeat) {
             double returnCost = costOfOldSeat - costOfNewSeat;
-            message.append(String.format("%1$s will be returned.\n", returnCost));
+            message.append(String.format("$%1$.2f will be returned.\n", returnCost));
         }
         return message.toString();
     }

@@ -90,6 +90,9 @@ public class MainWindow extends AnchorPane {
         case "seat":
             displaySeats(fullCommand);
             break;
+        case "archive":
+            displayArchive();
+            break;
         default:
             break;
         }
@@ -121,14 +124,16 @@ public class MainWindow extends AnchorPane {
     }
 
     private void displaySeats(String fullCommand) {
-        clearDisplay();
-
         String[] splitStr = fullCommand.split("\\|");
-        LocalDate localDate = new OptixDateFormatter().toLocalDate(splitStr[1].trim());
-        ShowMap shows = optix.getShows();
-        Theatre theatre = shows.get(localDate);
+        if (splitStr.length == 2) {
+            clearDisplay();
 
-        display.getChildren().add(SeatsDisplayController.displaySeats(theatre, localDate));
+            LocalDate localDate = new OptixDateFormatter().toLocalDate(splitStr[1].trim());
+            ShowMap shows = optix.getShows();
+            Theatre theatre = shows.get(localDate);
+
+            display.getChildren().add(SeatsDisplayController.displaySeats(theatre, localDate));
+        }
     }
 
     private void clearDisplay() {
