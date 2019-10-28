@@ -3,6 +3,7 @@ package optix.util;
 import optix.commands.ByeCommand;
 import optix.commands.Command;
 import optix.commands.HelpCommand;
+import optix.commands.TabCommand;
 import optix.commands.parser.AddAliasCommand;
 import optix.commands.parser.ListAliasCommand;
 import optix.commands.parser.RemoveAliasCommand;
@@ -92,7 +93,7 @@ public class Parser {
             case "list-alias":
                 return new ListAliasCommand();
             default:
-                throw new OptixInvalidCommandException();
+                return new TabCommand(splitStr[0]);
             }
         } else if (splitStr.length == 2) {
 
