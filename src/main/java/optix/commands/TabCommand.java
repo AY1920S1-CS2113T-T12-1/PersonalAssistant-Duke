@@ -8,9 +8,9 @@ import optix.ui.Ui;
 public class TabCommand extends Command {
     String commandWord;
 
-    private  static final String MESSAGE_ARCHIVE = "Here is your list of archived shows.";
-    private static final String MESSAGE_SHOW = "Here is your list of scheduled shows.";
-    private static final String MESSAGE_FINANCE = "Here is your list of projected earnings";
+    private  static final String MESSAGE_ARCHIVE = "Here is your list of archived shows.\n";
+    private static final String MESSAGE_SHOW = "Here is your list of scheduled shows.\n";
+    private static final String MESSAGE_FINANCE = "Here is your list of projected earnings.\n";
 
     public TabCommand(String commandWord) {
         this.commandWord = commandWord.trim().toLowerCase();
@@ -21,15 +21,15 @@ public class TabCommand extends Command {
         try {
             switch (commandWord) {
             case "archive":
-                model.setShowsGUI(model.getShowsHistory());
+                model.setShowsGui(model.getShowsHistory());
                 ui.setMessage(MESSAGE_ARCHIVE);
                 break;
             case "show":
-                model.setShowsGUI(model.getShows());
+                model.setShowsGui(model.getShows());
                 ui.setMessage(MESSAGE_SHOW);
                 break;
             case "finance":
-                model.setShowsGUI(model.getShows());
+                model.setShowsGui(model.getShows());
                 ui.setMessage(MESSAGE_FINANCE);
                 break;
             default:

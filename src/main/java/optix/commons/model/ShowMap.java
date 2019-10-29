@@ -69,7 +69,11 @@ public class ShowMap extends TreeMap<LocalDate, Theatre> {
         return message.toString();
     }
 
-
+    /**
+     * Get the list of show dates for the show in query.
+     * @param showName The name of the show.
+     * @return new ShowMap with shows that have the show in query.
+     */
     public ShowMap listShow(String showName) {
         ShowMap shows = new ShowMap();
         for (Map.Entry<LocalDate, Theatre> entry : this.entrySet()) {
@@ -80,6 +84,12 @@ public class ShowMap extends TreeMap<LocalDate, Theatre> {
         return shows;
     }
 
+    /**
+     * Get the list of show for the month in query.
+     * @param startOfMonth The first day of month in query.
+     * @param endOfMonth The first day of the following month for the month in query.
+     * @return new ShowMap with shows that are within the month of query.
+     */
     public ShowMap listShow(LocalDate startOfMonth, LocalDate endOfMonth) {
         ShowMap shows = new ShowMap();
 
@@ -117,5 +127,9 @@ public class ShowMap extends TreeMap<LocalDate, Theatre> {
 
     public String reassignSeat(LocalDate showLocalDate, String oldSeat, String newSeat) {
         return this.get(showLocalDate).reassignSeat(oldSeat, newSeat);
+    }
+
+    public double getProfit(LocalDate localDate) {
+        return this.get(localDate).getProfit();
     }
 }

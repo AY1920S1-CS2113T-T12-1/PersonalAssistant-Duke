@@ -292,7 +292,7 @@ public class Theatre {
         if (row == -1 || col == -1) {
             return seatPrice;
         } else if (!seats[row][col].isBooked()) {
-            seatPrice = -1;
+            seatPrice = 0;
             return seatPrice;
         }
         double currRevenue = show.getProfit();
@@ -317,7 +317,7 @@ public class Theatre {
     }
 
     private int getRow(String row) {
-        switch (row) {
+        switch (row.toUpperCase()) {
         case "A":
             return 0;
         case "B":

@@ -117,7 +117,7 @@ public class MainWindow extends AnchorPane {
     private void displayShows() {
         clearDisplay();
 
-        for (Map.Entry<LocalDate, Theatre> entry : optix.getShowsGUI().entrySet()) {
+        for (Map.Entry<LocalDate, Theatre> entry : optix.getShowsGui().entrySet()) {
             display.getChildren().add(ShowController.displayShow(entry.getValue(), entry.getKey()));
         }
     }
@@ -125,14 +125,14 @@ public class MainWindow extends AnchorPane {
     private void displayFinance() {
         clearDisplay();
 
-        for (Map.Entry<LocalDate, Theatre> entry : optix.getShowsGUI().entrySet()) {
+        for (Map.Entry<LocalDate, Theatre> entry : optix.getShowsGui().entrySet()) {
             display.getChildren().add(FinanceController.displayFinance(entry.getValue(), entry.getKey()));
         }
     }
 
     private void displaySeats(String fullCommand) {
         String[] splitStr = fullCommand.split("\\|");
-        if (splitStr.length == 2) {
+        if (splitStr.length >= 2 && !optix.getShowsGui().isEmpty()) {
             clearDisplay();
 
             LocalDate localDate = new OptixDateFormatter().toLocalDate(splitStr[1].trim());

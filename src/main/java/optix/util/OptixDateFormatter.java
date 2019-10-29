@@ -1,5 +1,7 @@
 package optix.util;
 
+import optix.exceptions.OptixInvalidDateException;
+
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.text.DateFormatSymbols;
@@ -101,11 +103,11 @@ public class OptixDateFormatter {
      * @param year String format: YYYY.
      * @return Integer number for year.
      */
-    public int getYear(String year) {
+    public int getYear(String year) throws OptixInvalidDateException {
         try {
             return Integer.parseInt(year);
         } catch (NumberFormatException e) {
-            return 0;
+            throw new OptixInvalidDateException();
         }
     }
 
@@ -167,7 +169,7 @@ public class OptixDateFormatter {
     }
 
     public String intToMonth(int month) {
-        return new DateFormatSymbols().getMonths()[month-1];
+        return new DateFormatSymbols().getMonths()[month - 1];
     }
 
     /**

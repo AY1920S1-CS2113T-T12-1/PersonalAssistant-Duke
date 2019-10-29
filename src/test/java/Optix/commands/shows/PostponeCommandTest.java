@@ -76,6 +76,7 @@ class PostponeCommandTest {
                 + "__________________________________________________________________________________\n";
         assertEquals(expected1, ui.showCommandLine());
     }
+
     @AfterAll
     static void cleanUp() {
         File deletedFile = new File(filePath, "optix.txt");

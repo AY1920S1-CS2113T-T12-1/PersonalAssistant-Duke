@@ -10,7 +10,7 @@ import java.util.Map;
 public class Model {
     private ShowMap showsHistory = new ShowMap();
     private ShowMap shows = new ShowMap();
-    private ShowMap showsGUI;
+    private ShowMap showsGui;
 
     /**
      * The Optix model.
@@ -20,7 +20,7 @@ public class Model {
         storage.loadShows(shows, showsHistory);
         storage.loadArchive(showsHistory);
         storage.writeArchive(showsHistory);
-        showsGUI = this.getShows();
+        showsGui = this.getShows();
     }
 
     public ShowMap getShows() {
@@ -31,12 +31,12 @@ public class Model {
         return showsHistory;
     }
 
-    public ShowMap getShowsGUI() {
-        return showsGUI;
+    public ShowMap getShowsGui() {
+        return showsGui;
     }
 
-    public void setShowsGUI(ShowMap showsGUI) {
-        this.showsGUI = showsGUI;
+    public void setShowsGui(ShowMap showsGui) {
+        this.showsGui = showsGui;
     }
 
     public boolean hasSameName(LocalDate key, String showName) {
@@ -51,29 +51,34 @@ public class Model {
 
     public void addShow(String showName, LocalDate showDate, double seatBasePrice) {
         shows.addShow(showName, showDate, seatBasePrice);
-        this.setShowsGUI(shows);
+        this.setShowsGui(shows);
     }
 
     public void editShowName(LocalDate showDate, String showName) {
         shows.editShowName(showDate, showName);
-        this.setShowsGUI(shows);
+        this.setShowsGui(shows);
     }
 
     public void postponeShow(LocalDate oldDate, LocalDate newDate) {
         shows.postponeShow(oldDate, newDate);
-        this.setShowsGUI(shows);
+        this.setShowsGui(shows);
     }
 
     public String listShow() {
-        this.setShowsGUI(shows);
+        this.setShowsGui(shows);
         return shows.listShow();
     }
 
+    /**
+     * Get the list of show dates for the show in query.
+     * @param showName The name of the show.
+     * @return String message for the list of dates for the show in query.
+     */
     public String listShow(String showName) {
-        this.setShowsGUI(shows.listShow(showName));
+        this.setShowsGui(shows.listShow(showName));
         StringBuilder message = new StringBuilder();
         int counter = 1;
-        for (Map.Entry<LocalDate, Theatre> entry : showsGUI.entrySet()) {
+        for (Map.Entry<LocalDate, Theatre> entry : showsGui.entrySet()) {
             String date = new OptixDateFormatter().toStringDate(entry.getKey());
             message.append(String.format("%d. %s\n", counter, date));
             counter++;
@@ -81,11 +86,17 @@ public class Model {
         return message.toString();
     }
 
+    /**
+     * Get the list of show for the month in query.
+     * @param startOfMonth The first day of month in query.
+     * @param endOfMonth The first day of the following month for the month in query.
+     * @return String message for the list of shows that are scheduled for the month in query.
+     */
     public String listShow(LocalDate startOfMonth, LocalDate endOfMonth) {
-        this.setShowsGUI(shows.listShow(startOfMonth, endOfMonth));
+        this.setShowsGui(shows.listShow(startOfMonth, endOfMonth));
         StringBuilder message = new StringBuilder();
         int counter = 1;
-        for (Map.Entry<LocalDate, Theatre> entry : showsGUI.entrySet()) {
+        for (Map.Entry<LocalDate, Theatre> entry : showsGui.entrySet()) {
             String date = new OptixDateFormatter().toStringDate(entry.getKey());
             String showName = entry.getValue().getShowName();
             message.append(String.format("%d. %s (on: %s)\n", counter, showName, date));
@@ -96,7 +107,7 @@ public class Model {
 
     public void deleteShow(LocalDate showDate) {
         shows.deleteShow(showDate);
-        this.setShowsGUI(shows);
+        this.setShowsGui(shows);
     }
 
     //// Commands that deals with Seats.

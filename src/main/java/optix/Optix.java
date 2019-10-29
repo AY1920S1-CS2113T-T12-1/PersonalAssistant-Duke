@@ -90,16 +90,16 @@ public class Optix {
         return model.getShows();
     }
 
-    public ShowMap getShowsGUI() {
-        return model.getShowsGUI();
+    public ShowMap getShowsGui() {
+        return model.getShowsGui();
     }
 
     public void resetShows() {
-        model.setShowsGUI(model.getShows());
+        model.setShowsGui(model.getShows());
     }
 
     public void resetArchive() {
-        model.setShowsGUI(model.getShowsHistory());
+        model.setShowsGui(model.getShowsHistory());
     }
 
     public String getResponse() {
