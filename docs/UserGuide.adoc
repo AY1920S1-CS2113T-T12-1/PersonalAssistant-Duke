@@ -24,7 +24,7 @@ image::images/UI.png[width ="600", align="center"]
 ** list: list all shows currently added to Optix.
 ** delete Phantom of the Opera|5/5/2020 : finds a show called Phantom of the Opera scheduled on the 5/5/2020 in Optix, and deletes it.
 ** help: displays the list of commands available.
-** bye: exits the application.
+** bye:m exits the application.
 
 == 3. Features
 
@@ -216,10 +216,13 @@ view-monthly May 2020
 view-monthly January 2018
 ----
 === 3.5 Alias Commands
+Aliases help you to create shortcuts for commands, hence enabling
+you to to input commands with less effort!
 
 ==== 3.5.1 Add new alias: `add-alias`
 As a user, you can give a Command an alternate name for easy access.
-You can add them with `add-alias` to an existing command. +
+You can add them with `add-alias` to an existing command.
+After adding the alias, it is immediately available for use! +
 Format: `add-alias ALIAS|COMMAND`
 
 * Adds a new alias for `COMMAND`
@@ -230,11 +233,17 @@ Format: `add-alias ALIAS|COMMAND`
 Give the command `add` an alias of 't': +
 `add-alias t|add` +
 
+image::images/UG_add-alias_success.png[width ="600", align="center"]
+
 Assigning an alias that is already in use is not allowed. +
 `add-alias t|delete` would not work if 't' is paired to another command already.
 
+image::images/UG_add-alias_failure.png[width ="600", align="center"]
+
 Assigning an command keyword as an alias is also not allowed: +
 `add-alias add|delete` is not allowed.
+
+image::images/UG_add-alias_illegal.png[width ="600", align="center"]
 
 ==== 3.5.2 Remove alias: remove-alias
 Let's say you changed your mind after adding the alias.
@@ -247,15 +256,22 @@ Format: `remove-alias ALIAS|COMMAND`
 ----
 remove-alias t|add
 ----
+image::images/UG-remove_alias-success.png[width ="600", align="center"]
+
 ==== 3.5.3 List alias: list-alias
 If you forgot the aliases you set, or would like to view the default aliases,
 use the `list-alias` command! +
 Format: `list-alias`
 
+image::images/UG_list-alias_success.png[width ="600", align="center"]
+
 ==== 3.5.4 Reset alias: reset-alias
 To undo all your alias modifications, use the `reset-alias` command
-to set them back to the defaults. +
+to set them back to the defaults. After the reset, use `list-alias` to
+view the default aliases. +
 Format: `reset-alias`
+
+image::images/UG_reset-alias_success.png[width ="600", align="center"]
 
 == 4. FAQ
 
