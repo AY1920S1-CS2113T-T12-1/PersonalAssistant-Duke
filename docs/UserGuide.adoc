@@ -1,70 +1,88 @@
 = Optix User Guide
+:site-section: UserGuide
+:toc:
+:toclevels: 4
+:toc-title:
+:toc-placement: preamble
+:sectnums:
+:imagesDir: screenshots
+:stylesDir: stylesheets
+:xrefstyle: full
+:experimental:
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+endif::[]
+:repoURL: https://github.com/AY1920S1-CS2113T-T12-1/main
 
-By Team AY1920S1-CS2113T-T12-1 +
-Since: Oct 2019
+By: `Team AY1920S1-CS2113T-T12-1`      Since: `Oct 2019`
 
-== 1. Introduction
+== Introduction
 
-Optix is a desktop application made for users who want to manage the seating of a theatre or other venues while keeping track of the finances earned. Optix is optimised for users who can type fast and prefers using a Command Line Interface (CLI) to other methods. A Graphical User Interface (GUI) is also developed for additional user interaction. Want to skip the process of going through multiple steps to manage bookings and viewing your profits? If you can type fast and want to avoid this hassle, Optix is the perfect application for you! Jump to Section 2, “Quick Start” to get started.
+Optix is a desktop application made for users who want to manage the seating of a theatre or other venues while keeping track of the finances earned. Optix is optimised for users who can type fast and prefers using a Command Line Interface (CLI) to other methods. A Graphical User Interface (GUI) is also developed for additional user interaction. Want to skip the process of going through multiple steps to manage bookings and viewing your profits? If you can type fast and want to avoid this hassle, Optix is the perfect application for you! Jump to <<Quick Start>> to get started.
 
-== 2. Quick Start
+== Quick Start
 
 . Ensure that Java 11 or above is installed on your computer.
-. Download the latest optix.jar here.
+. Download the latest `optix.jar` link:{repoURL}/releases[here].
 . Copy the file to the folder you want to use as the home folder for your theatre bookings.
 . Double-click the file to start the application. The GUI should appear in a few seconds.
 
 image::images/UI.png[width ="600", align="center"]
 
 [start=5]
-. Type the command in the command box and press Enter to execute it
-(e.g. type help and press Enter to open the help window.)
+. Type the command in the command box and press kbd:[Enter] to execute it
+(e.g. type help and press kbd:[Enter] to open the help window.)
 . Some example commands you can try:
-** add Phantom of the Opera|20|5/5/2020 : adds a show called “Phantom of the Opera” to be scheduled on the 5/5/2020 and the base price of $20 per seat to Optix.
-** list: list all shows currently added to Optix.
-** delete Phantom of the Opera|5/5/2020 : finds a show called Phantom of the Opera scheduled on the 5/5/2020 in Optix, and deletes it.
-** help: displays the list of commands available.
-** bye:m exits the application.
+** `add` Phantom of the Opera|20|5/5/2020 : adds a show called “Phantom of the Opera” to be scheduled on the 5/5/2020 and the base price of $20 per seat to Optix.
+** `list`: list all shows currently added to Optix.
+** `delete` Phantom of the Opera|5/5/2020 : finds a show called Phantom of the Opera scheduled on the 5/5/2020 in Optix, and deletes it.
+** `help`: displays the list of commands available.
+** `bye`: exits the application.
 
-== 3. Features
+== Features
 
 === Command Format
 
-* Words in UPPER_CASE are the parameters to be supplied by the user.
-e.g. in add SHOW_NAME|SCHEDULED_DATE|PRICE the SHOW_NAME, SCHEDULED_DATE, and PRICE are parameters that can be used as add Phantom of the Opera|5/5/2020|20.
+* Words in `UPPER_CASE` are the parameters to be supplied by the user.
+e.g. in add `SHOW_NAME|SCHEDULED_DATE|PRICE`, the `SHOW_NAME`, `SCHEDULED_DATE`, and `PRICE` are parameters that can be used as `add Phantom of the Opera|5/5/2020|20`.
 
-* Items with ... after them can be used multiple times (minimally once).
-e.g. SEAT can be used as A1 A2 B6 etc.
+* Items with `...` after them can be used multiple times (minimally once).
+e.g. `SEAT` can be used as `A1 A2 B6` etc.
 
 * Parameters have to be in order.
-e.g. if the command specifies SHOW_NAME|SHOW_DATE, SHOW_DATE|SHOW_NAME is invalid.
+e.g. if the command specifies `SHOW_NAME|SHOW_DATE`, `SHOW_DATE|SHOW_NAME` is invalid.
 
-* All SHOW_DATE entered must be in the format dd/mm/yyyy
-* All COMMAND and SHOW_NAME are case insensitive.
+* All `SHOW_DATE` entered must be in the format dd/mm/yyyy
 
-=== 3.1 Generic Commands
 
-==== 3.1.1 Viewing Help: `help`
+* All *COMMAND* and `SHOW_NAME` are case insensitive.
+
+=== Generic Commands
+
+==== Viewing Help: `help`
 As a new or returning user you may be unsure about the commands.
-The `help` command can refresh your knowledge. The help command displays descriptions of all the available commands. +
+The `help` command displays descriptions of all the available commands. +
 Format: `help`
 
-==== 3.1.2 Exiting the program: `bye`
-Easily save and exit the program with the `bye` command. It
-saves all the shows and status of the seats within the showlist, then exits the program.  +
+==== Exiting the program: `bye`
+Saves all the shows and statuses of the seats within the show list, then exits the program.  +
 Format: `bye`
 
-=== 3.2 Show Commands
+=== Show Commands
 
-==== 3.2.1 Adding shows: `add`
+
+==== Adding shows: `add`
 Let's say that a new event is coming up and you'd like to add it to the application showlist.
-Use the `add` command to adds shows to the current show list. +
-Format: add SHOW_NAME|SEATS_BASE_PRICE|DATE1|DATE2|...
+Use the `add` command to add shows to the current show list. +
+Format: `add SHOW_NAME|SEATS_BASE_PRICE|DATE1|DATE2|...`
 
-* SEATS_BASE_PRICE represents the lowest cost of a seat in the venue.
-* There must be no other show on that date.
-* The date must be in the future.
-* The format of the date must be dd/mm/yyyy
+[TIP]
+use `DATE1|DATE2|DATE3|...` to easily add multiple dates for the show
+* `SEATS_BASE_PRICE` represents the lowest cost of a seat in the venue.
+* There must be no other show on that `DATE`.
+* The `DATE` must be in the future.
+* The format of `DATE` must be dd/mm/yyyy
 * Shows of the same name can be added.
 
 ===== Examples:
@@ -92,6 +110,7 @@ The `list` command allows you to view all current shows. +
 Format: `list`
 
 ==== 3.2.4 Listing dates for specific show: `list`
+
 You can also search for all listings of a particular show with the `list` command!
 Current shows with the specified name will be listed. +
 Format: `list SHOW_NAME`
@@ -132,42 +151,51 @@ Use `edit` to change it's name. +
 Format: `edit OLD_SHOW_NAME|SHOW_DATE|NEW_SHOW_NAME`
 
 * Changes the name of the specified `SHOW_DATE` with `OLD_SHOW_NAME` to `NEW_SHOW_NAME`
+
 * Invalid if the date of `OLD_SHOW_NAME` does not match `SHOW_DATE`
 
 ===== Examples:
 ----
 edit Phanom of the Opera|5/5/2020|Phantom of the Opera
 ----
-=== 3.3 Seats Commands
 
-==== 3.3.1 Sell seats: `sell`
-The `sell` command can be used to mark seats as sold. It is useful in tracking
-the availability of seats for events. +
+[NOTE]
+====
+Phanom of the Opera is intentionally mispelled
+====
+
+=== Seats Commands
+
+==== Sell seats: `sell`
+The `sell` command can be used to mark seats as sold. It is useful for selling seats to customers and tracking the availability of the seats +
 Format: `sell SHOW_NAME|SHOW_DATE|SEAT …`
 
-* Sells SEATS specified by customers for the indicated SHOW_NAME on SHOW_DATE.
-* Each SEAT is represented by an alphabet followed by an integer e.g. A1
-* Multiple SEATS can be entered in the parameter SEAT ...
-* SEATS sold are marked with  ✕ to represent a “booked” status.
-* SEATS that has been marked with ✕ cannot be booked by other people.
+[TIP]
+Use the `view` command for a visual representation of the statuses of all the seats
+
+* Sells `SEAT` specified by customers for the indicated `SHOW_NAME` on `SHOW_DATE`.
+* Each `SEAT` is represented by an alphabet followed by an integer e.g. A1
+* Multiple `SEAT` can be entered in the parameter `SEAT ...` to book all those seats
+* `SEAT` sold are marked with  `✓` to represent a “booked” status.
+* `SEAT` marked with `✓` cannot be booked by other people.
 
 ===== Examples:
 Sell a single seat: +
-`sell Phantom of the Opera|5/5/2020| C1 D6 E10`
+`sell Phantom of the Opera|5/5/2020|C1`
 
 Sell multiple seats in a single command: +
 `sell Lion King|6/5/2020| A1 A2 A3 A4`
 
 
-==== 3.3.2 View the seats for a show: `view`
+==== View the seats for a show: `view`
 You can use the `view` command to check seat availabilities for shows.
 The layout of the seats within the theatre will be displayed. +
 Format: `view SHOW_NAME|SHOW_DATE`
 
 * Displays the layout of the specified `SHOW_NAME` on `SHOW_DATE` in a 2D array format.
-* Seats that have been booked are mark with "✕" and seats that are available for booking are marked with "✓".
-* The layout will not be displayed if the specified SHOW_DATE does not
-correspond to the actual show date of the indicated SHOW_NAME.
+* Seats that have been booked are mark with `✓` and seats that are available for booking are marked with `✕`.
+* The layout will not be displayed if the specified `SHOW_DATE` does not
+correspond to the actual show date of the indicated `SHOW_NAME`.
 
 ===== Examples:
 ----
@@ -177,7 +205,7 @@ view Phantom of the Opera | 5/5/2020
 If a customers  wants to change seats, this can be achieved through the `reassign-seat` command. +
 Format: `reassign-seat SHOW_NAME|SHOW_DATE|OLD_SEAT|NEW_SEAT`
 
-* Reassign a booked seat with another non-booked seat for the show.
+* Reassign a booked seat to another available seat for the show.
 * Seat cannot be reassigned if:
 ** `OLD_SEAT` is not booked previously.
 ** `NEW_SEAT` has been booked.
@@ -187,10 +215,13 @@ Format: `reassign-seat SHOW_NAME|SHOW_DATE|OLD_SEAT|NEW_SEAT`
 ===== Examples:
 ----
 reassign-seat Phantom of the Opera|5/5/2020|A1|A2
+reassign-seat Lion King|10/5/2020|D6|A1
 ----
-=== 3.4 Finance Commands
 
-==== 3.4.1 View the profit of a show: `view-profit`
+
+=== Finance Commands
+
+==== View the profit of a show: `view-profit`
 
 Displays the profit earned from that particular show. +
 Format: `view-profit SHOW_NAME|SHOW_DATE`
@@ -202,10 +233,10 @@ Format: `view-profit SHOW_NAME|SHOW_DATE`
 ----
 view-profit Lion King|5/5/2020
 ----
-==== 3.4.2 View the amount earned for a particular month: view-monthly
+==== View the amount earned for a particular month: `view-monthly`
 
 Displays the profit earned for that particular month. +
-Format: view-monthly MONTH YEAR
+Format: `view-monthly MONTH YEAR`
 
 * Displays the total profit collected for all the shows in MONTH YEAR
 * Displays projected earnings if MONTH YEAR is in the future.
@@ -223,6 +254,7 @@ you to to input commands with less effort!
 As a user, you can give a Command an alternate name for easy access.
 You can add them with `add-alias` to an existing command.
 After adding the alias, it is immediately available for use! +
+
 Format: `add-alias ALIAS|COMMAND`
 
 * Adds a new alias for `COMMAND`
@@ -246,6 +278,7 @@ Assigning an command keyword as an alias is also not allowed: +
 image::images/UG_add-alias_illegal.png[width ="600", align="center"]
 
 ==== 3.5.2 Remove alias: remove-alias
+
 Let's say you changed your mind after adding the alias.
 Use the `remove-alias` command to delete an existing alias. +
 Format: `remove-alias ALIAS|COMMAND`
@@ -273,58 +306,59 @@ Format: `reset-alias`
 
 image::images/UG_reset-alias_success.png[width ="600", align="center"]
 
-== 4. FAQ
+
+== FAQ
 
 *Q: *How do I transfer my data to another computer? +
 *A: *Install the app in the other computer and replace the empty data file created with the file that contains the data of your previous Optix folder.
 
-== 5. Command summary
+== Command summary
 
-* *Add*: add SHOW_NAME|SEATS_BASE_PRICE|DATE1|DATE2|...
-Eg. add Phantom of the Opera|20|5/5/2020|6/5/2020
+* *Add*: `add SHOW_NAME|SEATS_BASE_PRICE|DATE1|DATE2|...`
+Eg. `add Phantom of the Opera|20|5/5/2020|6/5/2020`
 
-* *Add-alias*: add-alias ALIAS|COMMAND
-Eg. add-alias q|add
+* *Add-alias*: `add-alias ALIAS|COMMAND`
+Eg. `add-alias q|add`
 
 * *Bye*
 
-* *Delete*: delete SHOW_NAME|DATE1|DATE2|...
-Eg. delete Phantom of the Opera|5/5/2020
+* *Delete*: `delete SHOW_NAME|DATE1|DATE2|...`
+Eg. `delete Phantom of the Opera|5/5/2020`
 
-* *Edit*: edit OLD_SHOW_NAME|SHOW_DATE|NEW_SHOW_NAME
-Eg. edit Phanom of the Opera|5/5/2020|Phantom of the Opera
+* *Edit*: `edit OLD_SHOW_NAME|SHOW_DATE|NEW_SHOW_NAME`
+Eg. `edit Phanom of the Opera|5/5/2020|Phantom of the Opera`
 
-* *List*: list
+* *List*: `list`
 
-* *List*: list SHOW_NAME
-Eg. list Phantom of the Opera
+* *List*: `list SHOW_NAME`
+Eg. `list Phantom of the Opera`
 
-* *List*: list MONTH YEAR
-Eg. list May 2020
+* *List*: `list MONTH YEAR`
+Eg. `list May 2020`
 
-* *List-alias*
+* *List Alias*: `List-alias`
 
-* *Postpone*: postpone SHOW_NAME|OLD_DATE|NEW_DATE
-Eg. postpone Phantom of the Opera|5/5/2020|10/5/2020
+* *Postpone*: `postpone SHOW_NAME|OLD_DATE|NEW_DATE`
+Eg. `postpone Phantom of the Opera|5/5/2020|10/5/2020`
 
-* *Reassign-seat*: reassign-seat SHOW_NAME|SHOW_DATE|OLD_SEAT|NEW_SEAT
-Eg. reassign-seat Phantom of the Opera|5/5/2020|A1|A2
+* *Reassign-seat*: `reassign-seat SHOW_NAME|SHOW_DATE|OLD_SEAT|NEW_SEAT`
+Eg. `reassign-seat Phantom of the Opera|5/5/2020|A1|A2`
 
-* *Remove-alias*: remove-alias ALIAS|COMMAND
-Eg. remove-alias q|add
+* *Remove-alias*: `remove-alias ALIAS|COMMAND`
+Eg. `remove-alias q|add`
 
-* *Reset-alias*: reset-alias
+* *Reset-alias*: `reset-alias`
 
-* *Sell*: sell SHOW_NAME|SHOW_DATE|SEAT1 SEAT2 SEAT3 …
-Eg. sell Phantom of the Opera|5/5/2020| C1 D6 E10
+* *Sell*: `sell SHOW_NAME|SHOW_DATE|SEAT1 SEAT2 SEAT3 …`
+Eg. `sell Phantom of the Opera|5/5/2020| C1 D6 E10`
 
-* *View*: view SHOW_NAME|SHOW_DATE
-Eg. view Phantom of the Opera|5/5/2020
+* *View*: `view SHOW_NAME|SHOW_DATE`
+Eg. `view Phantom of the Opera|5/5/2020`
 
-* *View-profit*: view-profit SHOW_NAME|SHOW_DATE
-Eg. view-profit Lion King|5/5/2020
+* *View-profit*: `view-profit SHOW_NAME|SHOW_DATE`
+Eg. `view-profit Lion King|5/5/2020`
 
-* *View-monthly*: view-monthly MONTH YEAR
-Eg. view-monthly May 2020
+* *View-monthly*: `view-monthly MONTH YEAR`
+Eg. `view-monthly May 2020`
 
-* *Help*
+* *Help*: `help`
