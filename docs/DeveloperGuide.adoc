@@ -339,7 +339,7 @@ Use case ends.
 .. User re-enters command.
 
 Steps i to iii are repeated until shows entered are correct.
-Use case resumes from step 2.
+Use case resumes from step 2 of MSS.
 
 
 
@@ -363,7 +363,7 @@ Use case resumes from step 2.
 .. User re-enters command.
 
 Steps i to iii are repeated until shows entered are correct.
-Use case resumes from step 2.
+Use case resumes from step 2 of MSS.
 
 === Use case: UC05 - View the entire list of shows
 
@@ -397,7 +397,7 @@ Use case ends.
 .. User re-enters command.
 
 Steps i to iv are repeated until the command entered is correct.
-Use case resumes from step 2.
+Use case resumes from step 2 of MSS.
 
 === Use Case: UC07 - Refund ticket for seat
 
@@ -421,7 +421,7 @@ Use case ends.
 .. User re-enters command, with the correct show name.
 
 Steps i to iv are repeated until the command entered is valid.
-Use case resumes from step 3.
+Use case resumes from step 3 of MSS.
 
 * Extension 2
 
@@ -431,7 +431,7 @@ Use case resumes from step 3.
 .. User re-enters command, with a correct seat number.
 
 Steps i to iv is repeated until the command entered is valid.
-Use case resumes from step 3.
+Use case resumes from step 3 of MSS.
 
 === Use case: UC08- Tutorial/ Help Command
 
@@ -461,7 +461,7 @@ Use case resumes from step 3.
 .. User re-enters command.
 
 Steps i to iv are repeated until the command entered is correct.
-Use case resumes from step 2.
+Use case resumes from step 2 of MSS.
 
 * Extension 2
 .. Optix detects that  there is no show of the given input in the list.
@@ -470,7 +470,7 @@ Use case resumes from step 2.
 .. User re-enters command.
 
 Steps i to iv are repeated until the command entered is correct.
-Use case resumes from step 2.
+Use case resumes from step 2 of MSS.
 
 
 [appendix]
