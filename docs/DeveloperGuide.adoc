@@ -275,7 +275,7 @@ Use case ends.
 .. Optix displays an error message that shows the part of the command that was entered incorrectly. +
 .. Optix requests command from user again. +
 .. User re-enters details. +
-Steps a to d are repeated until details entered are correct.
+Steps i to iv are repeated until details entered are correct.
 Use case resumes from step 2 of MSS. +
 
 Use case ends.
@@ -303,7 +303,7 @@ Use case ends.
 .. Optix requests command from user again.
 .. User re-enters details.
 
-Steps a to d are repeated until details entered are correct.
+Steps i to iv are repeated until details entered are correct.
 Use case resumes from step 1 of MSS.
 
 * Extension 2
@@ -311,7 +311,7 @@ Use case resumes from step 1 of MSS.
 .. Optix requests command from user again.
 .. User re-enters details.
 
-Steps a to c are repeated until details entered are correct.
+Steps i to iii are repeated until details entered are correct.
 Use case resumes from step 2 of MSS.
 
 
@@ -337,7 +337,7 @@ Use case ends.
 .. Optix requests command from user again.
 .. User re-enters command.
 
-Steps a to c are repeated until shows entered are correct.
+Steps i to iii are repeated until shows entered are correct.
 Use case resumes from step 2.
 
 
@@ -361,7 +361,7 @@ Use case resumes from step 2.
 .. Optix replies by listing all the shows the could not be found.
 .. User re-enters command.
 
-Steps a to c are repeated until shows entered are correct.
+Steps i to iii are repeated until shows entered are correct.
 Use case resumes from step 2.
 
 === Use case: UC05 - View the entire list of shows
@@ -395,7 +395,7 @@ Use case ends.
 .. Optix requests command from user again.
 .. User re-enters command.
 
-Steps a to d are repeated until the command entered is correct.
+Steps i to iv are repeated until the command entered is correct.
 Use case resumes from step 2.
 
 === Use Case: UC07 - Refund ticket for seat
@@ -419,7 +419,7 @@ Use case ends.
 .. Optix requests command from user again.
 .. User re-enters command, with the correct show name.
 
-Steps a to d are repeated until the command entered is valid.
+Steps i to iv are repeated until the command entered is valid.
 Use case resumes from step 3.
 
 * Extension 2
@@ -428,7 +428,8 @@ Use case resumes from step 3.
 .. Optix replies that the request to refund this seat is invalid.
 .. Optix requests command from user again.
 .. User re-enters command, with a correct seat number.
-Steps 2a1-2a3 is repeated until the command entered is valid.
+
+Steps i to iv is repeated until the command entered is valid.
 Use case resumes from step 3.
 
 === Use case: UC08- Tutorial/ Help Command
@@ -458,7 +459,7 @@ Use case resumes from step 3.
 .. Optix requests command from user again.
 .. User re-enters command.
 
-Steps a to d are repeated until the command entered is correct.
+Steps i to iv are repeated until the command entered is correct.
 Use case resumes from step 2.
 
 * Extension 2
@@ -467,7 +468,7 @@ Use case resumes from step 2.
 .. Optix requests command from user again.
 .. User re-enters command.
 
-Steps a to d are repeated until the command entered is correct.
+Steps i to iv are repeated until the command entered is correct.
 Use case resumes from step 2.
 
 
