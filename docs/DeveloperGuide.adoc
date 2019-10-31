@@ -271,10 +271,11 @@ Use case ends.
 
 
 * Extension 1
-.. Optix detects an error in the details entered. +
-.. Optix displays an error message that shows the part of the command that was entered incorrectly. +
-.. Optix requests command from user again. +
-.. User re-enters details. +
+.. Optix detects an error in the details entered.
+.. Optix displays an error message that shows the part of the command that was entered incorrectly.
+.. Optix requests command from user again.
+.. User re-enters details.
+
 Steps i to iv are repeated until details entered are correct.
 Use case resumes from step 2 of MSS. +
 
