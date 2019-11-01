@@ -79,26 +79,20 @@ dialog first)
 == Implementation
 This section describes some noteworthy details on how certain features are implemented.
 
-=== [Proposed] Sell Seats Feature
-Allows users to sell seats for a specific show.
-
-==== Proposed implementation
-//todo
-==== Design Considerations
-//todo
-
 === [Proposed] View Monthly Revenue Feature
+Allows user to view their profit for a specific month.
 
 ==== Proposed Implementation
 Viewing the monthly revenue is executed by the `ViewMonthlyCommand`, which extends from the abstract class `Command` and
-is stored under the Command package. +
-Additionally, it implements the following operations based on the query date: +
-* Model#findMonthly() -- Retrieves the list of shows in the month specified by the input. +
-* Model#getShows() -- Retrieves the current list of shows should the user query be in the future. +
-* Model#getShowshistory() -- Retrieves the archive list should the user query be in the past. +
-* OptixDateFormatter#getMonth() -- get the integer value of the month. +
-* OptixDateFormatter#getYear() -- get the integer value of the year. +
-* Theatre#getProfit() -- get the profit earned for the show. +
+is stored under the commands package. +
+Additionally, it implements the following operations based on the query date:
+
+* Model#findMonthly() -- Retrieves the list of shows in the month specified by the input.
+* Model#getShows() -- Retrieves the current list of shows should the user query be in the future.
+* Model#getShowshistory() -- Retrieves the archive list should the user query be in the past.
+* OptixDateFormatter#getMonth() -- get the integer value of the month.
+* OptixDateFormatter#getYear() -- get the integer value of the year.
+* Theatre#getProfit() -- get the profit earned for the show.
 
 Given below is an example usage scenario of the `ViewMonthlyCommand` at each step.
 
@@ -120,17 +114,17 @@ The profit for each of the shows in the remaining list is then added up in `Mode
 
 The following sequence diagram shows how the view-monthly operation works:
 
-image::images/SequenceDiagram_ViewMonthly.png[width ="600", align="center"]
+image::images/devguide/DG_ViewMonthly_SequenceDiagram.png[width ="600", align="center"]
 
 The following activity diagram summarizes what happens when a user executes the ViewMonthly Command:
 
-image::images/ActivityDiagram_ViewMonthly.png[width ="600", align="center"]
+image::images/devguide/DG_ViewMonthly_ActivityDiagram.png[width ="300", align="center"]
 
 ==== Design Considerations
 
-*Aspect: How view-monthly executes* +
+*Aspect: How view-monthly executes*
 
-* Alternative 1 (current choice): Saves the archive shows and current shows separately. +
+* Alternative 1 (current choice): Saves the archive shows and current shows separately.
 ** Pros: Reduces search time Optix knows which list to search from.
 ** Cons: Archive list does not need any methods and certain parameters since it is only a list to store show names and
 revenue. Have to insert dummy values for Archive list since Archive and current list are from the same class and now
@@ -140,34 +134,200 @@ use the same parameters.
 ** Pros: Archive list and current list will have their own class and reduces dependency.
 ** Cons: Certain code needs to be repeated which may be confusing.
 
+=== [Proposed] Sell Seats Feature
+Allows user to sell seats for a specific show.
+
+==== Proposed Implementation
+Selling of seats is executed by the `SellSeatCommand`, which extends from an abstract class `Command` and
+is stored under the commands package. Additionally, it implements the following operations based on the user input.
+
+* OptixDateFormatter#isValidDate -- Ensures that the date keyed is valid.
+* Model#containsKey -- Check if the date has any show scheduled.
+* Model#hasSameName -- Check if the show name matches the show in the TreeMap for the specified date.
+* Model#sellSeat -- Sell seats corresponding to the seat number that is keyed by user.
+
+Given below is an example usage scenario and how the sell seat mechanism behaves at each step.
+
+*Step 1* +
+The user executes `sell Phantom of the Opera|5/5/2020|C1 D6 E10` command to sell the following seats C1 D6 E10
+for the show Phantom of the Opera on 5th May 2020. The `SellSeatCommand` command calls `OptixDateFormatter#isValidDate(String date)`
+to first check if the given date is a valid date.
+
+*Step 2* +
+Once verified, the `SellSeatCommand` command calls `Model#containsKey(LocalDate date)` and `Model#hasSameName(LocalDate date, String showName)`
+to check if the show in query exist within `Model`.
+
+*Step 3* +
+Once it has been confirmed that the show exist, the `SellSeatCommand` command calls `Model#sellSeats(LocalDate date, String[] seats)`
+to query if the seats have been booked. Whenever a seat has been purchased successfully, the revenue obtained from
+the show will then be updated accordingly.
+
+The following activity diagram summarizes what happens when a user executes sell seat command.
+
+image::images/devguide/DG_SellSeat_ActivityDiagram.png[width ="300", align="center"]
+
+==== Design Considerations
+
+*Aspect: How sell seat executes* +
+
+* Alternative 1 (current choice)
+** Format: `sell Harry Potter | 5/5/2020 | A1 A2 A3 A4`
+
+** Pros:
+*** Easy to implement and less buggy.
+*** Simplicity of code allows it to handle exception and edge cases more efficiently.
+*** Ability to bulk purchase seats.
+
+** Cons:
+*** Less intuitive. User has to carry out one additional command view before carrying out the booking.
+
+* Alternative 2 (previous choice):
+** Format: `sell Harry Potter | 5/5/2020`
+** Alternative: `sell Harry Potter | 5/5/2020 | A1 A2 A3 A4`
+
+** Pros:
+*** More flexible. Seating arrangement will be shown without explicit command for it.
+*** Ability to bulk purchase seats.
+
+** Cons:
+*** Incompatible with GUI as code requires CLI query for seats, causing GUI to hang once command is used.
+*** Code is deeply-nested which violates coding standards.
+*** User has to key in the seats 1 by 1.
+
+Below is the code snippet for our previous implementation:
+
+image::images/devguide/DG_SellSeat_CodeBlock.png[align="center"]
+
+*Choice for current implementation:* +
+
+While *Alternative 2* is more intuitive and allows for better control over the sales of seats,
+ultimately we have chosen *Alternative 1* as it is more compatible with our GUI codebase.
+Furthermore with the implementation of GUI, it would also be more intuitive for the users
+to get the seating arrangements for a particular show before they attempt to make any sales for the seat
+as it would be impossible for them to memorise all the seats that they have sold.
+
 === Delete Show Feature
 Allows users to delete shows from the shows ShowMap.
 
 ==== Implementation
-//todo
+It is executed by the `DeleteCommand`, which is extended from the abstract class `Command`, and is stored under the
+Command package. Additionally, it implements the following operations based on the user input:
 
-===  Design Considerations
-//todo
+* DeleteCommand#hasValidDate -- checks if the input date is of a valid format
+* Model#containsKey -- Checks for key in ShowMap.
+* Model#hasSameName -- Checks for the existence of the show for the specified date in ShowMap.
+* Model#deleteShow -- Removes the show from ShowMap.
 
-== Command Aliasing
-Enable users to set up aliases for the commands.
+Given below is an example usage scenario and how the sell seat mechanism behaves at each step.
 
-=== Implementation
-//todo
+*Step 1* +
+The user inputs `delete Phantom of the Opera|5/5/2020|6/5/2020`, with the intention to delete shows dated on 5th May 2020
+and 6th May 2020. The `DeleteCommand` is initialised with `Phantom of the Opera|5/5/2020|6/5/2020` as the `details`
+attribute. The `details` string is parsed into the show name, and the individual dates.
 
-=== Design Considerations
+image::images/devguide/DG_Delete_ObjectDiagram.png[width ="300", align="center"]
 
-
-
-
-
-
-
-
-
-
+*Step 2* +
+`DeleteCommand` iterates through the dates. It formats and verifies them through
+`OptixDateFormatter#hasValidDate(String date)` to ensure the given dates are valid(that the date follows the format
+DD/MM/YYYY). `LocalDate` instances are generated from these date strings.
 
 
+*Step 3* +
+`DeleteCommand` checks if the specified show exists on the verified dates using
+`Model#containsKey(LocalDate showLocalDate)` and `Model#hasSameName(LocalDate showLocalDate, LocalDate showName)`. If it
+exists, `Model#deleteShow(LocalDate showLocalDate)` is called to remove the show from the shows ShowMap. The details are
+also appended to message to record the successful deletion. If it does not exist, then the date is added to
+`missingShows`.
+
+*Step 4* +
+`DeleteCommand` checks if the specified show exists on the verified dates using
+`Model#containsKey(LocalDate showLocalDate)` and `Model#hasSameName(LocalDate showLocalDate, LocalDate showName)`.
+
+The activity diagram below illustrates the logic process of the `DeleteCommand`:
+
+image::images/devguide/DG_Delete_ActivityDiagram.png[width ="300", align="center"]
+
+The following code snippet highlights the key logic of the `DeleteCommand`.
+
+image::images/devguide/DG_Delete_CodeBlock.png[align="center"]
+
+==== Design Considerations
+
+* Aspect: How delete works
+
+* *Alternative 1*: Splitting the delete feature into `delete-one` and `delete-all`. I.e. Splitting the delete feature
+into the 2 abilities: to delete 1 specific show, and to delete all shows of the specified show name. +
+This design would use 2 separate commands, `DeleteOneCommand` and `DeleteAllCommand`. The user would use
+`delete-one SHOW_NAME|SHOW_DATE`, and `delete SHOW_NAME` as the input format for the function to delete one
+show, and to delete all the specified shows respectively.
+
+** Pros: `delete-all` would enable the user to delete all the shows of specified show name with less hassle, without
+having to input all the dates.
+** Cons: Having 2 delete functions is less intuitive and may confuse new users, making them more prone to deleting
+multiple shows unintentionally.
+
+* *Alternative 2 (Current Implementation)*: One common delete feature that can delete multiple shows at once.
+
+** Pros: This method is intuitive and flexible, as it enables users to delete multiple shows with a single command.
+This makes deletions faster, and users will save time by typing less. This is important since this is a command-line
+based application.
+** Cons: If the user wishes to delete all shows of a specific name, the user has to input all of the dates which the
+show is scheduled for. This can in turn slow down the user instead. However, the instances of this happening is less
+likely.
+
+=== Command Aliasing
+Enabling users to set up aliases for the commands.
+
+==== Implementation
+Command aliasing is executed primarily by the `Parser`, which is stored under the `util` package. Some features related
+to command aliasing such as adding, removing, or listing of aliases is executed via commands. The aliases for commands
+are stored in the `commandAliasMap` within the Parser object. These pairs are also saved within a text file,
+`ParserPreferences.txt`, so that the user can continue to use the aliases after the application is restarted. The
+location of `ParserPreferences.txt` is decided in `Optix.java`. By default, it is located in `src/main/data`.
+
+The following operations are operations related to command aliasing:
+
+* Parser#addAlias(NEW_ALIAS, COMMAND) -- adds a alias-command pair to the commandAliasMap.
+* Parser#removeAlias(NEW_ALIAS, COMMAND) -- removes a alias-command pair from the commandAliasMAp.
+* Parser#loadPreferences() -- loads all alias-command pairs from `ParserPreferences.txt`. `ParserPreferences.txt` is the
+file where all the alias-command pairs are saved.
+* Parser#resetPreferences() -- clears all alias-command pairs from `commandAliasMap` and adds in the default
+alias-command pairs. This method does not access `ParserPreferences.txt`.
+
+Given below is an example usage scenario of where command aliasing is used.
+
+*Step 1* +
+The user starts the application. A parser object will be initialised, and `loadPreferences()` will be called as part of
+the initialisation process for it. If `ParserPreferences.txt` does not exist, it is created, and `resetPreferences()` is
+called. `CommandAliasMap` is populated, and these pairs are also written to `ParserPreferences.txt`.
+
+*Step 2* +
+The user adds a new alias. An example input would be `add-alias q|add`. This command would associate the character
+q with the command `add`. This calls the `AddAliasCommand`, which verifies that ‘q’ and “add” are valid aliases and
+commands respectively (more on valid aliases and commands below). After the alias-command pair is verified, the pair
+is put in the `commandAliasList`, and a success message is presented.
+
+*Step 3* +
+The user uses the alias by replacing “add” with “q” for any input. An example would be to use
+`q The Lion King|20|31/12/2019` instead of `add The Lion King|20|31/12/2019`.
+
+*Step 4* +
+The user decides that setting this alias was a mistake, and decides to remove it with the input `remove-alias q|add`.
+This calls the `RemoveAliasCommand()`. The command verifies that this pair exists, and can be removed. It then
+removes this pair from the `commandAliasList`.
+
+*Step 5* +
+The user decides to list all aliases with the input `list-alias`. This calls the `ListAliasCommand`, which prints
+all alias-command pairs in the `commandAliasList`.
+
+*Step 6* +
+The user decides that he has too many self-added aliases which he no longer wants. He uses the reset alias function
+to reset his aliases to the default settings, with the input `reset-alias`. This calls the `ResetAliasCommand`, which
+clears all existing aliases, and adds in the default aliases, which are defined in the `resetPreferences()` method in
+the `Parser` class.
+
+image::images/devguide/DG_Alias_CodeBlock.png[align="center"]
 
 
 [appendix]
