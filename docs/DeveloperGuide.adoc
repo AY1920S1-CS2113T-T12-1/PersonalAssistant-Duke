@@ -766,15 +766,25 @@ Use case resumes from step 2.
 [appendix]
 == Functional Requirements
 
-* Command to add shows
+* Command to add shows.
 * Command to Sell Tickets to audience.
 * Command to delete a particular show. 
 * Command to delete multiple shows (by showName).
-* Command to list all shows before date of showing. (Query for booking and check seat availability)
-* Command to list specific show to get date of showing (To check when the show is happening and check seat availability)
+* Command to list all shows before date of showing.
+(Query for booking and check seat availability)
+* Command to list specific show to get date of showing
+(To check when the show is happening and check seat availability).
 * Command to refund ticket for the show.
-* Tutorial/ Help function
-* Command to postpone particular show to an empty slot
+* Command to view seating arrangement for a specific show.
+* Command to reassign seat in case customer was assigned wrongly.
+* Tutorial/ Help function.
+* Command to view profits for a particular show.
+* Command to view profits for a particular month.
+* Command to postpone particular show to an empty slot.
+* Command to add alias for a command.
+* Command to remove alias for a command.
+* Command to reset alias back to default settings.
+* Command to list the alias for each command.
 
 [appendix]
 == Non-functional Requirements
