@@ -35,7 +35,6 @@ import java.util.Map;
  * Parse input arguments and create a new Command Object.
  */
 public class Parser {
-
     public static HashMap<String, String> commandAliasMap = new HashMap<>();
     private File preferenceFilePath; // the directory where the file is stored
     private File preferenceFile; // the path to the file itself
@@ -87,11 +86,10 @@ public class Parser {
             case "list-alias":
                 return new ListAliasCommand();
             default:
-                return new TabCommand(splitStr[0]);
+                return new TabCommand(commandName);
             }
         } else if (splitStr.length == 2) {
 
-            // There will definitely be exceptions thrown here. Need to stress test and then categorise
             switch (commandName) {
             case "edit":
                 return new EditCommand(splitStr[1]);
@@ -128,8 +126,6 @@ public class Parser {
     }
 
     //@@ OungKennedy
-
-
     /**
      * Adds a new alias-command pair to commandAliasMap.
      *
@@ -207,7 +203,7 @@ public class Parser {
         commandAliasMap.put("shw", "show");
         commandAliasMap.put("fin", "finance");
         commandAliasMap.put("b", "bye");
-        commandAliasMap.put("l", "list");   
+        commandAliasMap.put("l", "list");
         commandAliasMap.put("h", "help");
         commandAliasMap.put("e", "edit");
         commandAliasMap.put("s", "sell");
@@ -216,7 +212,6 @@ public class Parser {
         commandAliasMap.put("a", "add");
         commandAliasMap.put("d", "delete");
     }
-
 
     /**
      * Parse the remaining user input to its respective parameters for ListDateCommand or ListShowCommand.
@@ -238,6 +233,4 @@ public class Parser {
 
         return new ListShowCommand(details);
     }
-
-
 }
