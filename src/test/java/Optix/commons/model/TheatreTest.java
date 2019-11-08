@@ -37,6 +37,7 @@ class TheatreTest {
                         + "Tier 1 Seats: " + theatre.getTierOneSeats() + "\n"
                         + "Tier 2 Seats: " + theatre.getTierTwoSeats() + "\n"
                         + "Tier 3 Seats: " + theatre.getTierThreeSeats() + "\n";
+        System.out.println(theatre.getSeatingArrangement());
         assertEquals(expected, theatre.getSeatingArrangement());
     }
 

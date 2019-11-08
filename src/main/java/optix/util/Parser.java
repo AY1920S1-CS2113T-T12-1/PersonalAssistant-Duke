@@ -86,6 +86,7 @@ public class Parser {
                 return new ResetAliasCommand(this.preferenceFilePath);
             case "list-alias":
                 return new ListAliasCommand();
+            case "help":
             case "archive":
             case "show":
             case "finance":
