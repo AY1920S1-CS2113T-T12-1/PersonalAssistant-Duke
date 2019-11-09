@@ -85,6 +85,10 @@ public class Parser {
                 return new ResetAliasCommand(this.preferenceFilePath);
             case "list-alias":
                 return new ListAliasCommand();
+            case "archive":
+            case "show":
+            case "finance":
+                return new TabCommand(commandName);
             default:
                 return new TabCommand(commandName);
             }
@@ -203,7 +207,7 @@ public class Parser {
         commandAliasMap.put("shw", "show");
         commandAliasMap.put("fin", "finance");
         commandAliasMap.put("b", "bye");
-        commandAliasMap.put("l", "list");
+        commandAliasMap.put("l", "list");   
         commandAliasMap.put("h", "help");
         commandAliasMap.put("e", "edit");
         commandAliasMap.put("s", "sell");
