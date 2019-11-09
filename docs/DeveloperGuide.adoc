@@ -203,10 +203,10 @@ API: `Link for Command folder`
 All commands found in commands package extends `Command`. The `Command` for the different data structures
 are stored under different subpackages. Currently the commands package consists of 4 different subpackages.
 
-* *shows*: Commands that deals with the management fo shows for the theatre.
-* *seats*: Commands that deals with the management of seats within the theatre.
-* *finance*: Commands that manages finances within the theatre.
-* *parser*: Commands that deals with command aliases.
+* *shows*: Commands that deal with the management fo shows for the theatre.
+* *seats*: Commands that deal with the management of seats within the theatre.
+* *finance*: Commands that manage finances within the theatre.
+* *parser*: Commands that deal with command aliases.
 
 
 == Implementation
