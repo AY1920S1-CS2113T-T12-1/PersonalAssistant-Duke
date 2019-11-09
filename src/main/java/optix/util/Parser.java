@@ -41,7 +41,8 @@ public class Parser {
     private File preferenceFile; // the path to the file itself
     // array of all possible command values
     private static String[] commandList = {"bye", "list", "help", "edit", "sell", "view",
-        "reschedule", "add", "delete", "reassign-seat", "show", "archive", "finance"};
+        "reschedule", "add", "delete", "reassign-seat", "show", "archive", "finance",
+        "view-profit", "view-monthly", "add-alias", "remove-alias", "reset-alias", "list-alias"};
 
     /**
      * Set the path to directory containing the save file for preferences.
@@ -147,13 +148,14 @@ public class Parser {
      *                        the pipe symbol is a special character- it cannot be used.
      */
     public void addAlias(String newAlias, String command) throws OptixException {
-        if (!newAlias.contains("\\|") // pipe symbol not in alias
+        if (!newAlias.contains("|") // pipe symbol not in alias
                 && Arrays.asList(commandList).contains(command) // command exists
                 && !commandAliasMap.containsKey(newAlias) // new alias is not already in use
                 && !Arrays.asList(commandList).contains(newAlias)) { // new alias is not the name of a command
             commandAliasMap.put(newAlias, command);
         } else {
-            throw new OptixException("Alias is already in use, or command does not exist.\n");
+            throw new OptixException("Invalid alias-command input.\n Alias cannot be a command keyword.\n" +
+                    "Alias cannot already be in use.");
         }
     }
 
@@ -220,6 +222,11 @@ public class Parser {
         commandAliasMap.put("rd", "reschedule");
         commandAliasMap.put("a", "add");
         commandAliasMap.put("d", "delete");
+        commandAliasMap.put("vp", "view-profit");
+        commandAliasMap.put("vm", "view-monthly");
+        commandAliasMap.put("a-a", "add-alias");
+        commandAliasMap.put("rm-a", "remove-alias");
+        commandAliasMap.put("rst-a", "reset-alias");
     }
 
 

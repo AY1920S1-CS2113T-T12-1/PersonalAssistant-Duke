@@ -1,0 +1,13 @@
+a|add
+b|bye
+shw|show
+d|delete
+e|edit
+h|help
+fin|finance
+l|list
+rd|reschedule
+re|reassign-seat
+arc|archive
+s|sell
+v|view
