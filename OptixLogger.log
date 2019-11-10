@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T04:03:08.839590Z</date>
+  <millis>1573358588839</millis>
+  <nanos>590000</nanos>
+  <sequence>1</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>12</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T04:03:08.844587900Z</date>
+  <millis>1573358588844</millis>
+  <nanos>587900</nanos>
+  <sequence>2</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>12</thread>
+  <message>Parser initialization complete.</message>
+</record>

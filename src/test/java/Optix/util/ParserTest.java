@@ -12,7 +12,13 @@ import optix.commands.parser.ResetAliasCommand;
 import optix.commands.seats.ReassignSeatCommand;
 import optix.commands.seats.SellSeatCommand;
 import optix.commands.seats.ViewSeatsCommand;
-import optix.commands.shows.*;
+import optix.commands.shows.EditCommand;
+import optix.commands.shows.ListCommand;
+import optix.commands.shows.ListDateCommand;
+import optix.commands.shows.RescheduleCommand;
+import optix.commands.shows.ListShowCommand;
+import optix.commands.shows.DeleteCommand;
+import optix.commands.shows.AddCommand;
 import optix.exceptions.OptixException;
 import optix.exceptions.OptixInvalidCommandException;
 import org.junit.jupiter.api.BeforeEach;
@@ -21,7 +27,9 @@ import org.junit.jupiter.api.Test;
 
 import java.io.File;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.fail;
 
 class ParserTest {
     private static File currentDir = new File(System.getProperty("user.dir"));
