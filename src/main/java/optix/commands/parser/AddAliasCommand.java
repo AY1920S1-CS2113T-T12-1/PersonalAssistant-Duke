@@ -21,13 +21,16 @@ public class AddAliasCommand extends Command {
     private File preferenceFilePath;
     private static final Logger OPTIXLOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 
+    private static final String MESSAGE_NOT_ACCEPTED = "☹ OOPS!!! Spaces are not allowed for alias command.\n"
+                                                       + "Please try again";
+
     /**
      * Command to add a new alias to the command alias map.
      *
      * @param details String containing "NEW_ALIAS|COMMAND"
      */
     public AddAliasCommand(String details, File filePath) {
-        this.details = details;
+        this.details = details.trim();
         this.preferenceFilePath = filePath;
         initLogger();
     }
@@ -58,6 +61,10 @@ public class AddAliasCommand extends Command {
         String message;
         Parser dummyParser = new Parser(preferenceFilePath);         // create parser object
         try {
+            String[] aliasArray = newAlias.split(" ");
+            if (aliasArray.length > 1 || aliasArray[0].equals("")) {
+                throw new OptixException(MESSAGE_NOT_ACCEPTED);
+            }
             // adds the alias-command pair to commandAliasMap, and saves it to file
             dummyParser.addAlias(newAlias, command);
             dummyParser.savePreferences();

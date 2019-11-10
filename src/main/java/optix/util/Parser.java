@@ -40,7 +40,6 @@ import java.util.logging.Logger;
  * Parse input arguments and create a new Command Object.
  */
 public class Parser {
-
     public static HashMap<String, String> commandAliasMap = new HashMap<>();
     private File preferenceFilePath; // the directory where the file is stored
     private File preferenceFile; // the path to the file itself
@@ -108,7 +107,6 @@ public class Parser {
             }
         } else if (splitStr.length == 2) {
 
-            // There will definitely be exceptions thrown here. Need to stress test and then categorise
             switch (commandName) {
             case "edit":
                 return new EditCommand(splitStr[1]);
@@ -139,7 +137,6 @@ public class Parser {
             default:
                 OPTIXLOGGER.log(Level.WARNING, "Error with command: " + commandName);
                 throw new OptixInvalidCommandException();
-
             }
         } else {
             OPTIXLOGGER.log(Level.WARNING, "Error with command: " + fullCommand);
@@ -148,8 +145,6 @@ public class Parser {
     }
 
     //@@ OungKennedy
-
-
     /**
      * Adds a new alias-command pair to commandAliasMap.
      *
@@ -211,7 +206,6 @@ public class Parser {
     }
 
     //@@ OungKennedy
-
     /**
      * Writes the contents of commandAliasMap to the file in preferenceFilePath.
      */
@@ -227,7 +221,6 @@ public class Parser {
     }
 
     //@@ OungKennedy
-
     /**
      * Method to reset preferences to default values.op
      */
@@ -254,7 +247,6 @@ public class Parser {
         commandAliasMap.put("rst-a", "reset-alias");
         OPTIXLOGGER.log(Level.INFO, "preferences saved");
     }
-
 
     /**
      * Parse the remaining user input to its respective parameters for ListDateCommand or ListShowCommand.
