@@ -2,10 +2,10 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2019-11-10T10:00:30.126270800Z</date>
-  <millis>1573380030126</millis>
-  <nanos>270800</nanos>
-  <sequence>326</sequence>
+  <date>2019-11-10T11:13:01.631690900Z</date>
+  <millis>1573384381631</millis>
+  <nanos>690900</nanos>
+  <sequence>120</sequence>
   <logger>global</logger>
   <level>INFO</level>
   <class>optix.util.Parser</class>
@@ -14,10 +14,10 @@
   <message>Parser initialization begin</message>
 </record>
 <record>
-  <date>2019-11-10T10:00:30.127270200Z</date>
-  <millis>1573380030127</millis>
-  <nanos>270200</nanos>
-  <sequence>327</sequence>
+  <date>2019-11-10T11:13:01.632690Z</date>
+  <millis>1573384381632</millis>
+  <nanos>690000</nanos>
+  <sequence>121</sequence>
   <logger>global</logger>
   <level>INFO</level>
   <class>optix.util.Parser</class>
@@ -26,10 +26,10 @@
   <message>Parser initialization complete.</message>
 </record>
 <record>
-  <date>2019-11-10T10:00:30.127270200Z</date>
-  <millis>1573380030127</millis>
-  <nanos>270200</nanos>
-  <sequence>328</sequence>
+  <date>2019-11-10T11:13:01.632690Z</date>
+  <millis>1573384381632</millis>
+  <nanos>690000</nanos>
+  <sequence>122</sequence>
   <logger>global</logger>
   <level>INFO</level>
   <class>optix.util.Parser</class>
@@ -38,10 +38,10 @@
   <message>Saving preferences</message>
 </record>
 <record>
-  <date>2019-11-10T10:00:30.128271Z</date>
-  <millis>1573380030128</millis>
-  <nanos>271000</nanos>
-  <sequence>329</sequence>
+  <date>2019-11-10T11:13:01.633689800Z</date>
+  <millis>1573384381633</millis>
+  <nanos>689800</nanos>
+  <sequence>123</sequence>
   <logger>global</logger>
   <level>INFO</level>
   <class>optix.util.Parser</class>
@@ -50,10 +50,10 @@
   <message>preferences saved</message>
 </record>
 <record>
-  <date>2019-11-10T10:00:30.128271Z</date>
-  <millis>1573380030128</millis>
-  <nanos>271000</nanos>
-  <sequence>330</sequence>
+  <date>2019-11-10T11:13:01.634689800Z</date>
+  <millis>1573384381634</millis>
+  <nanos>689800</nanos>
+  <sequence>124</sequence>
   <logger>global</logger>
   <level>INFO</level>
   <class>optix.util.Parser</class>

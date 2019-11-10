@@ -2,10 +2,10 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2019-11-10T10:00:30.443091500Z</date>
-  <millis>1573380030443</millis>
-  <nanos>91500</nanos>
-  <sequence>530</sequence>
+  <date>2019-11-10T11:13:01.965499500Z</date>
+  <millis>1573384381965</millis>
+  <nanos>499500</nanos>
+  <sequence>324</sequence>
   <logger>global</logger>
   <level>INFO</level>
   <class>optix.util.Parser</class>
@@ -14,10 +14,10 @@
   <message>Parser initialization begin</message>
 </record>
 <record>
-  <date>2019-11-10T10:00:30.443091500Z</date>
-  <millis>1573380030443</millis>
-  <nanos>91500</nanos>
-  <sequence>531</sequence>
+  <date>2019-11-10T11:13:01.965499500Z</date>
+  <millis>1573384381965</millis>
+  <nanos>499500</nanos>
+  <sequence>325</sequence>
   <logger>global</logger>
   <level>INFO</level>
   <class>optix.util.Parser</class>
@@ -26,10 +26,10 @@
   <message>Parser initialization complete.</message>
 </record>
 <record>
-  <date>2019-11-10T10:00:30.443091500Z</date>
-  <millis>1573380030443</millis>
-  <nanos>91500</nanos>
-  <sequence>532</sequence>
+  <date>2019-11-10T11:13:01.965499500Z</date>
+  <millis>1573384381965</millis>
+  <nanos>499500</nanos>
+  <sequence>326</sequence>
   <logger>global</logger>
   <level>INFO</level>
   <class>optix.util.Parser</class>
@@ -38,10 +38,10 @@
   <message>Saving preferences</message>
 </record>
 <record>
-  <date>2019-11-10T10:00:30.443091500Z</date>
-  <millis>1573380030443</millis>
-  <nanos>91500</nanos>
-  <sequence>533</sequence>
+  <date>2019-11-10T11:13:01.965499500Z</date>
+  <millis>1573384381965</millis>
+  <nanos>499500</nanos>
+  <sequence>327</sequence>
   <logger>global</logger>
   <level>INFO</level>
   <class>optix.util.Parser</class>
@@ -50,10 +50,10 @@
   <message>preferences saved</message>
 </record>
 <record>
-  <date>2019-11-10T10:00:30.444090500Z</date>
-  <millis>1573380030444</millis>
-  <nanos>90500</nanos>
-  <sequence>534</sequence>
+  <date>2019-11-10T11:13:01.966499400Z</date>
+  <millis>1573384381966</millis>
+  <nanos>499400</nanos>
+  <sequence>328</sequence>
   <logger>global</logger>
   <level>INFO</level>
   <class>optix.util.Parser</class>
@@ -62,10 +62,10 @@
   <message>adding new alias</message>
 </record>
 <record>
-  <date>2019-11-10T10:00:30.444090500Z</date>
-  <millis>1573380030444</millis>
-  <nanos>90500</nanos>
-  <sequence>535</sequence>
+  <date>2019-11-10T11:13:01.966499400Z</date>
+  <millis>1573384381966</millis>
+  <nanos>499400</nanos>
+  <sequence>329</sequence>
   <logger>global</logger>
   <level>INFO</level>
   <class>optix.util.Parser</class>
@@ -74,10 +74,10 @@
   <message>error adding alias.</message>
 </record>
 <record>
-  <date>2019-11-10T10:00:30.454083900Z</date>
-  <millis>1573380030454</millis>
-  <nanos>83900</nanos>
-  <sequence>537</sequence>
+  <date>2019-11-10T11:13:01.969498Z</date>
+  <millis>1573384381969</millis>
+  <nanos>498000</nanos>
+  <sequence>331</sequence>
   <logger>global</logger>
   <level>INFO</level>
   <class>optix.util.Parser</class>
@@ -86,10 +86,10 @@
   <message>Parser initialization begin</message>
 </record>
 <record>
-  <date>2019-11-10T10:00:30.454083900Z</date>
-  <millis>1573380030454</millis>
-  <nanos>83900</nanos>
-  <sequence>538</sequence>
+  <date>2019-11-10T11:13:01.970497300Z</date>
+  <millis>1573384381970</millis>
+  <nanos>497300</nanos>
+  <sequence>332</sequence>
   <logger>global</logger>
   <level>INFO</level>
   <class>optix.util.Parser</class>
@@ -98,10 +98,10 @@
   <message>Parser initialization complete.</message>
 </record>
 <record>
-  <date>2019-11-10T10:00:30.454083900Z</date>
-  <millis>1573380030454</millis>
-  <nanos>83900</nanos>
-  <sequence>539</sequence>
+  <date>2019-11-10T11:13:01.970497300Z</date>
+  <millis>1573384381970</millis>
+  <nanos>497300</nanos>
+  <sequence>333</sequence>
   <logger>global</logger>
   <level>INFO</level>
   <class>optix.util.Parser</class>
@@ -110,10 +110,10 @@
   <message>Saving preferences</message>
 </record>
 <record>
-  <date>2019-11-10T10:00:30.454083900Z</date>
-  <millis>1573380030454</millis>
-  <nanos>83900</nanos>
-  <sequence>540</sequence>
+  <date>2019-11-10T11:13:01.970497300Z</date>
+  <millis>1573384381970</millis>
+  <nanos>497300</nanos>
+  <sequence>334</sequence>
   <logger>global</logger>
   <level>INFO</level>
   <class>optix.util.Parser</class>
@@ -122,10 +122,10 @@
   <message>preferences saved</message>
 </record>
 <record>
-  <date>2019-11-10T10:00:30.455083900Z</date>
-  <millis>1573380030455</millis>
-  <nanos>83900</nanos>
-  <sequence>541</sequence>
+  <date>2019-11-10T11:13:01.970497300Z</date>
+  <millis>1573384381970</millis>
+  <nanos>497300</nanos>
+  <sequence>335</sequence>
   <logger>global</logger>
   <level>INFO</level>
   <class>optix.util.Parser</class>
@@ -134,10 +134,10 @@
   <message>adding new alias</message>
 </record>
 <record>
-  <date>2019-11-10T10:00:30.455083900Z</date>
-  <millis>1573380030455</millis>
-  <nanos>83900</nanos>
-  <sequence>542</sequence>
+  <date>2019-11-10T11:13:01.970497300Z</date>
+  <millis>1573384381970</millis>
+  <nanos>497300</nanos>
+  <sequence>336</sequence>
   <logger>global</logger>
   <level>INFO</level>
   <class>optix.util.Parser</class>
@@ -146,10 +146,10 @@
   <message>error adding alias.</message>
 </record>
 <record>
-  <date>2019-11-10T10:00:30.465077400Z</date>
-  <millis>1573380030465</millis>
-  <nanos>77400</nanos>
-  <sequence>544</sequence>
+  <date>2019-11-10T11:13:01.976495500Z</date>
+  <millis>1573384381976</millis>
+  <nanos>495500</nanos>
+  <sequence>338</sequence>
   <logger>global</logger>
   <level>INFO</level>
   <class>optix.util.Parser</class>
@@ -158,10 +158,10 @@
   <message>Parser initialization begin</message>
 </record>
 <record>
-  <date>2019-11-10T10:00:30.465077400Z</date>
-  <millis>1573380030465</millis>
-  <nanos>77400</nanos>
-  <sequence>545</sequence>
+  <date>2019-11-10T11:13:01.976495500Z</date>
+  <millis>1573384381976</millis>
+  <nanos>495500</nanos>
+  <sequence>339</sequence>
   <logger>global</logger>
   <level>INFO</level>
   <class>optix.util.Parser</class>
@@ -170,10 +170,10 @@
   <message>Parser initialization complete.</message>
 </record>
 <record>
-  <date>2019-11-10T10:00:30.466078Z</date>
-  <millis>1573380030466</millis>
-  <nanos>78000</nanos>
-  <sequence>546</sequence>
+  <date>2019-11-10T11:13:01.977495100Z</date>
+  <millis>1573384381977</millis>
+  <nanos>495100</nanos>
+  <sequence>340</sequence>
   <logger>global</logger>
   <level>INFO</level>
   <class>optix.util.Parser</class>
@@ -182,10 +182,10 @@
   <message>Saving preferences</message>
 </record>
 <record>
-  <date>2019-11-10T10:00:30.466078Z</date>
-  <millis>1573380030466</millis>
-  <nanos>78000</nanos>
-  <sequence>547</sequence>
+  <date>2019-11-10T11:13:01.977495100Z</date>
+  <millis>1573384381977</millis>
+  <nanos>495100</nanos>
+  <sequence>341</sequence>
   <logger>global</logger>
   <level>INFO</level>
   <class>optix.util.Parser</class>
@@ -194,10 +194,10 @@
   <message>preferences saved</message>
 </record>
 <record>
-  <date>2019-11-10T10:00:30.466078Z</date>
-  <millis>1573380030466</millis>
-  <nanos>78000</nanos>
-  <sequence>548</sequence>
+  <date>2019-11-10T11:13:01.977495100Z</date>
+  <millis>1573384381977</millis>
+  <nanos>495100</nanos>
+  <sequence>342</sequence>
   <logger>global</logger>
   <level>INFO</level>
   <class>optix.util.Parser</class>
@@ -206,10 +206,10 @@
   <message>adding new alias</message>
 </record>
 <record>
-  <date>2019-11-10T10:00:30.468075900Z</date>
-  <millis>1573380030468</millis>
-  <nanos>75900</nanos>
-  <sequence>549</sequence>
+  <date>2019-11-10T11:13:01.977495100Z</date>
+  <millis>1573384381977</millis>
+  <nanos>495100</nanos>
+  <sequence>343</sequence>
   <logger>global</logger>
   <level>INFO</level>
   <class>optix.util.Parser</class>
