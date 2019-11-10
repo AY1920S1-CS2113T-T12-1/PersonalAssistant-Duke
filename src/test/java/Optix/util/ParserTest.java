@@ -31,6 +31,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;
 
+//@@author OungKennedy
 class ParserTest {
     private static File currentDir = new File(System.getProperty("user.dir"));
     private File filePath = new File(currentDir.toString() + "\\src\\test\\data\\testOptix");

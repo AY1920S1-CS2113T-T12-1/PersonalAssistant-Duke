@@ -31,7 +31,6 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-import java.util.logging.LogManager;
 import java.util.logging.FileHandler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -270,9 +269,9 @@ public class Parser {
     }
 
     private void initLogger() {
-        LogManager.getLogManager().reset();
         OPTIXLOGGER.setLevel(Level.ALL);
         try {
+            // do not append here to avoid
             FileHandler fh = new FileHandler("OptixLogger.log");
             fh.setLevel(Level.FINE);
             OPTIXLOGGER.addHandler(fh);

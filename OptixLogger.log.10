@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:30.118275100Z</date>
+  <millis>1573380030118</millis>
+  <nanos>275100</nanos>
+  <sequence>320</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.118275100Z</date>
+  <millis>1573380030118</millis>
+  <nanos>275100</nanos>
+  <sequence>321</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.119275400Z</date>
+  <millis>1573380030119</millis>
+  <nanos>275400</nanos>
+  <sequence>322</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.119275400Z</date>
+  <millis>1573380030119</millis>
+  <nanos>275400</nanos>
+  <sequence>323</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.120274Z</date>
+  <millis>1573380030120</millis>
+  <nanos>274000</nanos>
+  <sequence>324</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>parse</method>
+  <thread>1</thread>
+  <message>Parsing string: add poto|25|25/12/2020</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.126270800Z</date>
+  <millis>1573380030126</millis>
+  <nanos>270800</nanos>
+  <sequence>326</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.127270200Z</date>
+  <millis>1573380030127</millis>
+  <nanos>270200</nanos>
+  <sequence>327</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.127270200Z</date>
+  <millis>1573380030127</millis>
+  <nanos>270200</nanos>
+  <sequence>328</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.128271Z</date>
+  <millis>1573380030128</millis>
+  <nanos>271000</nanos>
+  <sequence>329</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.128271Z</date>
+  <millis>1573380030128</millis>
+  <nanos>271000</nanos>
+  <sequence>330</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>parse</method>
+  <thread>1</thread>
+  <message>Parsing string: bye</message>
+</record>
+</log>

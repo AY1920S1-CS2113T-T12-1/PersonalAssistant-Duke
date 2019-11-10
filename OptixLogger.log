@@ -2,10 +2,10 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2019-11-10T04:03:08.839590Z</date>
-  <millis>1573358588839</millis>
-  <nanos>590000</nanos>
-  <sequence>1</sequence>
+  <date>2019-11-10T09:46:23.764066700Z</date>
+  <millis>1573379183764</millis>
+  <nanos>66700</nanos>
+  <sequence>2</sequence>
   <logger>global</logger>
   <level>INFO</level>
   <class>optix.util.Parser</class>
@@ -14,10 +14,406 @@
   <message>Parser initialization begin</message>
 </record>
 <record>
-  <date>2019-11-10T04:03:08.844587900Z</date>
-  <millis>1573358588844</millis>
-  <nanos>587900</nanos>
-  <sequence>2</sequence>
+  <date>2019-11-10T09:46:23.769062900Z</date>
+  <millis>1573379183769</millis>
+  <nanos>62900</nanos>
+  <sequence>3</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>loadPreferences</method>
+  <thread>12</thread>
+  <message>loading preferences</message>
+</record>
+<record>
+  <date>2019-11-10T09:46:23.770062Z</date>
+  <millis>1573379183770</millis>
+  <nanos>62000</nanos>
+  <sequence>4</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>loadPreferences</method>
+  <thread>12</thread>
+  <message>preference file found.</message>
+</record>
+<record>
+  <date>2019-11-10T09:46:23.771061900Z</date>
+  <millis>1573379183771</millis>
+  <nanos>61900</nanos>
+  <sequence>5</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T09:46:23.771061900Z</date>
+  <millis>1573379183771</millis>
+  <nanos>61900</nanos>
+  <sequence>6</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T09:46:23.772060800Z</date>
+  <millis>1573379183772</millis>
+  <nanos>60800</nanos>
+  <sequence>7</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T09:46:23.772060800Z</date>
+  <millis>1573379183772</millis>
+  <nanos>60800</nanos>
+  <sequence>8</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T09:46:23.773061100Z</date>
+  <millis>1573379183773</millis>
+  <nanos>61100</nanos>
+  <sequence>9</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T09:46:23.773061100Z</date>
+  <millis>1573379183773</millis>
+  <nanos>61100</nanos>
+  <sequence>10</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T09:46:23.773061100Z</date>
+  <millis>1573379183773</millis>
+  <nanos>61100</nanos>
+  <sequence>11</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T09:46:23.774060300Z</date>
+  <millis>1573379183774</millis>
+  <nanos>60300</nanos>
+  <sequence>12</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T09:46:23.774060300Z</date>
+  <millis>1573379183774</millis>
+  <nanos>60300</nanos>
+  <sequence>13</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T09:46:23.775059300Z</date>
+  <millis>1573379183775</millis>
+  <nanos>59300</nanos>
+  <sequence>14</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T09:46:23.775059300Z</date>
+  <millis>1573379183775</millis>
+  <nanos>59300</nanos>
+  <sequence>15</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T09:46:23.776059Z</date>
+  <millis>1573379183776</millis>
+  <nanos>59000</nanos>
+  <sequence>16</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T09:46:23.776059Z</date>
+  <millis>1573379183776</millis>
+  <nanos>59000</nanos>
+  <sequence>17</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T09:46:23.776059Z</date>
+  <millis>1573379183776</millis>
+  <nanos>59000</nanos>
+  <sequence>18</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T09:46:23.777058300Z</date>
+  <millis>1573379183777</millis>
+  <nanos>58300</nanos>
+  <sequence>19</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T09:46:23.777058300Z</date>
+  <millis>1573379183777</millis>
+  <nanos>58300</nanos>
+  <sequence>20</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T09:46:23.777058300Z</date>
+  <millis>1573379183777</millis>
+  <nanos>58300</nanos>
+  <sequence>21</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T09:46:23.778057900Z</date>
+  <millis>1573379183778</millis>
+  <nanos>57900</nanos>
+  <sequence>22</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T09:46:23.778057900Z</date>
+  <millis>1573379183778</millis>
+  <nanos>57900</nanos>
+  <sequence>23</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T09:46:23.779056900Z</date>
+  <millis>1573379183779</millis>
+  <nanos>56900</nanos>
+  <sequence>24</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T09:46:23.779056900Z</date>
+  <millis>1573379183779</millis>
+  <nanos>56900</nanos>
+  <sequence>25</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T09:46:23.780056900Z</date>
+  <millis>1573379183780</millis>
+  <nanos>56900</nanos>
+  <sequence>26</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T09:46:23.780056900Z</date>
+  <millis>1573379183780</millis>
+  <nanos>56900</nanos>
+  <sequence>27</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T09:46:23.781056600Z</date>
+  <millis>1573379183781</millis>
+  <nanos>56600</nanos>
+  <sequence>28</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T09:46:23.781056600Z</date>
+  <millis>1573379183781</millis>
+  <nanos>56600</nanos>
+  <sequence>29</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T09:46:23.782056200Z</date>
+  <millis>1573379183782</millis>
+  <nanos>56200</nanos>
+  <sequence>30</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T09:46:23.782056200Z</date>
+  <millis>1573379183782</millis>
+  <nanos>56200</nanos>
+  <sequence>31</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T09:46:23.782056200Z</date>
+  <millis>1573379183782</millis>
+  <nanos>56200</nanos>
+  <sequence>32</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T09:46:23.783055Z</date>
+  <millis>1573379183783</millis>
+  <nanos>55000</nanos>
+  <sequence>33</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T09:46:23.783055Z</date>
+  <millis>1573379183783</millis>
+  <nanos>55000</nanos>
+  <sequence>34</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T09:46:23.784054200Z</date>
+  <millis>1573379183784</millis>
+  <nanos>54200</nanos>
+  <sequence>35</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>loadPreferences</method>
+  <thread>12</thread>
+  <message>load preferences completed</message>
+</record>
+<record>
+  <date>2019-11-10T09:46:23.784054200Z</date>
+  <millis>1573379183784</millis>
+  <nanos>54200</nanos>
+  <sequence>36</sequence>
   <logger>global</logger>
   <level>INFO</level>
   <class>optix.util.Parser</class>
@@ -25,3 +421,6260 @@
   <thread>12</thread>
   <message>Parser initialization complete.</message>
 </record>
+<record>
+  <date>2019-11-10T09:46:34.890709800Z</date>
+  <millis>1573379194890</millis>
+  <nanos>709800</nanos>
+  <sequence>58</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>parse</method>
+  <thread>16</thread>
+  <message>Parsing string: list-alias</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T09:46:34.898179600Z</date>
+  <millis>1573379194898</millis>
+  <nanos>179600</nanos>
+  <sequence>60</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.parser.ListAliasCommand</class>
+  <method>execute</method>
+  <thread>16</thread>
+  <message>executing command</message>
+</record>
+<record>
+  <date>2019-11-10T09:46:40.791380800Z</date>
+  <millis>1573379200791</millis>
+  <nanos>380800</nanos>
+  <sequence>63</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>parse</method>
+  <thread>16</thread>
+  <message>Parsing string: add-alias a|show</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T09:46:40.795384600Z</date>
+  <millis>1573379200795</millis>
+  <nanos>384600</nanos>
+  <sequence>66</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>16</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T09:46:40.796385600Z</date>
+  <millis>1573379200796</millis>
+  <nanos>385600</nanos>
+  <sequence>67</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>16</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T09:46:40.796385600Z</date>
+  <millis>1573379200796</millis>
+  <nanos>385600</nanos>
+  <sequence>68</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>16</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T09:46:40.797384700Z</date>
+  <millis>1573379200797</millis>
+  <nanos>384700</nanos>
+  <sequence>69</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>16</thread>
+  <message>error adding alias.</message>
+</record>
+<record>
+  <date>2019-11-10T09:46:40.797384700Z</date>
+  <millis>1573379200797</millis>
+  <nanos>384700</nanos>
+  <sequence>70</sequence>
+  <logger>global</logger>
+  <level>WARNING</level>
+  <class>optix.commands.parser.AddAliasCommand</class>
+  <method>execute</method>
+  <thread>16</thread>
+  <message>error adding or saving alias. Alias:a Command:show</message>
+</record>
+<record>
+  <date>2019-11-10T09:46:44.511185Z</date>
+  <millis>1573379204511</millis>
+  <nanos>185000</nanos>
+  <sequence>73</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>parse</method>
+  <thread>16</thread>
+  <message>Parsing string: b</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T09:46:44.515188400Z</date>
+  <millis>1573379204515</millis>
+  <nanos>188400</nanos>
+  <sequence>75</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.ByeCommand</class>
+  <method>execute</method>
+  <thread>16</thread>
+  <message>executing command</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T09:47:37.394890400Z</date>
+  <millis>1573379257394</millis>
+  <nanos>890400</nanos>
+  <sequence>2</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>12</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T09:47:37.399887300Z</date>
+  <millis>1573379257399</millis>
+  <nanos>887300</nanos>
+  <sequence>3</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>loadPreferences</method>
+  <thread>12</thread>
+  <message>loading preferences</message>
+</record>
+<record>
+  <date>2019-11-10T09:47:37.399887300Z</date>
+  <millis>1573379257399</millis>
+  <nanos>887300</nanos>
+  <sequence>4</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>loadPreferences</method>
+  <thread>12</thread>
+  <message>preference file found.</message>
+</record>
+<record>
+  <date>2019-11-10T09:47:37.400884600Z</date>
+  <millis>1573379257400</millis>
+  <nanos>884600</nanos>
+  <sequence>5</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T09:47:37.401885800Z</date>
+  <millis>1573379257401</millis>
+  <nanos>885800</nanos>
+  <sequence>6</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T09:47:37.401885800Z</date>
+  <millis>1573379257401</millis>
+  <nanos>885800</nanos>
+  <sequence>7</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T09:47:37.401885800Z</date>
+  <millis>1573379257401</millis>
+  <nanos>885800</nanos>
+  <sequence>8</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T09:47:37.401885800Z</date>
+  <millis>1573379257401</millis>
+  <nanos>885800</nanos>
+  <sequence>9</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T09:47:37.402886300Z</date>
+  <millis>1573379257402</millis>
+  <nanos>886300</nanos>
+  <sequence>10</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T09:47:37.402886300Z</date>
+  <millis>1573379257402</millis>
+  <nanos>886300</nanos>
+  <sequence>11</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T09:47:37.403885900Z</date>
+  <millis>1573379257403</millis>
+  <nanos>885900</nanos>
+  <sequence>12</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T09:47:37.403885900Z</date>
+  <millis>1573379257403</millis>
+  <nanos>885900</nanos>
+  <sequence>13</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T09:47:37.403885900Z</date>
+  <millis>1573379257403</millis>
+  <nanos>885900</nanos>
+  <sequence>14</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T09:47:37.404885200Z</date>
+  <millis>1573379257404</millis>
+  <nanos>885200</nanos>
+  <sequence>15</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T09:47:37.404885200Z</date>
+  <millis>1573379257404</millis>
+  <nanos>885200</nanos>
+  <sequence>16</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T09:47:37.404885200Z</date>
+  <millis>1573379257404</millis>
+  <nanos>885200</nanos>
+  <sequence>17</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T09:47:37.405883300Z</date>
+  <millis>1573379257405</millis>
+  <nanos>883300</nanos>
+  <sequence>18</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T09:47:37.405883300Z</date>
+  <millis>1573379257405</millis>
+  <nanos>883300</nanos>
+  <sequence>19</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T09:47:37.405883300Z</date>
+  <millis>1573379257405</millis>
+  <nanos>883300</nanos>
+  <sequence>20</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T09:47:37.406882200Z</date>
+  <millis>1573379257406</millis>
+  <nanos>882200</nanos>
+  <sequence>21</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T09:47:37.406882200Z</date>
+  <millis>1573379257406</millis>
+  <nanos>882200</nanos>
+  <sequence>22</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T09:47:37.406882200Z</date>
+  <millis>1573379257406</millis>
+  <nanos>882200</nanos>
+  <sequence>23</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T09:47:37.407881800Z</date>
+  <millis>1573379257407</millis>
+  <nanos>881800</nanos>
+  <sequence>24</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T09:47:37.407881800Z</date>
+  <millis>1573379257407</millis>
+  <nanos>881800</nanos>
+  <sequence>25</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T09:47:37.408881400Z</date>
+  <millis>1573379257408</millis>
+  <nanos>881400</nanos>
+  <sequence>26</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T09:47:37.408881400Z</date>
+  <millis>1573379257408</millis>
+  <nanos>881400</nanos>
+  <sequence>27</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T09:47:37.408881400Z</date>
+  <millis>1573379257408</millis>
+  <nanos>881400</nanos>
+  <sequence>28</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T09:47:37.409880800Z</date>
+  <millis>1573379257409</millis>
+  <nanos>880800</nanos>
+  <sequence>29</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T09:47:37.409880800Z</date>
+  <millis>1573379257409</millis>
+  <nanos>880800</nanos>
+  <sequence>30</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T09:47:37.409880800Z</date>
+  <millis>1573379257409</millis>
+  <nanos>880800</nanos>
+  <sequence>31</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T09:47:37.410883700Z</date>
+  <millis>1573379257410</millis>
+  <nanos>883700</nanos>
+  <sequence>32</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T09:47:37.410883700Z</date>
+  <millis>1573379257410</millis>
+  <nanos>883700</nanos>
+  <sequence>33</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T09:47:37.411882900Z</date>
+  <millis>1573379257411</millis>
+  <nanos>882900</nanos>
+  <sequence>34</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>12</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T09:47:37.411882900Z</date>
+  <millis>1573379257411</millis>
+  <nanos>882900</nanos>
+  <sequence>35</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>loadPreferences</method>
+  <thread>12</thread>
+  <message>load preferences completed</message>
+</record>
+<record>
+  <date>2019-11-10T09:47:37.411882900Z</date>
+  <millis>1573379257411</millis>
+  <nanos>882900</nanos>
+  <sequence>36</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>12</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T09:47:43.876120600Z</date>
+  <millis>1573379263876</millis>
+  <nanos>120600</nanos>
+  <sequence>58</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>parse</method>
+  <thread>16</thread>
+  <message>Parsing string: try for second time</message>
+</record>
+<record>
+  <date>2019-11-10T09:47:43.877923900Z</date>
+  <millis>1573379263877</millis>
+  <nanos>923900</nanos>
+  <sequence>59</sequence>
+  <logger>global</logger>
+  <level>WARNING</level>
+  <class>optix.util.Parser</class>
+  <method>parse</method>
+  <thread>16</thread>
+  <message>Error with command: try</message>
+</record>
+<record>
+  <date>2019-11-10T09:47:44.652331900Z</date>
+  <millis>1573379264652</millis>
+  <nanos>331900</nanos>
+  <sequence>62</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>parse</method>
+  <thread>16</thread>
+  <message>Parsing string: b</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T09:47:44.658334700Z</date>
+  <millis>1573379264658</millis>
+  <nanos>334700</nanos>
+  <sequence>64</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.ByeCommand</class>
+  <method>execute</method>
+  <thread>16</thread>
+  <message>executing command</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:28.400257300Z</date>
+  <millis>1573380028400</millis>
+  <nanos>257300</nanos>
+  <sequence>1</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>addShow</method>
+  <thread>1</thread>
+  <message>adding show: Test Show on 2030-05-05at the base price of 5.0</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:28.476213600Z</date>
+  <millis>1573380028476</millis>
+  <nanos>213600</nanos>
+  <sequence>4</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>addShow</method>
+  <thread>1</thread>
+  <message>adding show: Test Show 1 on 2020-05-05at the base price of 20.0</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:28.492206Z</date>
+  <millis>1573380028492</millis>
+  <nanos>206000</nanos>
+  <sequence>5</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>editShowName</method>
+  <thread>1</thread>
+  <message>editing show: Test Show 3 scheduled on 2020-05-05</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:28.573158100Z</date>
+  <millis>1573380028573</millis>
+  <nanos>158100</nanos>
+  <sequence>10</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>addShow</method>
+  <thread>1</thread>
+  <message>adding show: Test Show on 2030-05-05at the base price of 5.0</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:28.579154200Z</date>
+  <millis>1573380028579</millis>
+  <nanos>154200</nanos>
+  <sequence>12</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.seats.ViewSeatsCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:28.648115400Z</date>
+  <millis>1573380028648</millis>
+  <nanos>115400</nanos>
+  <sequence>16</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.seats.ViewSeatsCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:28.649114Z</date>
+  <millis>1573380028649</millis>
+  <nanos>114000</nanos>
+  <sequence>17</sequence>
+  <logger>global</logger>
+  <level>WARNING</level>
+  <class>optix.commands.seats.ViewSeatsCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>Show not found: Test</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:28.725071900Z</date>
+  <millis>1573380028725</millis>
+  <nanos>71900</nanos>
+  <sequence>21</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.seats.ViewSeatsCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:28.727071100Z</date>
+  <millis>1573380028727</millis>
+  <nanos>71100</nanos>
+  <sequence>22</sequence>
+  <logger>global</logger>
+  <level>WARNING</level>
+  <class>optix.commands.seats.ViewSeatsCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>Invalid date given:2020</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:28.728070300Z</date>
+  <millis>1573380028728</millis>
+  <nanos>70300</nanos>
+  <sequence>23</sequence>
+  <logger>global</logger>
+  <level>WARNING</level>
+  <class>optix.commands.seats.ViewSeatsCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>Error viewing seat. Details:Test Show|2020</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:28.772045600Z</date>
+  <millis>1573380028772</millis>
+  <nanos>45600</nanos>
+  <sequence>26</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>addShow</method>
+  <thread>1</thread>
+  <message>adding show: Test Show on 2020-05-05at the base price of 20.0</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:28.782038500Z</date>
+  <millis>1573380028782</millis>
+  <nanos>38500</nanos>
+  <sequence>28</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.seats.ViewSeatsCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:28.782038500Z</date>
+  <millis>1573380028782</millis>
+  <nanos>38500</nanos>
+  <sequence>29</sequence>
+  <logger>global</logger>
+  <level>WARNING</level>
+  <class>optix.commands.seats.ViewSeatsCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>Error viewing seat. Details:</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:28.844005300Z</date>
+  <millis>1573380028844</millis>
+  <nanos>5300</nanos>
+  <sequence>33</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>addShow</method>
+  <thread>1</thread>
+  <message>adding show: Test Show 1 on 2020-05-05at the base price of 20.0</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:28.845002700Z</date>
+  <millis>1573380028845</millis>
+  <nanos>2700</nanos>
+  <sequence>34</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>addShow</method>
+  <thread>1</thread>
+  <message>adding show: Test Show 1 on 2020-05-06at the base price of 20.0</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:28.846002100Z</date>
+  <millis>1573380028846</millis>
+  <nanos>2100</nanos>
+  <sequence>35</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>addShow</method>
+  <thread>1</thread>
+  <message>adding show: Test Show 1 on 2020-12-12at the base price of 20.0</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:28.849000300Z</date>
+  <millis>1573380028849</millis>
+  <nanos>300</nanos>
+  <sequence>36</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>deleteShow</method>
+  <thread>1</thread>
+  <message>Deleting show</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:28.850000300Z</date>
+  <millis>1573380028850</millis>
+  <nanos>300</nanos>
+  <sequence>37</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>deleteShow</method>
+  <thread>1</thread>
+  <message>Deleting show</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:28.852998Z</date>
+  <millis>1573380028852</millis>
+  <nanos>998000</nanos>
+  <sequence>38</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>deleteShow</method>
+  <thread>1</thread>
+  <message>Deleting show</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:28.873986800Z</date>
+  <millis>1573380028873</millis>
+  <nanos>986800</nanos>
+  <sequence>41</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.ByeCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:28.928954700Z</date>
+  <millis>1573380028928</millis>
+  <nanos>954700</nanos>
+  <sequence>44</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>addShow</method>
+  <thread>1</thread>
+  <message>adding show: Test Show on 2030-05-05at the base price of 5.0</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:28.937949900Z</date>
+  <millis>1573380028937</millis>
+  <nanos>949900</nanos>
+  <sequence>46</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.seats.ReassignSeatCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:28.968931600Z</date>
+  <millis>1573380028968</millis>
+  <nanos>931600</nanos>
+  <sequence>50</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.seats.ReassignSeatCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:28.969931300Z</date>
+  <millis>1573380028969</millis>
+  <nanos>931300</nanos>
+  <sequence>51</sequence>
+  <logger>global</logger>
+  <level>WARNING</level>
+  <class>optix.commands.seats.ReassignSeatCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>Error with showDate:2020</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:28.970931100Z</date>
+  <millis>1573380028970</millis>
+  <nanos>931100</nanos>
+  <sequence>52</sequence>
+  <logger>global</logger>
+  <level>WARNING</level>
+  <class>optix.commands.seats.ReassignSeatCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>Error reassigning seat. Details:Test Show|2020|a1|a2</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:29.015907500Z</date>
+  <millis>1573380029015</millis>
+  <nanos>907500</nanos>
+  <sequence>55</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>addShow</method>
+  <thread>1</thread>
+  <message>adding show: Test Show on 2030-10-10at the base price of 20.0</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:29.026900600Z</date>
+  <millis>1573380029026</millis>
+  <nanos>900600</nanos>
+  <sequence>57</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.seats.SellSeatCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:29.035894100Z</date>
+  <millis>1573380029035</millis>
+  <nanos>894100</nanos>
+  <sequence>59</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.seats.ReassignSeatCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:29.043889600Z</date>
+  <millis>1573380029043</millis>
+  <nanos>889600</nanos>
+  <sequence>61</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.seats.ReassignSeatCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:29.068875300Z</date>
+  <millis>1573380029068</millis>
+  <nanos>875300</nanos>
+  <sequence>63</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.seats.ReassignSeatCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:29.117849100Z</date>
+  <millis>1573380029117</millis>
+  <nanos>849100</nanos>
+  <sequence>67</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.seats.ReassignSeatCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:29.117849100Z</date>
+  <millis>1573380029117</millis>
+  <nanos>849100</nanos>
+  <sequence>68</sequence>
+  <logger>global</logger>
+  <level>WARNING</level>
+  <class>optix.commands.seats.ReassignSeatCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>Error reassigning seat. Details:</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:29.263765Z</date>
+  <millis>1573380029263</millis>
+  <nanos>765000</nanos>
+  <sequence>70</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>listShow</method>
+  <thread>1</thread>
+  <message>listing show by month:2020-12-01</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:29.347720700Z</date>
+  <millis>1573380029347</millis>
+  <nanos>720700</nanos>
+  <sequence>72</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>addShow</method>
+  <thread>1</thread>
+  <message>adding show: Dummy Show on 2020-05-05at the base price of 20.0</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:29.351714Z</date>
+  <millis>1573380029351</millis>
+  <nanos>714000</nanos>
+  <sequence>73</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>addShow</method>
+  <thread>1</thread>
+  <message>adding show: Dummy Show on 2020-05-06at the base price of 20.0</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:29.354711900Z</date>
+  <millis>1573380029354</millis>
+  <nanos>711900</nanos>
+  <sequence>74</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>listShow</method>
+  <thread>1</thread>
+  <message>listing show by month:2020-05-01</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:29.372702200Z</date>
+  <millis>1573380029372</millis>
+  <nanos>702200</nanos>
+  <sequence>76</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>addShow</method>
+  <thread>1</thread>
+  <message>adding show: Test Show on 2030-05-05at the base price of 5.0</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:29.429670500Z</date>
+  <millis>1573380029429</millis>
+  <nanos>670500</nanos>
+  <sequence>81</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.finance.ViewProfitCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:29.429670500Z</date>
+  <millis>1573380029429</millis>
+  <nanos>670500</nanos>
+  <sequence>82</sequence>
+  <logger>global</logger>
+  <level>WARNING</level>
+  <class>optix.commands.finance.ViewProfitCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>invalid date provided</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:29.452655900Z</date>
+  <millis>1573380029452</millis>
+  <nanos>655900</nanos>
+  <sequence>86</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.finance.ViewProfitCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:29.453654900Z</date>
+  <millis>1573380029453</millis>
+  <nanos>654900</nanos>
+  <sequence>87</sequence>
+  <logger>global</logger>
+  <level>WARNING</level>
+  <class>optix.commands.finance.ViewProfitCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>Show not found</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:29.459654Z</date>
+  <millis>1573380029459</millis>
+  <nanos>654000</nanos>
+  <sequence>89</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.finance.ViewProfitCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:29.459654Z</date>
+  <millis>1573380029459</millis>
+  <nanos>654000</nanos>
+  <sequence>90</sequence>
+  <logger>global</logger>
+  <level>WARNING</level>
+  <class>optix.commands.finance.ViewProfitCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>Show not found</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:29.460651600Z</date>
+  <millis>1573380029460</millis>
+  <nanos>651600</nanos>
+  <sequence>91</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>addShow</method>
+  <thread>1</thread>
+  <message>adding show: Test Show on 2020-05-05at the base price of 20.0</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:29.467646300Z</date>
+  <millis>1573380029467</millis>
+  <nanos>646300</nanos>
+  <sequence>93</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.finance.ViewProfitCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:29.468647700Z</date>
+  <millis>1573380029468</millis>
+  <nanos>647700</nanos>
+  <sequence>94</sequence>
+  <logger>global</logger>
+  <level>WARNING</level>
+  <class>optix.commands.finance.ViewProfitCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>Show not found</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:29.470645700Z</date>
+  <millis>1573380029470</millis>
+  <nanos>645700</nanos>
+  <sequence>96</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.finance.ViewProfitCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:29.470645700Z</date>
+  <millis>1573380029470</millis>
+  <nanos>645700</nanos>
+  <sequence>97</sequence>
+  <logger>global</logger>
+  <level>WARNING</level>
+  <class>optix.commands.finance.ViewProfitCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>Show not found</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:29.487634600Z</date>
+  <millis>1573380029487</millis>
+  <nanos>634600</nanos>
+  <sequence>101</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.finance.ViewProfitCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:29.503625700Z</date>
+  <millis>1573380029503</millis>
+  <nanos>625700</nanos>
+  <sequence>105</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.finance.ViewProfitCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:29.504625200Z</date>
+  <millis>1573380029504</millis>
+  <nanos>625200</nanos>
+  <sequence>106</sequence>
+  <logger>global</logger>
+  <level>WARNING</level>
+  <class>optix.commands.finance.ViewProfitCommand</class>
+  <method>parseDetails</method>
+  <thread>1</thread>
+  <message>Error parsing command details</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:29.504625200Z</date>
+  <millis>1573380029504</millis>
+  <nanos>625200</nanos>
+  <sequence>107</sequence>
+  <logger>global</logger>
+  <level>WARNING</level>
+  <class>optix.commands.finance.ViewProfitCommand</class>
+  <method>parseDetails</method>
+  <thread>1</thread>
+  <message>Expected details array length: 2</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:29.508623900Z</date>
+  <millis>1573380029508</millis>
+  <nanos>623900</nanos>
+  <sequence>109</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.finance.ViewProfitCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:29.508623900Z</date>
+  <millis>1573380029508</millis>
+  <nanos>623900</nanos>
+  <sequence>110</sequence>
+  <logger>global</logger>
+  <level>WARNING</level>
+  <class>optix.commands.finance.ViewProfitCommand</class>
+  <method>parseDetails</method>
+  <thread>1</thread>
+  <message>Error parsing command details</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:29.508623900Z</date>
+  <millis>1573380029508</millis>
+  <nanos>623900</nanos>
+  <sequence>111</sequence>
+  <logger>global</logger>
+  <level>WARNING</level>
+  <class>optix.commands.finance.ViewProfitCommand</class>
+  <method>parseDetails</method>
+  <thread>1</thread>
+  <message>Expected details array length: 2</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:29.511621800Z</date>
+  <millis>1573380029511</millis>
+  <nanos>621800</nanos>
+  <sequence>113</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.finance.ViewProfitCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:29.512620900Z</date>
+  <millis>1573380029512</millis>
+  <nanos>620900</nanos>
+  <sequence>114</sequence>
+  <logger>global</logger>
+  <level>WARNING</level>
+  <class>optix.commands.finance.ViewProfitCommand</class>
+  <method>parseDetails</method>
+  <thread>1</thread>
+  <message>Error parsing command details</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:29.512620900Z</date>
+  <millis>1573380029512</millis>
+  <nanos>620900</nanos>
+  <sequence>115</sequence>
+  <logger>global</logger>
+  <level>WARNING</level>
+  <class>optix.commands.finance.ViewProfitCommand</class>
+  <method>parseDetails</method>
+  <thread>1</thread>
+  <message>Expected details array length: 2</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:29.562593600Z</date>
+  <millis>1573380029562</millis>
+  <nanos>593600</nanos>
+  <sequence>119</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.seats.SellSeatCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:29.570588Z</date>
+  <millis>1573380029570</millis>
+  <nanos>588000</nanos>
+  <sequence>121</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.finance.ViewProfitCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:29.607567400Z</date>
+  <millis>1573380029607</millis>
+  <nanos>567400</nanos>
+  <sequence>125</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.finance.ViewMonthlyCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:29.608566700Z</date>
+  <millis>1573380029608</millis>
+  <nanos>566700</nanos>
+  <sequence>126</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>findMonthly</method>
+  <thread>1</thread>
+  <message>calculating earnings for month 11 of year 2019</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:29.626555800Z</date>
+  <millis>1573380029626</millis>
+  <nanos>555800</nanos>
+  <sequence>130</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.finance.ViewMonthlyCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:29.626555800Z</date>
+  <millis>1573380029626</millis>
+  <nanos>555800</nanos>
+  <sequence>131</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>findMonthly</method>
+  <thread>1</thread>
+  <message>calculating earnings for month 2 of year 2019</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:29.649543100Z</date>
+  <millis>1573380029649</millis>
+  <nanos>543100</nanos>
+  <sequence>134</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>addShow</method>
+  <thread>1</thread>
+  <message>adding show: Lion King on 2019-12-09at the base price of 20.0</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:29.650543600Z</date>
+  <millis>1573380029650</millis>
+  <nanos>543600</nanos>
+  <sequence>135</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>addShow</method>
+  <thread>1</thread>
+  <message>adding show: Lion King on 2020-10-10at the base price of 20.0</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:29.650543600Z</date>
+  <millis>1573380029650</millis>
+  <nanos>543600</nanos>
+  <sequence>136</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>addShow</method>
+  <thread>1</thread>
+  <message>adding show: Lion King on 2020-10-11at the base price of 20.0</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:29.655539400Z</date>
+  <millis>1573380029655</millis>
+  <nanos>539400</nanos>
+  <sequence>138</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.seats.SellSeatCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:29.661536Z</date>
+  <millis>1573380029661</millis>
+  <nanos>536000</nanos>
+  <sequence>140</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.seats.SellSeatCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:29.667532700Z</date>
+  <millis>1573380029667</millis>
+  <nanos>532700</nanos>
+  <sequence>142</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.finance.ViewMonthlyCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:29.668533400Z</date>
+  <millis>1573380029668</millis>
+  <nanos>533400</nanos>
+  <sequence>143</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>findMonthly</method>
+  <thread>1</thread>
+  <message>calculating earnings for month 10 of year 2020</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:29.671530500Z</date>
+  <millis>1573380029671</millis>
+  <nanos>530500</nanos>
+  <sequence>145</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.finance.ViewMonthlyCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:29.671530500Z</date>
+  <millis>1573380029671</millis>
+  <nanos>530500</nanos>
+  <sequence>146</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>findMonthly</method>
+  <thread>1</thread>
+  <message>calculating earnings for month 12 of year 2019</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:29.693517700Z</date>
+  <millis>1573380029693</millis>
+  <nanos>517700</nanos>
+  <sequence>150</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.finance.ViewMonthlyCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:29.693517700Z</date>
+  <millis>1573380029693</millis>
+  <nanos>517700</nanos>
+  <sequence>151</sequence>
+  <logger>global</logger>
+  <level>WARNING</level>
+  <class>optix.commands.finance.ViewMonthlyCommand</class>
+  <method>parseDetails</method>
+  <thread>1</thread>
+  <message>full command has too many spaces. Expected detailsArray length: 2</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:29.695518600Z</date>
+  <millis>1573380029695</millis>
+  <nanos>518600</nanos>
+  <sequence>153</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.finance.ViewMonthlyCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:29.696517300Z</date>
+  <millis>1573380029696</millis>
+  <nanos>517300</nanos>
+  <sequence>154</sequence>
+  <logger>global</logger>
+  <level>WARNING</level>
+  <class>optix.commands.finance.ViewMonthlyCommand</class>
+  <method>parseDetails</method>
+  <thread>1</thread>
+  <message>full command has too many spaces. Expected detailsArray length: 2</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:29.698514300Z</date>
+  <millis>1573380029698</millis>
+  <nanos>514300</nanos>
+  <sequence>156</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.finance.ViewMonthlyCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:29.698514300Z</date>
+  <millis>1573380029698</millis>
+  <nanos>514300</nanos>
+  <sequence>157</sequence>
+  <logger>global</logger>
+  <level>WARNING</level>
+  <class>optix.commands.finance.ViewMonthlyCommand</class>
+  <method>parseDetails</method>
+  <thread>1</thread>
+  <message>full command has too many spaces. Expected detailsArray length: 2</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:29.717502700Z</date>
+  <millis>1573380029717</millis>
+  <nanos>502700</nanos>
+  <sequence>161</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.finance.ViewMonthlyCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:29.718502600Z</date>
+  <millis>1573380029718</millis>
+  <nanos>502600</nanos>
+  <sequence>162</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>findMonthly</method>
+  <thread>1</thread>
+  <message>calculating earnings for month 11 of year 2018</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:29.720502900Z</date>
+  <millis>1573380029720</millis>
+  <nanos>502900</nanos>
+  <sequence>164</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.finance.ViewMonthlyCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:29.721502Z</date>
+  <millis>1573380029721</millis>
+  <nanos>502000</nanos>
+  <sequence>165</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>findMonthly</method>
+  <thread>1</thread>
+  <message>calculating earnings for month 9 of year 2019</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:29.737493500Z</date>
+  <millis>1573380029737</millis>
+  <nanos>493500</nanos>
+  <sequence>169</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.finance.ViewMonthlyCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:29.737493500Z</date>
+  <millis>1573380029737</millis>
+  <nanos>493500</nanos>
+  <sequence>170</sequence>
+  <logger>global</logger>
+  <level>WARNING</level>
+  <class>optix.commands.finance.ViewMonthlyCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>month is 0 or year is 0</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:29.739492500Z</date>
+  <millis>1573380029739</millis>
+  <nanos>492500</nanos>
+  <sequence>172</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.finance.ViewMonthlyCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:29.739492500Z</date>
+  <millis>1573380029739</millis>
+  <nanos>492500</nanos>
+  <sequence>173</sequence>
+  <logger>global</logger>
+  <level>WARNING</level>
+  <class>optix.commands.finance.ViewMonthlyCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>month is 0 or year is 0</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:29.742491200Z</date>
+  <millis>1573380029742</millis>
+  <nanos>491200</nanos>
+  <sequence>175</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.finance.ViewMonthlyCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:29.767475700Z</date>
+  <millis>1573380029767</millis>
+  <nanos>475700</nanos>
+  <sequence>178</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>addShow</method>
+  <thread>1</thread>
+  <message>adding show: Test Show on 2030-05-05at the base price of 20.0</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:29.780469300Z</date>
+  <millis>1573380029780</millis>
+  <nanos>469300</nanos>
+  <sequence>180</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>addShow</method>
+  <thread>1</thread>
+  <message>adding show: TestShow on 2030-05-06at the base price of 20.0</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:29.780469300Z</date>
+  <millis>1573380029780</millis>
+  <nanos>469300</nanos>
+  <sequence>181</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>addShow</method>
+  <thread>1</thread>
+  <message>adding show: TestShow on 2030-06-07at the base price of 20.0</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:29.782467600Z</date>
+  <millis>1573380029782</millis>
+  <nanos>467600</nanos>
+  <sequence>182</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>addShow</method>
+  <thread>1</thread>
+  <message>adding show: Test Show on 2030-05-20at the base price of 20.0</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:29.826442600Z</date>
+  <millis>1573380029826</millis>
+  <nanos>442600</nanos>
+  <sequence>188</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>addShow</method>
+  <thread>1</thread>
+  <message>adding show: dummy test 1 on 2020-05-05at the base price of 20.0</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:29.828442100Z</date>
+  <millis>1573380029828</millis>
+  <nanos>442100</nanos>
+  <sequence>189</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>addShow</method>
+  <thread>1</thread>
+  <message>adding show: dummy test 2 on 2020-05-06at the base price of 20.0</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:29.831438900Z</date>
+  <millis>1573380029831</millis>
+  <nanos>438900</nanos>
+  <sequence>190</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>listShow</method>
+  <thread>1</thread>
+  <message>listing shows</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:29.887408Z</date>
+  <millis>1573380029887</millis>
+  <nanos>408000</nanos>
+  <sequence>192</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>addShow</method>
+  <thread>1</thread>
+  <message>adding show: Dummy Show on 2020-05-05at the base price of 20.0</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:29.888409200Z</date>
+  <millis>1573380029888</millis>
+  <nanos>409200</nanos>
+  <sequence>193</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>addShow</method>
+  <thread>1</thread>
+  <message>adding show: Dummy Show on 2020-10-06at the base price of 20.0</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:29.900400200Z</date>
+  <millis>1573380029900</millis>
+  <nanos>400200</nanos>
+  <sequence>194</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>listShow</method>
+  <thread>1</thread>
+  <message>Listing show by name:Dummy Show</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:29.919389300Z</date>
+  <millis>1573380029919</millis>
+  <nanos>389300</nanos>
+  <sequence>196</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>listShow</method>
+  <thread>1</thread>
+  <message>Listing show by name:</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:29.920388100Z</date>
+  <millis>1573380029920</millis>
+  <nanos>388100</nanos>
+  <sequence>197</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>listShow</method>
+  <thread>1</thread>
+  <message>Listing show by name:Dummy</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:29.938378Z</date>
+  <millis>1573380029938</millis>
+  <nanos>378000</nanos>
+  <sequence>199</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>addShow</method>
+  <thread>1</thread>
+  <message>adding show: Test Show on 2030-05-05at the base price of 5.0</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:29.982353400Z</date>
+  <millis>1573380029982</millis>
+  <nanos>353400</nanos>
+  <sequence>204</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>addShow</method>
+  <thread>1</thread>
+  <message>adding show: Test Show 1 on 2020-05-05at the base price of 20.0</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:29.985351700Z</date>
+  <millis>1573380029985</millis>
+  <nanos>351700</nanos>
+  <sequence>205</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>rescheduleShow</method>
+  <thread>1</thread>
+  <message>rescheduling show from 2020-05-05 to 2020-05-06</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.001341600Z</date>
+  <millis>1573380030001</millis>
+  <nanos>341600</nanos>
+  <sequence>207</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.002341500Z</date>
+  <millis>1573380030002</millis>
+  <nanos>341500</nanos>
+  <sequence>208</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>loadPreferences</method>
+  <thread>1</thread>
+  <message>loading preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.002341500Z</date>
+  <millis>1573380030002</millis>
+  <nanos>341500</nanos>
+  <sequence>209</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>loadPreferences</method>
+  <thread>1</thread>
+  <message>preference file found.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.003340600Z</date>
+  <millis>1573380030003</millis>
+  <nanos>340600</nanos>
+  <sequence>210</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.003340600Z</date>
+  <millis>1573380030003</millis>
+  <nanos>340600</nanos>
+  <sequence>211</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.004340Z</date>
+  <millis>1573380030004</millis>
+  <nanos>340000</nanos>
+  <sequence>212</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.004340Z</date>
+  <millis>1573380030004</millis>
+  <nanos>340000</nanos>
+  <sequence>213</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.004340Z</date>
+  <millis>1573380030004</millis>
+  <nanos>340000</nanos>
+  <sequence>214</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.004340Z</date>
+  <millis>1573380030004</millis>
+  <nanos>340000</nanos>
+  <sequence>215</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.004340Z</date>
+  <millis>1573380030004</millis>
+  <nanos>340000</nanos>
+  <sequence>216</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.004340Z</date>
+  <millis>1573380030004</millis>
+  <nanos>340000</nanos>
+  <sequence>217</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.004340Z</date>
+  <millis>1573380030004</millis>
+  <nanos>340000</nanos>
+  <sequence>218</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.005338600Z</date>
+  <millis>1573380030005</millis>
+  <nanos>338600</nanos>
+  <sequence>219</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.005338600Z</date>
+  <millis>1573380030005</millis>
+  <nanos>338600</nanos>
+  <sequence>220</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.005338600Z</date>
+  <millis>1573380030005</millis>
+  <nanos>338600</nanos>
+  <sequence>221</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.005338600Z</date>
+  <millis>1573380030005</millis>
+  <nanos>338600</nanos>
+  <sequence>222</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.005338600Z</date>
+  <millis>1573380030005</millis>
+  <nanos>338600</nanos>
+  <sequence>223</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.005338600Z</date>
+  <millis>1573380030005</millis>
+  <nanos>338600</nanos>
+  <sequence>224</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.006338600Z</date>
+  <millis>1573380030006</millis>
+  <nanos>338600</nanos>
+  <sequence>225</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.006338600Z</date>
+  <millis>1573380030006</millis>
+  <nanos>338600</nanos>
+  <sequence>226</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.006338600Z</date>
+  <millis>1573380030006</millis>
+  <nanos>338600</nanos>
+  <sequence>227</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.006338600Z</date>
+  <millis>1573380030006</millis>
+  <nanos>338600</nanos>
+  <sequence>228</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.006338600Z</date>
+  <millis>1573380030006</millis>
+  <nanos>338600</nanos>
+  <sequence>229</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.006338600Z</date>
+  <millis>1573380030006</millis>
+  <nanos>338600</nanos>
+  <sequence>230</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.006338600Z</date>
+  <millis>1573380030006</millis>
+  <nanos>338600</nanos>
+  <sequence>231</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.006338600Z</date>
+  <millis>1573380030006</millis>
+  <nanos>338600</nanos>
+  <sequence>232</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.008338200Z</date>
+  <millis>1573380030008</millis>
+  <nanos>338200</nanos>
+  <sequence>233</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.008338200Z</date>
+  <millis>1573380030008</millis>
+  <nanos>338200</nanos>
+  <sequence>234</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.009338800Z</date>
+  <millis>1573380030009</millis>
+  <nanos>338800</nanos>
+  <sequence>235</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.009338800Z</date>
+  <millis>1573380030009</millis>
+  <nanos>338800</nanos>
+  <sequence>236</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>loadPreferences</method>
+  <thread>1</thread>
+  <message>load preferences completed</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.009338800Z</date>
+  <millis>1573380030009</millis>
+  <nanos>338800</nanos>
+  <sequence>237</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.009338800Z</date>
+  <millis>1573380030009</millis>
+  <nanos>338800</nanos>
+  <sequence>238</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.009338800Z</date>
+  <millis>1573380030009</millis>
+  <nanos>338800</nanos>
+  <sequence>239</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.010336400Z</date>
+  <millis>1573380030010</millis>
+  <nanos>336400</nanos>
+  <sequence>240</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.010336400Z</date>
+  <millis>1573380030010</millis>
+  <nanos>336400</nanos>
+  <sequence>241</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.015335300Z</date>
+  <millis>1573380030015</millis>
+  <nanos>335300</nanos>
+  <sequence>243</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.015335300Z</date>
+  <millis>1573380030015</millis>
+  <nanos>335300</nanos>
+  <sequence>244</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.016334500Z</date>
+  <millis>1573380030016</millis>
+  <nanos>334500</nanos>
+  <sequence>245</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.016334500Z</date>
+  <millis>1573380030016</millis>
+  <nanos>334500</nanos>
+  <sequence>246</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.016334500Z</date>
+  <millis>1573380030016</millis>
+  <nanos>334500</nanos>
+  <sequence>247</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.016334500Z</date>
+  <millis>1573380030016</millis>
+  <nanos>334500</nanos>
+  <sequence>248</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.019331500Z</date>
+  <millis>1573380030019</millis>
+  <nanos>331500</nanos>
+  <sequence>250</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.020331500Z</date>
+  <millis>1573380030020</millis>
+  <nanos>331500</nanos>
+  <sequence>251</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.020331500Z</date>
+  <millis>1573380030020</millis>
+  <nanos>331500</nanos>
+  <sequence>252</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.020331500Z</date>
+  <millis>1573380030020</millis>
+  <nanos>331500</nanos>
+  <sequence>253</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.021331Z</date>
+  <millis>1573380030021</millis>
+  <nanos>331000</nanos>
+  <sequence>254</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>parse</method>
+  <thread>1</thread>
+  <message>Parsing string: remove-alias VV</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:30.030328Z</date>
+  <millis>1573380030030</millis>
+  <nanos>328000</nanos>
+  <sequence>257</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.031326600Z</date>
+  <millis>1573380030031</millis>
+  <nanos>326600</nanos>
+  <sequence>258</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.031326600Z</date>
+  <millis>1573380030031</millis>
+  <nanos>326600</nanos>
+  <sequence>259</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.031326600Z</date>
+  <millis>1573380030031</millis>
+  <nanos>326600</nanos>
+  <sequence>260</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.032325900Z</date>
+  <millis>1573380030032</millis>
+  <nanos>325900</nanos>
+  <sequence>261</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>parse</method>
+  <thread>1</thread>
+  <message>Parsing string: invalidInput</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.032325900Z</date>
+  <millis>1573380030032</millis>
+  <nanos>325900</nanos>
+  <sequence>262</sequence>
+  <logger>global</logger>
+  <level>WARNING</level>
+  <class>optix.util.Parser</class>
+  <method>parse</method>
+  <thread>1</thread>
+  <message>Error with command: invalidinput</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.035323300Z</date>
+  <millis>1573380030035</millis>
+  <nanos>323300</nanos>
+  <sequence>264</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.036323600Z</date>
+  <millis>1573380030036</millis>
+  <nanos>323600</nanos>
+  <sequence>265</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.036323600Z</date>
+  <millis>1573380030036</millis>
+  <nanos>323600</nanos>
+  <sequence>266</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.036323600Z</date>
+  <millis>1573380030036</millis>
+  <nanos>323600</nanos>
+  <sequence>267</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.036323600Z</date>
+  <millis>1573380030036</millis>
+  <nanos>323600</nanos>
+  <sequence>268</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.036323600Z</date>
+  <millis>1573380030036</millis>
+  <nanos>323600</nanos>
+  <sequence>269</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.039321900Z</date>
+  <millis>1573380030039</millis>
+  <nanos>321900</nanos>
+  <sequence>271</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.039321900Z</date>
+  <millis>1573380030039</millis>
+  <nanos>321900</nanos>
+  <sequence>272</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.040322400Z</date>
+  <millis>1573380030040</millis>
+  <nanos>322400</nanos>
+  <sequence>273</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.040322400Z</date>
+  <millis>1573380030040</millis>
+  <nanos>322400</nanos>
+  <sequence>274</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.042320100Z</date>
+  <millis>1573380030042</millis>
+  <nanos>320100</nanos>
+  <sequence>275</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.042320100Z</date>
+  <millis>1573380030042</millis>
+  <nanos>320100</nanos>
+  <sequence>276</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.046318400Z</date>
+  <millis>1573380030046</millis>
+  <nanos>318400</nanos>
+  <sequence>278</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.046318400Z</date>
+  <millis>1573380030046</millis>
+  <nanos>318400</nanos>
+  <sequence>279</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.047318Z</date>
+  <millis>1573380030047</millis>
+  <nanos>318000</nanos>
+  <sequence>280</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.051313600Z</date>
+  <millis>1573380030051</millis>
+  <nanos>313600</nanos>
+  <sequence>281</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.054311500Z</date>
+  <millis>1573380030054</millis>
+  <nanos>311500</nanos>
+  <sequence>282</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.056312400Z</date>
+  <millis>1573380030056</millis>
+  <nanos>312400</nanos>
+  <sequence>283</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.065306Z</date>
+  <millis>1573380030065</millis>
+  <nanos>306000</nanos>
+  <sequence>285</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.066305300Z</date>
+  <millis>1573380030066</millis>
+  <nanos>305300</nanos>
+  <sequence>286</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.067304600Z</date>
+  <millis>1573380030067</millis>
+  <nanos>304600</nanos>
+  <sequence>287</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.067304600Z</date>
+  <millis>1573380030067</millis>
+  <nanos>304600</nanos>
+  <sequence>288</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.067304600Z</date>
+  <millis>1573380030067</millis>
+  <nanos>304600</nanos>
+  <sequence>289</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.068304100Z</date>
+  <millis>1573380030068</millis>
+  <nanos>304100</nanos>
+  <sequence>290</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.072301100Z</date>
+  <millis>1573380030072</millis>
+  <nanos>301100</nanos>
+  <sequence>292</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.073301Z</date>
+  <millis>1573380030073</millis>
+  <nanos>301000</nanos>
+  <sequence>293</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.074301600Z</date>
+  <millis>1573380030074</millis>
+  <nanos>301600</nanos>
+  <sequence>294</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.074301600Z</date>
+  <millis>1573380030074</millis>
+  <nanos>301600</nanos>
+  <sequence>295</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.075301400Z</date>
+  <millis>1573380030075</millis>
+  <nanos>301400</nanos>
+  <sequence>296</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.075301400Z</date>
+  <millis>1573380030075</millis>
+  <nanos>301400</nanos>
+  <sequence>297</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.081296700Z</date>
+  <millis>1573380030081</millis>
+  <nanos>296700</nanos>
+  <sequence>299</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.081296700Z</date>
+  <millis>1573380030081</millis>
+  <nanos>296700</nanos>
+  <sequence>300</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.082296800Z</date>
+  <millis>1573380030082</millis>
+  <nanos>296800</nanos>
+  <sequence>301</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.083295100Z</date>
+  <millis>1573380030083</millis>
+  <nanos>295100</nanos>
+  <sequence>302</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.083295100Z</date>
+  <millis>1573380030083</millis>
+  <nanos>295100</nanos>
+  <sequence>303</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.084294300Z</date>
+  <millis>1573380030084</millis>
+  <nanos>294300</nanos>
+  <sequence>304</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.092289600Z</date>
+  <millis>1573380030092</millis>
+  <nanos>289600</nanos>
+  <sequence>306</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.092289600Z</date>
+  <millis>1573380030092</millis>
+  <nanos>289600</nanos>
+  <sequence>307</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.093289200Z</date>
+  <millis>1573380030093</millis>
+  <nanos>289200</nanos>
+  <sequence>308</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.094288800Z</date>
+  <millis>1573380030094</millis>
+  <nanos>288800</nanos>
+  <sequence>309</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.094288800Z</date>
+  <millis>1573380030094</millis>
+  <nanos>288800</nanos>
+  <sequence>310</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.094288800Z</date>
+  <millis>1573380030094</millis>
+  <nanos>288800</nanos>
+  <sequence>311</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.104283400Z</date>
+  <millis>1573380030104</millis>
+  <nanos>283400</nanos>
+  <sequence>313</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.104283400Z</date>
+  <millis>1573380030104</millis>
+  <nanos>283400</nanos>
+  <sequence>314</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.113277900Z</date>
+  <millis>1573380030113</millis>
+  <nanos>277900</nanos>
+  <sequence>315</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.113277900Z</date>
+  <millis>1573380030113</millis>
+  <nanos>277900</nanos>
+  <sequence>316</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.114279800Z</date>
+  <millis>1573380030114</millis>
+  <nanos>279800</nanos>
+  <sequence>317</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.114279800Z</date>
+  <millis>1573380030114</millis>
+  <nanos>279800</nanos>
+  <sequence>318</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.118275100Z</date>
+  <millis>1573380030118</millis>
+  <nanos>275100</nanos>
+  <sequence>320</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.118275100Z</date>
+  <millis>1573380030118</millis>
+  <nanos>275100</nanos>
+  <sequence>321</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.119275400Z</date>
+  <millis>1573380030119</millis>
+  <nanos>275400</nanos>
+  <sequence>322</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.119275400Z</date>
+  <millis>1573380030119</millis>
+  <nanos>275400</nanos>
+  <sequence>323</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.120274Z</date>
+  <millis>1573380030120</millis>
+  <nanos>274000</nanos>
+  <sequence>324</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>parse</method>
+  <thread>1</thread>
+  <message>Parsing string: add poto|25|25/12/2020</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.126270800Z</date>
+  <millis>1573380030126</millis>
+  <nanos>270800</nanos>
+  <sequence>326</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.127270200Z</date>
+  <millis>1573380030127</millis>
+  <nanos>270200</nanos>
+  <sequence>327</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.127270200Z</date>
+  <millis>1573380030127</millis>
+  <nanos>270200</nanos>
+  <sequence>328</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.128271Z</date>
+  <millis>1573380030128</millis>
+  <nanos>271000</nanos>
+  <sequence>329</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.128271Z</date>
+  <millis>1573380030128</millis>
+  <nanos>271000</nanos>
+  <sequence>330</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>parse</method>
+  <thread>1</thread>
+  <message>Parsing string: bye</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:30.147258700Z</date>
+  <millis>1573380030147</millis>
+  <nanos>258700</nanos>
+  <sequence>333</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.147258700Z</date>
+  <millis>1573380030147</millis>
+  <nanos>258700</nanos>
+  <sequence>334</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.147258700Z</date>
+  <millis>1573380030147</millis>
+  <nanos>258700</nanos>
+  <sequence>335</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.147258700Z</date>
+  <millis>1573380030147</millis>
+  <nanos>258700</nanos>
+  <sequence>336</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.147258700Z</date>
+  <millis>1573380030147</millis>
+  <nanos>258700</nanos>
+  <sequence>337</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.148260500Z</date>
+  <millis>1573380030148</millis>
+  <nanos>260500</nanos>
+  <sequence>338</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.154255600Z</date>
+  <millis>1573380030154</millis>
+  <nanos>255600</nanos>
+  <sequence>340</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.154255600Z</date>
+  <millis>1573380030154</millis>
+  <nanos>255600</nanos>
+  <sequence>341</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.154255600Z</date>
+  <millis>1573380030154</millis>
+  <nanos>255600</nanos>
+  <sequence>342</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.155255400Z</date>
+  <millis>1573380030155</millis>
+  <nanos>255400</nanos>
+  <sequence>343</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.155255400Z</date>
+  <millis>1573380030155</millis>
+  <nanos>255400</nanos>
+  <sequence>344</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>parse</method>
+  <thread>1</thread>
+  <message>Parsing string: finance</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:30.163250300Z</date>
+  <millis>1573380030163</millis>
+  <nanos>250300</nanos>
+  <sequence>347</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.163250300Z</date>
+  <millis>1573380030163</millis>
+  <nanos>250300</nanos>
+  <sequence>348</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.163250300Z</date>
+  <millis>1573380030163</millis>
+  <nanos>250300</nanos>
+  <sequence>349</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.163250300Z</date>
+  <millis>1573380030163</millis>
+  <nanos>250300</nanos>
+  <sequence>350</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.164250300Z</date>
+  <millis>1573380030164</millis>
+  <nanos>250300</nanos>
+  <sequence>351</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.164250300Z</date>
+  <millis>1573380030164</millis>
+  <nanos>250300</nanos>
+  <sequence>352</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.173245200Z</date>
+  <millis>1573380030173</millis>
+  <nanos>245200</nanos>
+  <sequence>354</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.173245200Z</date>
+  <millis>1573380030173</millis>
+  <nanos>245200</nanos>
+  <sequence>355</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.173245200Z</date>
+  <millis>1573380030173</millis>
+  <nanos>245200</nanos>
+  <sequence>356</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.173245200Z</date>
+  <millis>1573380030173</millis>
+  <nanos>245200</nanos>
+  <sequence>357</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.173245200Z</date>
+  <millis>1573380030173</millis>
+  <nanos>245200</nanos>
+  <sequence>358</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.174244200Z</date>
+  <millis>1573380030174</millis>
+  <nanos>244200</nanos>
+  <sequence>359</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.179240900Z</date>
+  <millis>1573380030179</millis>
+  <nanos>240900</nanos>
+  <sequence>361</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.180241100Z</date>
+  <millis>1573380030180</millis>
+  <nanos>241100</nanos>
+  <sequence>362</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.180241100Z</date>
+  <millis>1573380030180</millis>
+  <nanos>241100</nanos>
+  <sequence>363</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.180241100Z</date>
+  <millis>1573380030180</millis>
+  <nanos>241100</nanos>
+  <sequence>364</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.181239900Z</date>
+  <millis>1573380030181</millis>
+  <nanos>239900</nanos>
+  <sequence>365</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.181239900Z</date>
+  <millis>1573380030181</millis>
+  <nanos>239900</nanos>
+  <sequence>366</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.188235800Z</date>
+  <millis>1573380030188</millis>
+  <nanos>235800</nanos>
+  <sequence>368</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.189234800Z</date>
+  <millis>1573380030189</millis>
+  <nanos>234800</nanos>
+  <sequence>369</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.189234800Z</date>
+  <millis>1573380030189</millis>
+  <nanos>234800</nanos>
+  <sequence>370</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.189234800Z</date>
+  <millis>1573380030189</millis>
+  <nanos>234800</nanos>
+  <sequence>371</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.193233900Z</date>
+  <millis>1573380030193</millis>
+  <nanos>233900</nanos>
+  <sequence>372</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>parse</method>
+  <thread>1</thread>
+  <message>Parsing string: edit testShow|testDate|newShowName</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.199229Z</date>
+  <millis>1573380030199</millis>
+  <nanos>229000</nanos>
+  <sequence>374</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.200228400Z</date>
+  <millis>1573380030200</millis>
+  <nanos>228400</nanos>
+  <sequence>375</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.200228400Z</date>
+  <millis>1573380030200</millis>
+  <nanos>228400</nanos>
+  <sequence>376</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.200228400Z</date>
+  <millis>1573380030200</millis>
+  <nanos>228400</nanos>
+  <sequence>377</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.200228400Z</date>
+  <millis>1573380030200</millis>
+  <nanos>228400</nanos>
+  <sequence>378</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>parse</method>
+  <thread>1</thread>
+  <message>Parsing string: help</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:30.216219800Z</date>
+  <millis>1573380030216</millis>
+  <nanos>219800</nanos>
+  <sequence>381</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.216219800Z</date>
+  <millis>1573380030216</millis>
+  <nanos>219800</nanos>
+  <sequence>382</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.217218800Z</date>
+  <millis>1573380030217</millis>
+  <nanos>218800</nanos>
+  <sequence>383</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.217218800Z</date>
+  <millis>1573380030217</millis>
+  <nanos>218800</nanos>
+  <sequence>384</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.217218800Z</date>
+  <millis>1573380030217</millis>
+  <nanos>218800</nanos>
+  <sequence>385</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>parse</method>
+  <thread>1</thread>
+  <message>Parsing string: list</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.222218100Z</date>
+  <millis>1573380030222</millis>
+  <nanos>218100</nanos>
+  <sequence>387</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.223216600Z</date>
+  <millis>1573380030223</millis>
+  <nanos>216600</nanos>
+  <sequence>388</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.223216600Z</date>
+  <millis>1573380030223</millis>
+  <nanos>216600</nanos>
+  <sequence>389</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.223216600Z</date>
+  <millis>1573380030223</millis>
+  <nanos>216600</nanos>
+  <sequence>390</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.224215900Z</date>
+  <millis>1573380030224</millis>
+  <nanos>215900</nanos>
+  <sequence>391</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>parse</method>
+  <thread>1</thread>
+  <message>Parsing string: show</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:30.234210Z</date>
+  <millis>1573380030234</millis>
+  <nanos>210000</nanos>
+  <sequence>394</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.234210Z</date>
+  <millis>1573380030234</millis>
+  <nanos>210000</nanos>
+  <sequence>395</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.234210Z</date>
+  <millis>1573380030234</millis>
+  <nanos>210000</nanos>
+  <sequence>396</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.235209500Z</date>
+  <millis>1573380030235</millis>
+  <nanos>209500</nanos>
+  <sequence>397</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.235209500Z</date>
+  <millis>1573380030235</millis>
+  <nanos>209500</nanos>
+  <sequence>398</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>parse</method>
+  <thread>1</thread>
+  <message>Parsing string: archive</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:30.243204100Z</date>
+  <millis>1573380030243</millis>
+  <nanos>204100</nanos>
+  <sequence>401</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.244205700Z</date>
+  <millis>1573380030244</millis>
+  <nanos>205700</nanos>
+  <sequence>402</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.244205700Z</date>
+  <millis>1573380030244</millis>
+  <nanos>205700</nanos>
+  <sequence>403</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.244205700Z</date>
+  <millis>1573380030244</millis>
+  <nanos>205700</nanos>
+  <sequence>404</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.244205700Z</date>
+  <millis>1573380030244</millis>
+  <nanos>205700</nanos>
+  <sequence>405</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.244205700Z</date>
+  <millis>1573380030244</millis>
+  <nanos>205700</nanos>
+  <sequence>406</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.252200200Z</date>
+  <millis>1573380030252</millis>
+  <nanos>200200</nanos>
+  <sequence>408</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.253198500Z</date>
+  <millis>1573380030253</millis>
+  <nanos>198500</nanos>
+  <sequence>409</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.253198500Z</date>
+  <millis>1573380030253</millis>
+  <nanos>198500</nanos>
+  <sequence>410</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.254200Z</date>
+  <millis>1573380030254</millis>
+  <nanos>200000</nanos>
+  <sequence>411</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.257196600Z</date>
+  <millis>1573380030257</millis>
+  <nanos>196600</nanos>
+  <sequence>412</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.257196600Z</date>
+  <millis>1573380030257</millis>
+  <nanos>196600</nanos>
+  <sequence>413</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.264192100Z</date>
+  <millis>1573380030264</millis>
+  <nanos>192100</nanos>
+  <sequence>415</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.265192200Z</date>
+  <millis>1573380030265</millis>
+  <nanos>192200</nanos>
+  <sequence>416</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.265192200Z</date>
+  <millis>1573380030265</millis>
+  <nanos>192200</nanos>
+  <sequence>417</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.265192200Z</date>
+  <millis>1573380030265</millis>
+  <nanos>192200</nanos>
+  <sequence>418</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.265192200Z</date>
+  <millis>1573380030265</millis>
+  <nanos>192200</nanos>
+  <sequence>419</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>parse</method>
+  <thread>1</thread>
+  <message>Parsing string: add-alias VV</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:30.281183200Z</date>
+  <millis>1573380030281</millis>
+  <nanos>183200</nanos>
+  <sequence>422</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.282183800Z</date>
+  <millis>1573380030282</millis>
+  <nanos>183800</nanos>
+  <sequence>423</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.282183800Z</date>
+  <millis>1573380030282</millis>
+  <nanos>183800</nanos>
+  <sequence>424</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.282183800Z</date>
+  <millis>1573380030282</millis>
+  <nanos>183800</nanos>
+  <sequence>425</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.282183800Z</date>
+  <millis>1573380030282</millis>
+  <nanos>183800</nanos>
+  <sequence>426</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.283182200Z</date>
+  <millis>1573380030283</millis>
+  <nanos>182200</nanos>
+  <sequence>427</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.288179600Z</date>
+  <millis>1573380030288</millis>
+  <nanos>179600</nanos>
+  <sequence>429</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.288179600Z</date>
+  <millis>1573380030288</millis>
+  <nanos>179600</nanos>
+  <sequence>430</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.288179600Z</date>
+  <millis>1573380030288</millis>
+  <nanos>179600</nanos>
+  <sequence>431</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.288179600Z</date>
+  <millis>1573380030288</millis>
+  <nanos>179600</nanos>
+  <sequence>432</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.289177900Z</date>
+  <millis>1573380030289</millis>
+  <nanos>177900</nanos>
+  <sequence>433</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>parse</method>
+  <thread>1</thread>
+  <message>Parsing string: list-alias</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:30.301172300Z</date>
+  <millis>1573380030301</millis>
+  <nanos>172300</nanos>
+  <sequence>436</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.302170600Z</date>
+  <millis>1573380030302</millis>
+  <nanos>170600</nanos>
+  <sequence>437</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.302170600Z</date>
+  <millis>1573380030302</millis>
+  <nanos>170600</nanos>
+  <sequence>438</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.302170600Z</date>
+  <millis>1573380030302</millis>
+  <nanos>170600</nanos>
+  <sequence>439</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.303169600Z</date>
+  <millis>1573380030303</millis>
+  <nanos>169600</nanos>
+  <sequence>440</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>parse</method>
+  <thread>1</thread>
+  <message>Parsing string: reschedule input</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.309166700Z</date>
+  <millis>1573380030309</millis>
+  <nanos>166700</nanos>
+  <sequence>442</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.310167100Z</date>
+  <millis>1573380030310</millis>
+  <nanos>167100</nanos>
+  <sequence>443</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.310167100Z</date>
+  <millis>1573380030310</millis>
+  <nanos>167100</nanos>
+  <sequence>444</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.310167100Z</date>
+  <millis>1573380030310</millis>
+  <nanos>167100</nanos>
+  <sequence>445</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.310167100Z</date>
+  <millis>1573380030310</millis>
+  <nanos>167100</nanos>
+  <sequence>446</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>parse</method>
+  <thread>1</thread>
+  <message>Parsing string: bye VV</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:30.321161300Z</date>
+  <millis>1573380030321</millis>
+  <nanos>161300</nanos>
+  <sequence>449</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.322159900Z</date>
+  <millis>1573380030322</millis>
+  <nanos>159900</nanos>
+  <sequence>450</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.322159900Z</date>
+  <millis>1573380030322</millis>
+  <nanos>159900</nanos>
+  <sequence>451</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.322159900Z</date>
+  <millis>1573380030322</millis>
+  <nanos>159900</nanos>
+  <sequence>452</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.322159900Z</date>
+  <millis>1573380030322</millis>
+  <nanos>159900</nanos>
+  <sequence>453</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>parse</method>
+  <thread>1</thread>
+  <message>Parsing string: invalidInput VV</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.323158700Z</date>
+  <millis>1573380030323</millis>
+  <nanos>158700</nanos>
+  <sequence>454</sequence>
+  <logger>global</logger>
+  <level>WARNING</level>
+  <class>optix.util.Parser</class>
+  <method>parse</method>
+  <thread>1</thread>
+  <message>Error with command: invalidinput</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.329155800Z</date>
+  <millis>1573380030329</millis>
+  <nanos>155800</nanos>
+  <sequence>456</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.331154800Z</date>
+  <millis>1573380030331</millis>
+  <nanos>154800</nanos>
+  <sequence>457</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.331154800Z</date>
+  <millis>1573380030331</millis>
+  <nanos>154800</nanos>
+  <sequence>458</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.331154800Z</date>
+  <millis>1573380030331</millis>
+  <nanos>154800</nanos>
+  <sequence>459</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.331154800Z</date>
+  <millis>1573380030331</millis>
+  <nanos>154800</nanos>
+  <sequence>460</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>parse</method>
+  <thread>1</thread>
+  <message>Parsing string: view-monthly VV</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:30.344146900Z</date>
+  <millis>1573380030344</millis>
+  <nanos>146900</nanos>
+  <sequence>463</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.344146900Z</date>
+  <millis>1573380030344</millis>
+  <nanos>146900</nanos>
+  <sequence>464</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.344146900Z</date>
+  <millis>1573380030344</millis>
+  <nanos>146900</nanos>
+  <sequence>465</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.344146900Z</date>
+  <millis>1573380030344</millis>
+  <nanos>146900</nanos>
+  <sequence>466</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.345147100Z</date>
+  <millis>1573380030345</millis>
+  <nanos>147100</nanos>
+  <sequence>467</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.345147100Z</date>
+  <millis>1573380030345</millis>
+  <nanos>147100</nanos>
+  <sequence>468</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.350144Z</date>
+  <millis>1573380030350</millis>
+  <nanos>144000</nanos>
+  <sequence>470</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.350144Z</date>
+  <millis>1573380030350</millis>
+  <nanos>144000</nanos>
+  <sequence>471</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.350144Z</date>
+  <millis>1573380030350</millis>
+  <nanos>144000</nanos>
+  <sequence>472</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.350144Z</date>
+  <millis>1573380030350</millis>
+  <nanos>144000</nanos>
+  <sequence>473</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.351143600Z</date>
+  <millis>1573380030351</millis>
+  <nanos>143600</nanos>
+  <sequence>474</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.351143600Z</date>
+  <millis>1573380030351</millis>
+  <nanos>143600</nanos>
+  <sequence>475</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>add alias successful</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.359139900Z</date>
+  <millis>1573380030359</millis>
+  <nanos>139900</nanos>
+  <sequence>477</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.359139900Z</date>
+  <millis>1573380030359</millis>
+  <nanos>139900</nanos>
+  <sequence>478</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.360138500Z</date>
+  <millis>1573380030360</millis>
+  <nanos>138500</nanos>
+  <sequence>479</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.360138500Z</date>
+  <millis>1573380030360</millis>
+  <nanos>138500</nanos>
+  <sequence>480</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.360138500Z</date>
+  <millis>1573380030360</millis>
+  <nanos>138500</nanos>
+  <sequence>481</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>parse</method>
+  <thread>1</thread>
+  <message>Parsing string: delete VV</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.364137Z</date>
+  <millis>1573380030364</millis>
+  <nanos>137000</nanos>
+  <sequence>483</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.365135400Z</date>
+  <millis>1573380030365</millis>
+  <nanos>135400</nanos>
+  <sequence>484</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.365135400Z</date>
+  <millis>1573380030365</millis>
+  <nanos>135400</nanos>
+  <sequence>485</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.365135400Z</date>
+  <millis>1573380030365</millis>
+  <nanos>135400</nanos>
+  <sequence>486</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.366135200Z</date>
+  <millis>1573380030366</millis>
+  <nanos>135200</nanos>
+  <sequence>487</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>parse</method>
+  <thread>1</thread>
+  <message>Parsing string: view-profit VV</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:30.380126700Z</date>
+  <millis>1573380030380</millis>
+  <nanos>126700</nanos>
+  <sequence>490</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.380126700Z</date>
+  <millis>1573380030380</millis>
+  <nanos>126700</nanos>
+  <sequence>491</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.380126700Z</date>
+  <millis>1573380030380</millis>
+  <nanos>126700</nanos>
+  <sequence>492</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.380126700Z</date>
+  <millis>1573380030380</millis>
+  <nanos>126700</nanos>
+  <sequence>493</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.381126Z</date>
+  <millis>1573380030381</millis>
+  <nanos>126000</nanos>
+  <sequence>494</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>parse</method>
+  <thread>1</thread>
+  <message>Parsing string: list Jan 2020</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.386122400Z</date>
+  <millis>1573380030386</millis>
+  <nanos>122400</nanos>
+  <sequence>496</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.387122300Z</date>
+  <millis>1573380030387</millis>
+  <nanos>122300</nanos>
+  <sequence>497</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.387122300Z</date>
+  <millis>1573380030387</millis>
+  <nanos>122300</nanos>
+  <sequence>498</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.387122300Z</date>
+  <millis>1573380030387</millis>
+  <nanos>122300</nanos>
+  <sequence>499</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.387122300Z</date>
+  <millis>1573380030387</millis>
+  <nanos>122300</nanos>
+  <sequence>500</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>parse</method>
+  <thread>1</thread>
+  <message>Parsing string: list testShow</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.393119900Z</date>
+  <millis>1573380030393</millis>
+  <nanos>119900</nanos>
+  <sequence>502</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.393119900Z</date>
+  <millis>1573380030393</millis>
+  <nanos>119900</nanos>
+  <sequence>503</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.393119900Z</date>
+  <millis>1573380030393</millis>
+  <nanos>119900</nanos>
+  <sequence>504</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.394119400Z</date>
+  <millis>1573380030394</millis>
+  <nanos>119400</nanos>
+  <sequence>505</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.394119400Z</date>
+  <millis>1573380030394</millis>
+  <nanos>119400</nanos>
+  <sequence>506</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>parse</method>
+  <thread>1</thread>
+  <message>Parsing string: reassign-seat VV</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:30.407111500Z</date>
+  <millis>1573380030407</millis>
+  <nanos>111500</nanos>
+  <sequence>509</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.409109700Z</date>
+  <millis>1573380030409</millis>
+  <nanos>109700</nanos>
+  <sequence>510</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.409109700Z</date>
+  <millis>1573380030409</millis>
+  <nanos>109700</nanos>
+  <sequence>511</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.409109700Z</date>
+  <millis>1573380030409</millis>
+  <nanos>109700</nanos>
+  <sequence>512</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.410109200Z</date>
+  <millis>1573380030410</millis>
+  <nanos>109200</nanos>
+  <sequence>513</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>parse</method>
+  <thread>1</thread>
+  <message>Parsing string: reset-alias</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:30.421102400Z</date>
+  <millis>1573380030421</millis>
+  <nanos>102400</nanos>
+  <sequence>516</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.422102900Z</date>
+  <millis>1573380030422</millis>
+  <nanos>102900</nanos>
+  <sequence>517</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.422102900Z</date>
+  <millis>1573380030422</millis>
+  <nanos>102900</nanos>
+  <sequence>518</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.422102900Z</date>
+  <millis>1573380030422</millis>
+  <nanos>102900</nanos>
+  <sequence>519</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.422102900Z</date>
+  <millis>1573380030422</millis>
+  <nanos>102900</nanos>
+  <sequence>520</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>parse</method>
+  <thread>1</thread>
+  <message>Parsing string: view input</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:30.432097500Z</date>
+  <millis>1573380030432</millis>
+  <nanos>97500</nanos>
+  <sequence>523</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.432097500Z</date>
+  <millis>1573380030432</millis>
+  <nanos>97500</nanos>
+  <sequence>524</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.432097500Z</date>
+  <millis>1573380030432</millis>
+  <nanos>97500</nanos>
+  <sequence>525</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.432097500Z</date>
+  <millis>1573380030432</millis>
+  <nanos>97500</nanos>
+  <sequence>526</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.433097100Z</date>
+  <millis>1573380030433</millis>
+  <nanos>97100</nanos>
+  <sequence>527</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>parse</method>
+  <thread>1</thread>
+  <message>Parsing string: sell input</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:30.443091500Z</date>
+  <millis>1573380030443</millis>
+  <nanos>91500</nanos>
+  <sequence>530</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.443091500Z</date>
+  <millis>1573380030443</millis>
+  <nanos>91500</nanos>
+  <sequence>531</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.443091500Z</date>
+  <millis>1573380030443</millis>
+  <nanos>91500</nanos>
+  <sequence>532</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.443091500Z</date>
+  <millis>1573380030443</millis>
+  <nanos>91500</nanos>
+  <sequence>533</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.444090500Z</date>
+  <millis>1573380030444</millis>
+  <nanos>90500</nanos>
+  <sequence>534</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.444090500Z</date>
+  <millis>1573380030444</millis>
+  <nanos>90500</nanos>
+  <sequence>535</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>error adding alias.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.454083900Z</date>
+  <millis>1573380030454</millis>
+  <nanos>83900</nanos>
+  <sequence>537</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.454083900Z</date>
+  <millis>1573380030454</millis>
+  <nanos>83900</nanos>
+  <sequence>538</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.454083900Z</date>
+  <millis>1573380030454</millis>
+  <nanos>83900</nanos>
+  <sequence>539</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.454083900Z</date>
+  <millis>1573380030454</millis>
+  <nanos>83900</nanos>
+  <sequence>540</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.455083900Z</date>
+  <millis>1573380030455</millis>
+  <nanos>83900</nanos>
+  <sequence>541</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.455083900Z</date>
+  <millis>1573380030455</millis>
+  <nanos>83900</nanos>
+  <sequence>542</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>error adding alias.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.465077400Z</date>
+  <millis>1573380030465</millis>
+  <nanos>77400</nanos>
+  <sequence>544</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization begin</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.465077400Z</date>
+  <millis>1573380030465</millis>
+  <nanos>77400</nanos>
+  <sequence>545</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Parser initialization complete.</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.466078Z</date>
+  <millis>1573380030466</millis>
+  <nanos>78000</nanos>
+  <sequence>546</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>Saving preferences</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.466078Z</date>
+  <millis>1573380030466</millis>
+  <nanos>78000</nanos>
+  <sequence>547</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>resetPreferences</method>
+  <thread>1</thread>
+  <message>preferences saved</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.466078Z</date>
+  <millis>1573380030466</millis>
+  <nanos>78000</nanos>
+  <sequence>548</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>adding new alias</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.468075900Z</date>
+  <millis>1573380030468</millis>
+  <nanos>75900</nanos>
+  <sequence>549</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.util.Parser</class>
+  <method>addAlias</method>
+  <thread>1</thread>
+  <message>error adding alias.</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:30.486065300Z</date>
+  <millis>1573380030486</millis>
+  <nanos>65300</nanos>
+  <sequence>551</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>addShow</method>
+  <thread>1</thread>
+  <message>adding show: Test Show on 2020-05-05at the base price of 20.0</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.486065300Z</date>
+  <millis>1573380030486</millis>
+  <nanos>65300</nanos>
+  <sequence>552</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>addShow</method>
+  <thread>1</thread>
+  <message>adding show: Test Show on 2020-05-06at the base price of 20.0</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.486065300Z</date>
+  <millis>1573380030486</millis>
+  <nanos>65300</nanos>
+  <sequence>553</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>addShow</method>
+  <thread>1</thread>
+  <message>adding show: Test Show on 2020-05-07at the base price of 20.0</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:30.493062100Z</date>
+  <millis>1573380030493</millis>
+  <nanos>62100</nanos>
+  <sequence>555</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.TabCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.494061600Z</date>
+  <millis>1573380030494</millis>
+  <nanos>61600</nanos>
+  <sequence>556</sequence>
+  <logger>global</logger>
+  <level>WARNING</level>
+  <class>optix.commands.TabCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>TabCommand Error. commandWord:</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.494061600Z</date>
+  <millis>1573380030494</millis>
+  <nanos>61600</nanos>
+  <sequence>557</sequence>
+  <logger>global</logger>
+  <level>WARNING</level>
+  <class>optix.commands.TabCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>Invalid input:</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:30.506054900Z</date>
+  <millis>1573380030506</millis>
+  <nanos>54900</nanos>
+  <sequence>559</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>addShow</method>
+  <thread>1</thread>
+  <message>adding show: Test Show on 2020-05-05at the base price of 20.0</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.506054900Z</date>
+  <millis>1573380030506</millis>
+  <nanos>54900</nanos>
+  <sequence>560</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>addShow</method>
+  <thread>1</thread>
+  <message>adding show: Test Show on 2020-05-06at the base price of 20.0</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.506054900Z</date>
+  <millis>1573380030506</millis>
+  <nanos>54900</nanos>
+  <sequence>561</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>addShow</method>
+  <thread>1</thread>
+  <message>adding show: Test Show on 2020-05-07at the base price of 20.0</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:30.512050500Z</date>
+  <millis>1573380030512</millis>
+  <nanos>50500</nanos>
+  <sequence>563</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.TabCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.513050300Z</date>
+  <millis>1573380030513</millis>
+  <nanos>50300</nanos>
+  <sequence>564</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.TabCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>show case</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:30.515047900Z</date>
+  <millis>1573380030515</millis>
+  <nanos>47900</nanos>
+  <sequence>566</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.TabCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.515047900Z</date>
+  <millis>1573380030515</millis>
+  <nanos>47900</nanos>
+  <sequence>567</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.TabCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>archive case</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:30.518047600Z</date>
+  <millis>1573380030518</millis>
+  <nanos>47600</nanos>
+  <sequence>569</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.TabCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.518047600Z</date>
+  <millis>1573380030518</millis>
+  <nanos>47600</nanos>
+  <sequence>570</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.TabCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>finance case</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:30.520045900Z</date>
+  <millis>1573380030520</millis>
+  <nanos>45900</nanos>
+  <sequence>572</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.TabCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.521045300Z</date>
+  <millis>1573380030521</millis>
+  <nanos>45300</nanos>
+  <sequence>573</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.TabCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>help case</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:30.524044300Z</date>
+  <millis>1573380030524</millis>
+  <nanos>44300</nanos>
+  <sequence>575</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.TabCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.524044300Z</date>
+  <millis>1573380030524</millis>
+  <nanos>44300</nanos>
+  <sequence>576</sequence>
+  <logger>global</logger>
+  <level>WARNING</level>
+  <class>optix.commands.TabCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>TabCommand Error. commandWord:random command</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.525046Z</date>
+  <millis>1573380030525</millis>
+  <nanos>46000</nanos>
+  <sequence>577</sequence>
+  <logger>global</logger>
+  <level>WARNING</level>
+  <class>optix.commands.TabCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>Invalid input:random command</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:30.540036300Z</date>
+  <millis>1573380030540</millis>
+  <nanos>36300</nanos>
+  <sequence>580</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>addShow</method>
+  <thread>1</thread>
+  <message>adding show: Test Show on 2030-10-10at the base price of 20.0</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:30.544032Z</date>
+  <millis>1573380030544</millis>
+  <nanos>32000</nanos>
+  <sequence>582</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.seats.SellSeatCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:30.557026100Z</date>
+  <millis>1573380030557</millis>
+  <nanos>26100</nanos>
+  <sequence>585</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commons.Model</class>
+  <method>addShow</method>
+  <thread>1</thread>
+  <message>adding show: Test Show on 2030-05-05at the base price of 5.0</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:30.561022400Z</date>
+  <millis>1573380030561</millis>
+  <nanos>22400</nanos>
+  <sequence>587</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.seats.SellSeatCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.562022Z</date>
+  <millis>1573380030562</millis>
+  <nanos>22000</nanos>
+  <sequence>588</sequence>
+  <logger>global</logger>
+  <level>WARNING</level>
+  <class>optix.commands.seats.SellSeatCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>Show not found: Test</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:30.580012300Z</date>
+  <millis>1573380030580</millis>
+  <nanos>12300</nanos>
+  <sequence>592</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.seats.SellSeatCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.581011300Z</date>
+  <millis>1573380030581</millis>
+  <nanos>11300</nanos>
+  <sequence>593</sequence>
+  <logger>global</logger>
+  <level>WARNING</level>
+  <class>optix.commands.seats.SellSeatCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>Invalid date given:2020</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.581011300Z</date>
+  <millis>1573380030581</millis>
+  <nanos>11300</nanos>
+  <sequence>594</sequence>
+  <logger>global</logger>
+  <level>WARNING</level>
+  <class>optix.commands.seats.SellSeatCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>Error selling seat. Details:Test Show|2020|a1 a2</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:30.597001500Z</date>
+  <millis>1573380030597</millis>
+  <nanos>1500</nanos>
+  <sequence>598</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.seats.SellSeatCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+<record>
+  <date>2019-11-10T10:00:30.598000900Z</date>
+  <millis>1573380030598</millis>
+  <nanos>900</nanos>
+  <sequence>599</sequence>
+  <logger>global</logger>
+  <level>WARNING</level>
+  <class>optix.commands.seats.SellSeatCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>Error selling seat. Details:</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:30.615991400Z</date>
+  <millis>1573380030615</millis>
+  <nanos>991400</nanos>
+  <sequence>603</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.seats.SellSeatCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:30.618989700Z</date>
+  <millis>1573380030618</millis>
+  <nanos>989700</nanos>
+  <sequence>605</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.seats.SellSeatCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:30.639977400Z</date>
+  <millis>1573380030639</millis>
+  <nanos>977400</nanos>
+  <sequence>609</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.seats.SellSeatCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:30.663962700Z</date>
+  <millis>1573380030663</millis>
+  <nanos>962700</nanos>
+  <sequence>613</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.seats.SellSeatCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-10T10:00:30.667962Z</date>
+  <millis>1573380030667</millis>
+  <nanos>962000</nanos>
+  <sequence>615</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>optix.commands.seats.SellSeatCommand</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>executing command</message>
+</record>
+</log>

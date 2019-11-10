@@ -77,7 +77,7 @@ public class ViewMonthlyCommand extends Command {
         LogManager.getLogManager().reset();
         OPTIXLOGGER.setLevel(Level.ALL);
         try {
-            FileHandler fh = new FileHandler("OptixLogger.log");
+            FileHandler fh = new FileHandler("OptixLogger.log", true);
             fh.setLevel(Level.FINE);
             OPTIXLOGGER.addHandler(fh);
         } catch (IOException e) {
