@@ -144,7 +144,6 @@ public class Parser {
     }
 
     //@@ OungKennedy
-
     /**
      * Adds a new alias-command pair to commandAliasMap.
      *
@@ -206,7 +205,6 @@ public class Parser {
     }
 
     //@@ OungKennedy
-
     /**
      * Writes the contents of commandAliasMap to the file in preferenceFilePath.
      */
@@ -222,7 +220,6 @@ public class Parser {
     }
 
     //@@ OungKennedy
-
     /**
      * Method to reset preferences to default values.op
      */
@@ -276,7 +273,7 @@ public class Parser {
         OPTIXLOGGER.setLevel(Level.ALL);
         try {
             // do not append here to avoid
-            FileHandler fh = new FileHandler("OptixLogger.log", 1024 * 1024, 1, false);
+            FileHandler fh = new FileHandler("OptixLogger.log",1024 * 1024,1, false);
             OPTIXLOGGER.addHandler(fh);
         } catch (IOException e) {
             OPTIXLOGGER.log(Level.SEVERE, "File logger not working", e);
