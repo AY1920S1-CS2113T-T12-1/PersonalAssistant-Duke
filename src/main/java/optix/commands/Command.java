@@ -11,7 +11,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public abstract class Command {
-    public final Logger OPTIXLOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
+    public final Logger OPTIXLOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);//CHECKSTYLE IGNORE THIS LINE
 
     /**
      * Processes user input to be stored, queried, modified in ShowMap,
@@ -33,6 +33,9 @@ public abstract class Command {
      */
     public abstract String[] parseDetails(String details) throws OptixInvalidCommandException;
 
+    /**
+     * Initialise logger.
+     */
     public void initLogger() {
         // add a handler if there is no handler in the logger
         if (OPTIXLOGGER.getHandlers().length == 0) {
